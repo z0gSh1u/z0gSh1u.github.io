@@ -7,19 +7,13 @@ import store from './store'
 import Antd from 'ant-design-vue'
 import 'ant-design-vue/dist/antd.css'
 
-// markdown
-// tslint:disable-next-line:no-var-requires
-import VueMarkdown from 'vue-markdown'
-
 // 动画
 import 'animate.css'
 
 // 平滑滚动
-// tslint:disable-next-line:no-var-requires
 import VueSmoothScroll from 'vue2-smooth-scroll'
 
 // 滚动动画
-// tslint:disable-next-line:no-var-requires
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 AOS.init({
@@ -37,11 +31,9 @@ Vue.config.productionTip = false
 
 Vue.use(Antd)
 Vue.use(VueSmoothScroll)
-Vue.use(VueMarkdown)
 
-store.dispatch('init')
 router.beforeEach((to, from, next) => {
-  document.title = store.getters.title + (to.meta.title ? ' - ' + to.meta.title : '')
+  document.title = 'zxuuu.tech'
   next()
 })
 
