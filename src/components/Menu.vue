@@ -34,8 +34,8 @@ import { mapGetters } from 'vuex'
 @Component({
   components: {},
   computed: {
-    ...mapGetters(['banner']),
-  },
+    ...mapGetters(['banner'])
+  }
 })
 export default class Menu extends Vue {
   private closeMenuDrawer() {
@@ -45,8 +45,8 @@ export default class Menu extends Vue {
   menus = [
     {
       id: 'aboutme',
-      name: '关于我',
-    },
+      name: '关于我'
+    }
   ]
 }
 </script>

@@ -1,1 +1,1 @@
-declare module 'vue2-smooth-scroll';
+declare module 'vue2-smooth-scroll'

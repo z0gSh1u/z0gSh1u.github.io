@@ -26,7 +26,7 @@ AOS.init({
   once: true, // 只展示一次动画
   offset: 50,
   delay: 100,
-  duration: 1000,
+  duration: 1000
 })
 
 // 自定义样式
@@ -41,13 +41,12 @@ Vue.use(VueMarkdown)
 
 store.dispatch('init')
 router.beforeEach((to, from, next) => {
-  document.title =
-    store.getters.title + (to.meta.title ? ' - ' + to.meta.title : '')
+  document.title = store.getters.title + (to.meta.title ? ' - ' + to.meta.title : '')
   next()
 })
 
 new Vue({
   router,
   store,
-  render: (h) => h(App),
+  render: h => h(App)
 }).$mount('#app')

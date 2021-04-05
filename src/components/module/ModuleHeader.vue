@@ -21,8 +21,8 @@ import { Component, Vue } from 'vue-property-decorator'
 @Component({
   props: {
     title: String,
-    subTitle: String,
-  },
+    subTitle: String
+  }
 })
 export default class ModuleHeader extends Vue {}
 </script>

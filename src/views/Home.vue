@@ -16,7 +16,7 @@
             :class="{
               'sider-menu-trigger': true,
               'drawer-closed': !menuDrawerVisible,
-              'drawer-open': menuDrawerVisible,
+              'drawer-open': menuDrawerVisible
             }"
             shape="circle"
             size="large"
@@ -32,12 +32,7 @@
     </a-layout>
 
     <!-- 小屏侧边栏抽屉 -->
-    <a-drawer
-      placement="left"
-      :closable="true"
-      :visible="menuDrawerVisible"
-      @close="onMenuDrawerClose"
-    >
+    <a-drawer placement="left" :closable="true" :visible="menuDrawerVisible" @close="onMenuDrawerClose">
       <Menu @menuClick="onMenuDrawerClose" />
     </a-drawer>
   </a-layout>
@@ -54,11 +49,11 @@ import Footer from '@/components/Footer.vue'
   components: {
     Menu,
 
-    Footer,
+    Footer
   },
   computed: {
-    ...mapGetters(['moduleIds']),
-  },
+    ...mapGetters(['moduleIds'])
+  }
 })
 export default class Home extends Vue {
   private menuDrawerVisible = false

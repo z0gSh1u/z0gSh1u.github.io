@@ -2,10 +2,7 @@
 
 <template>
   <div class="content blog" id="blog">
-    <ModuleHeader
-      :title="blog.header.title"
-      :sub-title="blog.header.subtitle"
-    />
+    <ModuleHeader :title="blog.header.title" :sub-title="blog.header.subtitle" />
     <ModuleSkeleton :display="loading" :number="2" />
     <a-list
       v-if="!loading && ((rss || {}).items || []).length > 0"
@@ -13,27 +10,16 @@
       size="large"
       :dataSource="((rss || {}).items || []).slice(0, 10)"
     >
-      <a-list-item
-        data-aos="fade-in"
-        slot="renderItem"
-        slot-scope="item"
-        key="item.guid"
-      >
+      <a-list-item data-aos="fade-in" slot="renderItem" slot-scope="item" key="item.guid">
         <a-list-item-meta>
           <a-avatar slot="avatar" :src="item.thumbnail" icon="book" />
-          <a class="title" slot="title" :href="item.link" target="_blank">{{
-            item.title | decode
-          }}</a>
+          <a class="title" slot="title" :href="item.link" target="_blank">{{ item.title | decode }}</a>
           <template slot="description">
             <div class="description">
               <a :href="item.link" target="_blank">{{ item.author }}</a>
               <span class="pub-date">{{ item.pubDate }}</span>
               <span class="tag"
-                ><a-tag
-                  v-for="category in item.categories"
-                  v-bind:key="category"
-                  >{{ category }}</a-tag
-                ></span
+                ><a-tag v-for="category in item.categories" v-bind:key="category">{{ category }}</a-tag></span
               >
             </div>
           </template>
@@ -42,14 +28,7 @@
       </a-list-item>
     </a-list>
     <a-empty v-if="!loading && ((rss || {}).items || []).length < 1" />
-    <a-button
-      :block="true"
-      type="link"
-      v-if="!!blog.blog"
-      :href="blog.blog"
-      target="_blank"
-      >更多</a-button
-    >
+    <a-button :block="true" type="link" v-if="!!blog.blog" :href="blog.blog" target="_blank">更多</a-button>
   </div>
 </template>
 
@@ -65,12 +44,12 @@ import { Module } from '@/api/user_interface'
 @Component({
   components: {
     ModuleHeader,
-    ModuleSkeleton,
+    ModuleSkeleton
   },
   computed: {
     blog(): Module {
       return this.$store.getters.getModule('blog')
-    },
+    }
   },
   created() {
     ;(this as any).initBlog(this.$store.getters.getModule('blog').rss)
@@ -83,8 +62,8 @@ import { Module } from '@/api/user_interface'
     },
     sub(content: string) {
       return content.substr(0, 120)
-    },
-  },
+    }
+  }
 })
 export default class Blog extends Vue {
   private loading = true
@@ -99,13 +78,13 @@ export default class Blog extends Vue {
 
     api.rss(
       rss,
-      (r) => {
+      r => {
         this.rss = r
       },
       () => {
         this.loading = false
       },
-      (e) => {
+      e => {
         this.loading = false
       }
     )
