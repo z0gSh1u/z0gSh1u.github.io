@@ -13,15 +13,23 @@
     <a-layout-content class="menu">
       <a-menu>
         <!-- 根据配置动态模块的内容和顺序 -->
-        <a-menu-item v-for="m in menus" v-bind:key="m.id">
-          <router-link :to="m.id">{{ m.name }}</router-link>
+        <a-menu-item v-for="m in menus" v-bind:key="m._key" class="menu-item">
+          <router-link :to="m.path">{{ m.name }}</router-link>
         </a-menu-item>
       </a-menu>
     </a-layout-content>
     <!-- 菜单页脚 -->
     <a-layout-footer class="footer">
       <!-- 版权 -->
-      <span>©2021 zxuuu.tech 苏ICP备18044844号 / 基于 vuesume</span>
+      <span>基于</span>
+      <a href="https://github.com/manerfan/vuesume" target="_blank"> vuesume</a>
+      <br />
+      <span
+        ><a href="http://zxuuu.tech" target="_blank">zxuuu.tech</a>&nbsp;
+        <a href="https://beian.miit.gov.cn" target="_blank">苏ICP备18044844号</a></span
+      >
+      <br />
+      <span>©2021</span>
     </a-layout-footer>
   </a-layout>
 </template>
@@ -44,8 +52,19 @@ export default class Menu extends Vue {
 
   menus = [
     {
-      id: 'aboutme',
+      _key: 0,
+      path: '/',
       name: '关于我'
+    },
+    {
+      _key: 1,
+      path: 'blog',
+      name: '博客'
+    },
+    {
+      _key: 2,
+      path: 'life',
+      name: '人生成就系统'
     }
   ]
 }
@@ -88,6 +107,11 @@ export default class Menu extends Vue {
 
     a {
       display: inline;
+    }
+
+    .menu-item {
+      text-align: center;
+      margin-bottom: 20px;
     }
   }
 

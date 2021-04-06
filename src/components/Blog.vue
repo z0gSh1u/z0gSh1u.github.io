@@ -16,6 +16,9 @@
         <span class="desc">{{ item.summary }} ...</span>
       </a-list-item>
     </a-list>
+    <div style="width:100%;text-align:right;">
+      <a href="https://www.cnblogs.com/zxuuu/" target="_blank" style="text-decoration:none;">更多...</a>
+    </div>
   </div>
 </template>
 

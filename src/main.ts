@@ -25,7 +25,6 @@ AOS.init({
 
 // 自定义样式
 import './styles/main.scss'
-import './styles/typer.scss'
 
 Vue.config.productionTip = false
 

@@ -5,7 +5,7 @@
     <!-- 内容 -->
     <a-layout>
       <!-- 菜单 -->
-      <a-layout-sider class="layout-sider" width="320"
+      <a-layout-sider class="layout-sider" width="310"
         ><a-affix><Menu /></a-affix
       ></a-layout-sider>
       <!-- 正文部分 -->
@@ -24,10 +24,8 @@
             @click="toggleMenuDrawer"
           ></a-button>
         </a-affix>
-        <!-- 正文锚点 -->
-        <!-- <a-layout-content><div id="anchor-next"></div></a-layout-content> -->
+        <!-- 正文 -->
         <router-view></router-view>
-        <!-- 根据配置动态模块的内容和顺序 -->
       </a-layout>
     </a-layout>
 
@@ -43,13 +41,10 @@ import { Component, Vue } from 'vue-property-decorator'
 import { mapGetters } from 'vuex'
 
 import Menu from '@/components/Menu.vue'
-import Footer from '@/components/Footer.vue'
 
 @Component({
   components: {
     Menu,
-
-    Footer
   },
   computed: {
     ...mapGetters(['moduleIds'])
