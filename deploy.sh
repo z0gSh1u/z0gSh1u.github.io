@@ -14,4 +14,4 @@ npm i
 npm run build
 
 cd embedded-server
-pm2 start ./embedded-server --name zxuuu.tech
+pm2 start ./embedded-server.js --name zxuuu.tech
