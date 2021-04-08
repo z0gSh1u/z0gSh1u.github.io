@@ -232,9 +232,9 @@ export default class App extends Vue {
 }
 </script>
 
-<style scoped lang="scss">
+<style scoped lang="less">
 @import '../styles/variable';
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500&display=swap');
+@import '../styles/NotoSerifSC500.css';
 
 .about {
   padding: 30px;
@@ -321,7 +321,7 @@ export default class App extends Vue {
     }
   }
 
-  @media screen and (max-width: $--screen-md-min) {
+  @media screen and (max-width: @--screen-md-min) {
     .col {
       padding: 0;
       &.color-content {

@@ -24,7 +24,7 @@ AOS.init({
 })
 
 // 自定义样式
-import './styles/main.scss'
+import './styles/main.less'
 
 Vue.config.productionTip = false
 

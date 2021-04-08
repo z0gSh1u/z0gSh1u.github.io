@@ -12,7 +12,7 @@ import { Component, Vue } from 'vue-property-decorator'
 export default class App extends Vue {}
 </script>
 
-<style lang="scss" scoped>
+<style scoped lang="less">
 .life-root {
   height: 100vh;
   margin: 20px;

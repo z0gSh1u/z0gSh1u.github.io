@@ -7,8 +7,8 @@
   -moz-osx-font-smoothing: grayscale;
 
   &::selection {
-    background: $--selection-color;
-    color: $--font-color;
+    background: @--selection-color;
+    color: @--font-color;
   }
 
   ::-webkit-scrollbar {
@@ -71,16 +71,16 @@ body {
   padding: 1rem !important;
 
   a {
-    color: $--color-gray;
+    color: @--color-gray;
   }
 
   .ant-menu-item {
-    border-bottom: 1px dotted $--color-gray;
+    border-bottom: 1px dotted @--color-gray;
     background: transparent !important;
-    color: $--color-gray !important;
+    color: @--color-gray !important;
     .ant-menu-item-selected {
       background: transparent !important;
-      color: $--color-gray !important;
+      color: @--color-gray !important;
     }
   }
 }
@@ -90,13 +90,13 @@ body {
 }
 
 .ant-avatar {
-  background: $--selection-color;
+  background: @--selection-color;
 }
 
 .color-title {
-  color: $--color-title;
+  color: @--color-title;
 }
 
 .color-content {
-  color: $--color-content;
+  color: @--color-content;
 }

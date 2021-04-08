@@ -63,7 +63,7 @@ export default class Home extends Vue {
 }
 </script>
 
-<style scoped lang="scss">
+<style scoped lang="less">
 @import '../styles/variable';
 
 .layout-header {
@@ -91,13 +91,13 @@ export default class Home extends Vue {
   }
 }
 
-@media screen and (max-width: $--screen-sm-min) {
+@media screen and (max-width: @--screen-sm-min) {
   .layout-sider {
     display: none;
   }
 }
 
-@media screen and (min-width: $--screen-sm-min) {
+@media screen and (min-width: @--screen-sm-min) {
   .sider-menu-trigger {
     display: none;
   }

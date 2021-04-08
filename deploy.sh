@@ -3,6 +3,8 @@
 echo "whoami:"
 whoami
 
+sudo -i
+
 pm2 stop zxuuu.tech
 
 cd /var/www/

@@ -70,7 +70,7 @@ export default class Menu extends Vue {
 }
 </script>
 
-<style scoped lang="scss">
+<style scoped lang="less">
 @import '../styles/variable';
 
 .layout-menu {
@@ -119,7 +119,7 @@ export default class Menu extends Vue {
     padding: 10px;
     margin-bottom: 1rem;
     * {
-      color: $--color-gray;
+      color: @--color-gray;
     }
 
     & > div {

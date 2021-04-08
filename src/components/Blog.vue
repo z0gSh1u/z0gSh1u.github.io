@@ -42,7 +42,7 @@ export default class App extends Vue {
   blogs: BlogRecord[] = []
 
   async initBlogs() {
-    const rssUrl = 'http://zxuuu.tech:8008/phpapi/cnblogs-rss-to-json.php'
+    const rssUrl = 'http://101.132.143.124:8008/phpapi/cnblogs-rss-to-json.php'
     const rssJSON = JSON.parse(await (await fetch(rssUrl, { method: 'get', mode: 'cors' })).text())
     // @ts-ignore
     const recentBlogs = rssJSON['entry'].slice(0, 10).map((v, i) => ({
@@ -61,7 +61,7 @@ export default class App extends Vue {
 }
 </script>
 
-<style scoped lang="scss">
+<style scoped lang="less">
 @import '../styles/variable';
 
 .cnblog-redirect {
@@ -88,15 +88,15 @@ export default class App extends Vue {
     }
     .pub-date {
       font-size: 1em;
-      color: $--color-gray;
+      color: @--color-gray;
     }
   }
   .desc {
-    color: $--color-gray;
+    color: @--color-gray;
     padding-left: 0em;
     display: inline-block;
   }
-  @media screen and (max-width: $--screen-sm-min) {
+  @media screen and (max-width: @--screen-sm-min) {
     .description {
       .tag {
         display: block;

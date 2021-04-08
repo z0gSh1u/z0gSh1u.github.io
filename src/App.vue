@@ -12,7 +12,7 @@ export default Vue.extend({
 })
 </script>
 
-<style lang="scss">
+<style lang="less">
 #app {
   text-align: center;
   color: #2c3e50;
