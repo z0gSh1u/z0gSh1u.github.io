@@ -110,7 +110,7 @@
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
 
-function _wrapKeys(arr: { [key: string]: any }[]) {
+function _withKeys(arr: { [key: string]: any }[]) {
   return arr.map((v, _key) => Object.assign(v, { _key }))
 }
 
@@ -119,7 +119,7 @@ function _wrapKeys(arr: { [key: string]: any }[]) {
 })
 export default class App extends Vue {
   // 社交网络
-  socialNetworks = _wrapKeys([
+  socialNetworks = _withKeys([
     {
       title: 'zx.cs@qq.com',
       url: 'mailto:zx.cs@qq.com',
@@ -189,10 +189,24 @@ export default class App extends Vue {
       fgc: '#fff',
       bgc: 'rgb(114,206,165)',
       icon: require('@/assets/icons/ns.png')
+    },
+    {
+      title: '简历',
+      url: 'http://101.132.143.124:8008/static/cv-zhuoxu-zhcn.pdf',
+      fgc: '#000',
+      bgc: 'rgb(246,248,250)',
+      icon: require('@/assets/icons/cv.png')
+    },
+    {
+      title: 'Resume (CV)',
+      url: 'http://101.132.143.124:8008/static/cv-zhuoxu-enus.pdf',
+      fgc: '#000',
+      bgc: 'rgb(246,248,250)',
+      icon: require('@/assets/icons/cv.png')
     }
   ])
   // 教育经历
-  eduExps = _wrapKeys([
+  eduExps = _withKeys([
     {
       school: '东南大学',
       desc: '本科 / 计算机科学与技术 / 2017~至今',
@@ -200,7 +214,7 @@ export default class App extends Vue {
     }
   ])
   // 工作经历
-  workExps = _wrapKeys([
+  workExps = _withKeys([
     {
       place: '腾讯',
       desc: '前端开发 / 暑期实习 / 2020.06~08',
@@ -214,6 +228,7 @@ export default class App extends Vue {
     ['程序设计基础及语言A', 98],
     ['语言课程设计', 99],
     ['信号与系统', 92],
+    ['概率论与数理统计A', 96],
     ['计算机图形学', 100],
     ['数字图像处理', 100],
     ['数字信号处理', 94],
