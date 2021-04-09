@@ -24,9 +24,7 @@
       <span>基于</span>
       <a href="https://github.com/manerfan/vuesume" target="_blank"> vuesume</a>
       <br />
-      <span
-        >©2021&nbsp;<a href="http://zxuuu.tech" target="_blank">zxuuu.tech</a>&nbsp;
-      >
+      <span>©2021&nbsp;<a href="http://zxuuu.tech" target="_blank">zxuuu.tech</a></span>
     </a-layout-footer>
   </a-layout>
 </template>

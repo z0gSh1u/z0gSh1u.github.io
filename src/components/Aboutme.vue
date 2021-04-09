@@ -193,15 +193,15 @@ export default class App extends Vue {
     {
       title: '简历',
       url: 'http://101.132.143.124:8008/static/cv-zhuoxu-zhcn.pdf',
-      fgc: '#000',
-      bgc: 'rgb(246,248,250)',
+      fgc: '#fff',
+      bgc: 'rgb(87,149,241)',
       icon: require('@/assets/icons/cv.png')
     },
     {
       title: 'Resume (CV)',
       url: 'http://101.132.143.124:8008/static/cv-zhuoxu-enus.pdf',
-      fgc: '#000',
-      bgc: 'rgb(246,248,250)',
+      fgc: '#fff',
+      bgc: 'rgb(136,189,243)',
       icon: require('@/assets/icons/cv.png')
     }
   ])
