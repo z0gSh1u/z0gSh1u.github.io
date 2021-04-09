@@ -25,11 +25,8 @@
       <a href="https://github.com/manerfan/vuesume" target="_blank"> vuesume</a>
       <br />
       <span
-        ><a href="http://zxuuu.tech" target="_blank">zxuuu.tech</a>&nbsp;
-        <a href="https://beian.miit.gov.cn" target="_blank">苏ICP备18044844号</a></span
+        >©2021&nbsp;<a href="http://zxuuu.tech" target="_blank">zxuuu.tech</a>&nbsp;
       >
-      <br />
-      <span>©2021</span>
     </a-layout-footer>
   </a-layout>
 </template>
