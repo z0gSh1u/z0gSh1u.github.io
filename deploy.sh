@@ -3,17 +3,17 @@
 echo "whoami:"
 whoami
 
-sudo -i
+cd /var/www
+sudo rm -rf zxuuu.tech
+sudo git clone git@github.com:z0gSh1u/zxuuu.tech.git
+cd zxuuu.tech
+sudo npm i
+sudo npm run build
 
-pm2 stop zxuuu.tech
+cd /var/www/html
+sudo mv seucg ..
+
+sudo cp -r /var/www/zxuuu.tech/dist/* /var/www/html
 
 cd /var/www/
-rm -rf zxuuu.tech
-git clone git@github.com:z0gSh1u/zxuuu.tech.git
-
-cd zxuuu.tech
-npm i
-npm run build
-
-cd embedded-server
-pm2 start ./embedded-server.js --name zxuuu.tech
+sudo mv seucg ./html
