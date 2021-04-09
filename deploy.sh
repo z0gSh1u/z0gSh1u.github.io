@@ -12,6 +12,7 @@ sudo npm run build
 
 cd /var/www/html
 sudo mv seucg ..
+sudo rm -rf *
 
 sudo cp -r /var/www/zxuuu.tech/dist/* /var/www/html
 
