@@ -38,7 +38,7 @@ interface BlogRecord {
     _formatDatetime: (time: string) => new Date(time).toLocaleDateString()
   }
 })
-export default class App extends Vue {
+export default class extends Vue {
   blogs: BlogRecord[] = []
 
   async initBlogs() {

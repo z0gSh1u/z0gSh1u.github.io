@@ -46,18 +46,15 @@ import Menu from '@/components/Menu.vue'
   components: {
     Menu,
   },
-  computed: {
-    ...mapGetters(['moduleIds'])
-  }
 })
 export default class Home extends Vue {
-  private menuDrawerVisible = false
+  menuDrawerVisible = false
 
-  private toggleMenuDrawer() {
+  toggleMenuDrawer() {
     this.menuDrawerVisible = !this.menuDrawerVisible
   }
 
-  private onMenuDrawerClose() {
+  onMenuDrawerClose() {
     this.menuDrawerVisible = false
   }
 }

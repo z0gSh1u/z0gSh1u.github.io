@@ -13,9 +13,9 @@
         </span>
         <span class="brief black">
           我正在东南大学就读计算机科学与技术专业（本科大四），主要兴趣在 Web 开发领域。我于 2020
-          年暑期在腾讯公司（深圳）PCG 事业群进行了前端开发岗实习，并获得留用资格。2021 年 9
+          年暑期在腾讯公司（深圳）PCG 事业群进行了前端开发岗的实习，并获得留用资格。2021 年 9
           月，我将以推荐免试研究生的身份在本校继续攻读硕士学位，
-          研究方向为医学影像处理。因此，近期我还在系统地学习计算机视觉与深度学习相关理论。 我的主要技术栈是
+          研究方向为医学影像处理（计算机 × 生物医学工程）。因此，近期我还在系统地学习计算机视觉与深度学习相关理论。 我的主要技术栈是
           TypeScript、Vue.js、Node.js、Python、PyTorch，并且乐于学习新的技术。
         </span>
       </a-col>
@@ -117,7 +117,7 @@ function _withKeys(arr: { [key: string]: any }[]) {
 @Component({
   components: {}
 })
-export default class App extends Vue {
+export default class extends Vue {
   // 社交网络
   socialNetworks = _withKeys([
     {
@@ -217,7 +217,7 @@ export default class App extends Vue {
   workExps = _withKeys([
     {
       place: '腾讯',
-      desc: '前端开发 / 暑期实习 / 2020.06~08',
+      desc: '前端开发暑期实习 / Vue+TS, PHP / 2020.06~08',
       icon: require('@/assets/icons/tencent.png')
     }
   ])
@@ -227,6 +227,7 @@ export default class App extends Vue {
   scores = [
     ['程序设计基础及语言A', 98],
     ['语言课程设计', 99],
+    ['算法设计基础', 90],
     ['信号与系统', 92],
     ['概率论与数理统计A', 96],
     ['计算机图形学', 100],
@@ -242,8 +243,6 @@ export default class App extends Vue {
     score: v[1],
     suffix: v.length > 2 ? v[2] : void 0
   }))
-
-  created() {}
 }
 </script>
 

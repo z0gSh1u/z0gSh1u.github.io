@@ -14,7 +14,7 @@
       <a-menu>
         <!-- 根据配置动态模块的内容和顺序 -->
         <a-menu-item v-for="m in menus" v-bind:key="m._key" class="menu-item">
-          <router-link :to="m.path">{{ m.name }}</router-link>
+          <router-link :to="m.path" @click.native="closeMenuDrawer">{{ m.name }}</router-link>
         </a-menu-item>
       </a-menu>
     </a-layout-content>
@@ -32,17 +32,14 @@
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
 
-import { mapGetters } from 'vuex'
-
 @Component({
   components: {},
-  computed: {
-    ...mapGetters(['banner'])
-  }
 })
 export default class Menu extends Vue {
-  private closeMenuDrawer() {
+  closeMenuDrawer() {
     this.$emit('menuClick')
+    console.log("menuClick");
+    
   }
 
   menus = [
