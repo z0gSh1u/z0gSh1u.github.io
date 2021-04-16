@@ -32,7 +32,7 @@ Vue.use(Antd)
 Vue.use(VueSmoothScroll)
 
 router.beforeEach((to, from, next) => {
-  document.title = 'zxuuu.tech'
+  document.title = "z0gSh1u's page - zxuuu.tech"
   next()
 })
 
