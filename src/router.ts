@@ -1,11 +1,9 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 
-import Aboutme from '@/components/Aboutme.vue'
-import Blog from '@/components/Blog.vue'
-import Life from '@/components/Life.vue'
-
 Vue.use(Router)
+
+import Aboutme from '@/components/Aboutme.vue'
 
 export default new Router({
   mode: 'history',
@@ -13,15 +11,15 @@ export default new Router({
   routes: [
     {
       path: '/',
-      component: Aboutme
+      component: Aboutme // no lazy loading
     },
     {
       path: '/blog',
-      component: Blog
+      component: () => import('@/components/Blog.vue')
     },
     {
       path: '/life',
-      component: Life
+      component: () => import('@/components/Life.vue')
     }
   ]
 })
