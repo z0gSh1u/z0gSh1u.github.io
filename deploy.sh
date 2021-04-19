@@ -11,10 +11,11 @@ sudo npm i
 sudo npm run build
 
 cd /var/www/html
-sudo mv seucg ..
-sudo rm -rf *
+sudo rm -rf css
+sudo rm -rf js
+sudo rm index.html
+sudo rm favicon.ico
 
 sudo cp -r /var/www/zxuuu.tech/dist/* /var/www/html
 
-cd /var/www/
-sudo mv seucg ./html
+echo "zxuuu.tech deploy done."

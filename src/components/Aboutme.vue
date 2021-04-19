@@ -170,6 +170,13 @@ export default class extends Vue {
       icon: require('@/assets/icons/qq.png')
     },
     {
+      title: 'QQ空间',
+      url: 'https://user.qzone.qq.com/136371391',
+      fgc: '#fff',
+      bgc: 'rgb(0,163,255)',
+      icon: require('@/assets/icons/qzone.png')
+    },
+    {
       title: 'zhuoxu',
       url: '#',
       fgc: '#fff',
@@ -192,14 +199,14 @@ export default class extends Vue {
     },
     {
       title: '简历',
-      url: 'http://101.132.143.124:8008/static/cv-zhuoxu-zhcn.pdf',
+      url: './static/cv-zhuoxu-zhcn.pdf',
       fgc: '#fff',
       bgc: 'rgb(87,149,241)',
       icon: require('@/assets/icons/cv.png')
     },
     {
       title: 'Resume (CV)',
-      url: 'http://101.132.143.124:8008/static/cv-zhuoxu-enus.pdf',
+      url: './static/cv-zhuoxu-enus.pdf',
       fgc: '#fff',
       bgc: 'rgb(136,189,243)',
       icon: require('@/assets/icons/cv.png')
