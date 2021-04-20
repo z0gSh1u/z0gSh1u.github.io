@@ -82,7 +82,8 @@
         <a-list item-layout="horizontal" :data-source="publications">
           <a-list-item slot="renderItem" slot-scope="item" key="item._key" class="pub-item">
             <a-list-item-meta :description="item.place + ' / ' + item.authors">
-              <a slot="title" :href="item.url">{{ item.title }}</a>
+              <a slot="title" :href="item.url" v-if="item.url !== '#'">{{ item.title }}</a>
+              <span slot="title" v-else>{{ item.title }}</span>
             </a-list-item-meta>
           </a-list-item>
         </a-list>
@@ -229,7 +230,14 @@ export default class extends Vue {
     }
   ])
   // 著作
-  publications = []
+  publications = _withKeys([
+    {
+      title: 'Real-Time Endoscopy Haze Removal: A Synthetical Method',
+      place: 'MTAP (In Revision)',
+      authors: 'Xu Zhuo et al.',
+      url: '#'
+    }
+  ])
   // 成绩
   scores = [
     ['程序设计基础及语言A', 98],

@@ -38,8 +38,6 @@ import { Component, Vue } from 'vue-property-decorator'
 export default class Menu extends Vue {
   closeMenuDrawer() {
     this.$emit('menuClick')
-    console.log("menuClick");
-    
   }
 
   menus = [
@@ -103,7 +101,7 @@ export default class Menu extends Vue {
 
     .menu-item {
       text-align: center;
-      margin-bottom: 20px;
+      margin: 1.5rem;
     }
   }
 

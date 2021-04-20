@@ -7,6 +7,11 @@
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
+
+const LifeData = {
+  // TODO
+}
+
 const columns = [
   {
     title: 'Name',
@@ -14,38 +19,20 @@ const columns = [
     filters: [
       {
         text: 'Joe',
-        value: 'Joe',
+        value: 'Joe'
       },
       {
         text: 'Jim',
-        value: 'Jim',
-      },
-      {
-        text: 'Submenu',
-        value: 'Submenu',
-        children: [
-          {
-            text: 'Green',
-            value: 'Green',
-          },
-          {
-            text: 'Black',
-            value: 'Black',
-          },
-        ],
-      },
+        value: 'Jim'
+      }
     ],
-    // specify the condition of filtering result
-    // here is that finding the name started with `value`
-    onFilter: (value: any, record:any) => record.name.indexOf(value) === 0,
-    sorter: (a: any, b: any) => a.name.length - b.name.length,
-    sortDirections: ['descend'],
+    onFilter: (value: any, record: any) => record.name.indexOf(value) === 0,
   },
   {
     title: 'Age',
     dataIndex: 'age',
     defaultSortOrder: 'descend',
-    sorter: (a: any, b: any) => a.age - b.age,
+    sorter: (a: any, b: any) => a.age - b.age
   },
   {
     title: 'Address',
@@ -53,47 +40,46 @@ const columns = [
     filters: [
       {
         text: 'London',
-        value: 'London',
+        value: 'London'
       },
       {
         text: 'New York',
-        value: 'New York',
-      },
+        value: 'New York'
+      }
     ],
     filterMultiple: false,
     onFilter: (value: any, record: any) => record.address.indexOf(value) === 0,
     sorter: (a: any, b: any) => a.address.length - b.address.length,
-    sortDirections: ['descend', 'ascend'],
-  },
-];
+    sortDirections: ['descend', 'ascend']
+  }
+]
 
 const data = [
   {
     key: '1',
     name: 'John Brown',
     age: 32,
-    address: 'New York No. 1 Lake Park',
+    address: 'New York No. 1 Lake Park'
   },
   {
     key: '2',
     name: 'Jim Green',
     age: 42,
-    address: 'London No. 1 Lake Park',
+    address: 'London No. 1 Lake Park'
   },
   {
     key: '3',
     name: 'Joe Black',
     age: 32,
-    address: 'Sidney No. 1 Lake Park',
+    address: 'Sidney No. 1 Lake Park'
   },
   {
     key: '4',
     name: 'Jim Red',
     age: 32,
-    address: 'London No. 2 Lake Park',
-  },
-];
-
+    address: 'London No. 2 Lake Park'
+  }
+]
 
 @Component({
   components: {}
@@ -101,7 +87,6 @@ const data = [
 export default class extends Vue {
   columns = columns
   data = data
-
 }
 </script>
 
