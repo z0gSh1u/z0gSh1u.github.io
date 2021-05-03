@@ -82,7 +82,7 @@
         <a-list item-layout="horizontal" :data-source="publications">
           <a-list-item slot="renderItem" slot-scope="item" key="item._key" class="pub-item">
             <a-list-item-meta :description="item.place + ' / ' + item.authors">
-              <a slot="title" :href="item.url" v-if="item.url !== '#'">{{ item.title }}</a>
+              <a slot="title" :href="item.url" v-if="item.url !== '#'" target="_blank">{{ item.title }}</a>
               <span slot="title" v-else>{{ item.title }}</span>
             </a-list-item-meta>
           </a-list-item>
