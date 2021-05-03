@@ -236,7 +236,14 @@ export default class extends Vue {
       place: 'MTAP (In Revision)',
       authors: 'Xu Zhuo et al.',
       url: '#'
-    }
+    },
+    {
+      title: 'NTIRE 2021 Challenge on Video Super-Resolution',
+      place: 'arXiv 2104.14852',
+      authors: 'Sanghyun Son, ..., Xu Zhuo, ...',
+      url: 'https://arxiv.org/abs/2104.14852'
+    },
+    
   ])
   // 成绩
   scores = [
