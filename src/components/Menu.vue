@@ -51,11 +51,11 @@ export default class Menu extends Vue {
       path: 'blog',
       name: '博客'
     },
-    {
-      _key: 2,
-      path: 'life',
-      name: '人生成就系统'
-    }
+    // {
+    //   _key: 2,
+    //   path: 'life',
+    //   name: '人生成就系统'
+    // }
   ]
 }
 </script>

@@ -198,20 +198,20 @@ export default class extends Vue {
       bgc: 'rgb(114,206,165)',
       icon: require('@/assets/icons/ns.png')
     },
-    {
-      title: '简历',
-      url: './static/cv-zhuoxu-zhcn.pdf',
-      fgc: '#fff',
-      bgc: 'rgb(87,149,241)',
-      icon: require('@/assets/icons/cv.png')
-    },
-    {
-      title: 'Resume (CV)',
-      url: './static/cv-zhuoxu-enus.pdf',
-      fgc: '#fff',
-      bgc: 'rgb(136,189,243)',
-      icon: require('@/assets/icons/cv.png')
-    }
+    // {
+    //   title: '简历',
+    //   url: './static/cv-zhuoxu-zhcn.pdf',
+    //   fgc: '#fff',
+    //   bgc: 'rgb(87,149,241)',
+    //   icon: require('@/assets/icons/cv.png')
+    // },
+    // {
+    //   title: 'Resume (CV)',
+    //   url: './static/cv-zhuoxu-enus.pdf',
+    //   fgc: '#fff',
+    //   bgc: 'rgb(136,189,243)',
+    //   icon: require('@/assets/icons/cv.png')
+    // }
   ])
   // 教育经历
   eduExps = _withKeys([
