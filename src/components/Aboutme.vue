@@ -12,11 +12,10 @@
           卓旭
         </span>
         <span class="brief black">
-          我正在东南大学就读计算机科学与技术专业（本科大四），主要兴趣在 Web 开发领域。我于 2020
-          年暑期在腾讯公司（深圳）PCG 事业群进行了前端开发岗的实习，并获得留用资格。2021 年 9
-          月，我将以推荐免试研究生的身份在本校继续攻读硕士学位，
-          研究方向为医学影像处理（计算机 × 生物医学工程）。因此，近期我还在系统地学习计算机视觉与深度学习相关理论。 我的主要技术栈是
-          TypeScript、Vue.js、Node.js、Python、PyTorch，并且乐于学习新的技术。
+          我正在东南大学就读计算机科学与技术专业（本科大四）。2020 年暑期，在腾讯公司（深圳）PCG
+          事业群前端开发岗实习，并获得留用资格。今年 9 月，我将以推荐免试研究生的身份在本校继续攻读硕士学位，
+          研究方向为医学影像处理（计算机 × 生物医学工程）。我的主要技术栈是
+          JavaScript、TypeScript、Vue.js、Node.js、Python、PyTorch，并且乐于学习新的技术。
         </span>
       </a-col>
     </a-row>
@@ -198,6 +197,13 @@ export default class extends Vue {
       bgc: 'rgb(114,206,165)',
       icon: require('@/assets/icons/ns.png')
     },
+    {
+      title: '下厨房',
+      url: 'https://www.xiachufang.com/cook/159722813/',
+      fgc: '#fff',
+      bgc: 'rgb(138,207,219)',
+      icon: require('@/assets/icons/xcf.png')
+    }
     // {
     //   title: '简历',
     //   url: './static/cv-zhuoxu-zhcn.pdf',
@@ -217,7 +223,17 @@ export default class extends Vue {
   eduExps = _withKeys([
     {
       school: '东南大学',
-      desc: '本科 / 计算机科学与技术 / 2017~至今',
+      desc: '硕士 / 影像科学与技术 / 2021~',
+      icon: require('@/assets/icons/seu-icon.png')
+    },
+    {
+      school: '雷恩第一大学（Université de Rennes 1）',
+      desc: '硕士 / 信号和图像处理（联合培养） / 2021~',
+      icon: require('@/assets/icons/rennes1-icon.png')
+    },
+    {
+      school: '东南大学',
+      desc: '本科 / 计算机科学与技术 / 2017~2021',
       icon: require('@/assets/icons/seu-icon.png')
     }
   ])
@@ -232,6 +248,12 @@ export default class extends Vue {
   // 著作
   publications = _withKeys([
     {
+      title: '一种基于概率优化和神经网络的内窥镜去雾方法及装置',
+      place: '发明专利，ZL 202010370770.0',
+      authors: '汪彦刚 陈阳 卓旭 高钰铭 王志华',
+      url: 'http://www.soopat.com/Patent/202010370770'
+    },
+    {
       title: 'Real-Time Endoscopy Haze Removal: A Synthetical Method',
       place: 'MTAP (In Revision)',
       authors: 'Xu Zhuo et al.',
@@ -242,8 +264,7 @@ export default class extends Vue {
       place: 'arXiv 2104.14852',
       authors: 'Sanghyun Son, ..., Xu Zhuo, ...',
       url: 'https://arxiv.org/abs/2104.14852'
-    },
-    
+    }
   ])
   // 成绩
   scores = [
