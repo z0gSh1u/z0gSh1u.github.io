@@ -249,7 +249,7 @@ export default class extends Vue {
   publications = _withKeys([
     {
       title: '基于深度学习的图像超分辨率重建及其在医学影像上的应用',
-      place: '江苏省本科优秀毕业设计（论文）、东南大学本科优秀毕业设计（论文）',
+      place: '东南大学本科优秀毕业设计（论文）、江苏省本科优秀毕业设计（论文）(pending)',
       authors: '卓旭',
       url: '#'
     },
