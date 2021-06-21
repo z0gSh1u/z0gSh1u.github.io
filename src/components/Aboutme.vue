@@ -248,6 +248,12 @@ export default class extends Vue {
   // 著作
   publications = _withKeys([
     {
+      title: '基于深度学习的图像超分辨率重建及其在医学影像上的应用',
+      place: '江苏省本科优秀毕业设计（论文）、东南大学本科优秀毕业设计（论文）',
+      authors: '卓旭',
+      url: '#'
+    },
+    {
       title: '一种基于概率优化和神经网络的内窥镜去雾方法及装置',
       place: '发明专利，ZL 202010370770.0',
       authors: '汪彦刚 陈阳 卓旭 高钰铭 王志华',
