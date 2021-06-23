@@ -49,7 +49,7 @@
     <a-divider />
 
     <a-row type="flex" justify="center" align="top" class="section">
-      <a-col :xs="22" :sm="22" :md="22" :lg="12" :xl="12">
+      <a-col :xs="24" :sm="24" :md="24" :lg="12" :xl="12">
         <span class="section-title">教育经历</span>
         <a-list item-layout="horizontal" :data-source="eduExps">
           <a-list-item slot="renderItem" slot-scope="item" key="item._key" class="edu-item">
@@ -60,7 +60,7 @@
           </a-list-item>
         </a-list>
       </a-col>
-      <a-col :xs="22" :sm="22" :md="22" :lg="12" :xl="12">
+      <a-col :xs="24" :sm="24" :md="24" :lg="12" :xl="12">
         <span class="section-title">工作经历</span>
         <a-list item-layout="horizontal" :data-source="workExps">
           <a-list-item slot="renderItem" slot-scope="item" key="item._key" class="work-item">
@@ -239,6 +239,11 @@ export default class extends Vue {
   ])
   // 工作经历
   workExps = _withKeys([
+    {
+      place: '一影医疗',
+      desc: '见习研究员 / 2021.06~',
+      icon: require('@/assets/icons/first-imaging.png')
+    },
     {
       place: '腾讯',
       desc: '前端开发暑期实习 / Vue+TS, PHP / 2020.06~08',
