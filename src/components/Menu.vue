@@ -12,7 +12,6 @@
     <!-- 菜单 -->
     <a-layout-content class="menu">
       <a-menu>
-        <!-- 根据配置动态模块的内容和顺序 -->
         <a-menu-item v-for="m in menus" v-bind:key="m._key" class="menu-item">
           <router-link :to="m.path" @click.native="closeMenuDrawer">{{ m.name }}</router-link>
         </a-menu-item>
@@ -21,10 +20,13 @@
     <!-- 菜单页脚 -->
     <a-layout-footer class="footer">
       <!-- 版权 -->
-      <span>基于</span>
-      <a href="https://github.com/manerfan/vuesume" target="_blank"> vuesume</a>
-      <br />
-      <span>©2021&nbsp;<a href="http://zxuuu.tech" target="_blank">zxuuu.tech</a></span>
+      <div class="used-services">
+        <span>基于 </span>
+        <a href="https://github.com/manerfan/vuesume" target="_blank">vuesume</a><br /><span>使用 </span>
+        <a href="https://www.ucloud.cn/" target="_blank">UCloud 云服务器</a><span> 和 </span>
+        <a href="https://www.cloudflare.com/" target="_blank">Cloudflare CDN</a>
+      </div>
+      <span>© 2021&nbsp;<a href="https://zxuuu.tech" target="_blank">zxuuu.tech</a></span>
     </a-layout-footer>
   </a-layout>
 </template>
@@ -33,7 +35,7 @@
 import { Component, Vue } from 'vue-property-decorator'
 
 @Component({
-  components: {},
+  components: {}
 })
 export default class Menu extends Vue {
   closeMenuDrawer() {
@@ -51,11 +53,11 @@ export default class Menu extends Vue {
       path: 'blog',
       name: '博客'
     },
-    // {
-    //   _key: 2,
-    //   path: 'life',
-    //   name: '人生成就系统'
-    // }
+    {
+      _key: 2,
+      path: 'life',
+      name: 'Life...'
+    }
   ]
 }
 </script>
@@ -114,6 +116,15 @@ export default class Menu extends Vue {
 
     & > div {
       margin: 0.5rem auto;
+    }
+
+    .used-services {
+      a {
+        font-style: italic;
+      }
+      margin: 0;
+      line-height: 1.4;
+      font-size: 0.9em;
     }
   }
 }

@@ -1,5 +1,3 @@
-<!-- 整体的框架 -->
-
 <template>
   <a-layout>
     <!-- 内容 -->
@@ -38,14 +36,12 @@
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
-import { mapGetters } from 'vuex'
-
 import Menu from '@/components/Menu.vue'
 
 @Component({
   components: {
-    Menu,
-  },
+    Menu
+  }
 })
 export default class Home extends Vue {
   menuDrawerVisible = false

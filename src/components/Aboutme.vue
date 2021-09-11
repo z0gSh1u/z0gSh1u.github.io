@@ -12,10 +12,9 @@
           卓旭
         </span>
         <span class="brief black">
-          我正在东南大学就读计算机科学与技术专业（本科大四）。2020 年暑期，在腾讯公司（深圳）PCG
-          事业群前端开发岗实习，并获得留用资格。今年 9 月，我将以推荐免试研究生的身份在本校继续攻读硕士学位，
-          研究方向为医学影像处理（计算机 × 生物医学工程）。我的主要技术栈是
-          JavaScript、TypeScript、Vue.js、Node.js、Python、PyTorch，并且乐于学习新的技术。
+          我正在东南大学攻读硕士学位，研究方向为医学影像处理（计算机 × 生医），主要学习放射影像的二、三、四维重建。
+          我本科毕业于东南大学算机科学与技术专业。2020 年夏，在腾讯公司（深圳）PCG 事业群前端开发岗实习，并获得留用资格。
+          我的主要技术栈包括但不限于 TypeScript、Vue.js、Python，并在学习 CUDA 等新的技术。
         </span>
       </a-col>
     </a-row>
@@ -55,7 +54,7 @@
           <a-list-item slot="renderItem" slot-scope="item" key="item._key" class="edu-item">
             <a-list-item-meta :description="item.desc">
               <img slot="avatar" :src="item.icon" />
-              <a slot="title">{{ item.school }}</a>
+              <span slot="title">{{ item.school }}</span>
             </a-list-item-meta>
           </a-list-item>
         </a-list>
@@ -66,7 +65,7 @@
           <a-list-item slot="renderItem" slot-scope="item" key="item._key" class="work-item">
             <a-list-item-meta :description="item.desc">
               <img slot="avatar" :src="item.icon" />
-              <a slot="title">{{ item.place }}</a>
+              <span slot="title">{{ item.place }}</span>
             </a-list-item-meta>
           </a-list-item>
         </a-list>
@@ -181,7 +180,7 @@ export default class extends Vue {
       url: '#',
       fgc: '#fff',
       bgc: 'rgb(60,176,53)',
-      icon: require('@/assets/icons/weixin.png')
+      icon: require('@/assets/icons/wechat.png')
     },
     {
       title: 'z0gSh1u',
@@ -191,7 +190,7 @@ export default class extends Vue {
       icon: require('@/assets/icons/steam.png')
     },
     {
-      title: 'SW-0432-5008-****',
+      title: 'SW-0432-5008-1243',
       url: '#',
       fgc: '#fff',
       bgc: 'rgb(114,206,165)',
@@ -203,7 +202,7 @@ export default class extends Vue {
       fgc: '#fff',
       bgc: 'rgb(138,207,219)',
       icon: require('@/assets/icons/xcf.png')
-    }
+    },
     // {
     //   title: '简历',
     //   url: './static/cv-zhuoxu-zhcn.pdf',
@@ -241,7 +240,7 @@ export default class extends Vue {
   workExps = _withKeys([
     {
       place: '一影医疗',
-      desc: '见习研究员 / 2021.06~',
+      desc: '算法岗位实习 / 2021.06~07',
       icon: require('@/assets/icons/first-imaging.png')
     },
     {
@@ -254,9 +253,9 @@ export default class extends Vue {
   publications = _withKeys([
     {
       title: '基于深度学习的图像超分辨率重建及其在医学影像上的应用',
-      place: '东南大学本科优秀毕业设计（论文）、江苏省本科优秀毕业设计（论文）(pending)',
+      place: '东南大学本科优秀毕业设计（论文）',
       authors: '卓旭',
-      url: '#'
+      url: 'https://github.com/z0gSh1u/graduation-project'
     },
     {
       title: '一种基于概率优化和神经网络的内窥镜去雾方法及装置',
@@ -281,7 +280,6 @@ export default class extends Vue {
   scores = [
     ['程序设计基础及语言A', 98],
     ['语言课程设计', 99],
-    ['算法设计基础', 90],
     ['运筹学', 95],
     ['信号与系统', 92],
     ['概率论与数理统计A', 96],

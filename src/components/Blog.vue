@@ -1,7 +1,6 @@
 <template>
   <div class="blog">
-    <a href="https://www.cnblogs.com/zxuuu/" target="_blank" class="cnblog-redirect">z0gSh1u's Blog</a>
-    <span>此处为最近博文，更多请访问 <a href="https://www.cnblogs.com/zxuuu/" target="_blank">博客园</a> </span>
+    <a :href="cnblogUrl" target="_blank" class="cnblog-redirect">z0gSh1u's Blog</a>
     <a-list itemLayout="vertical" size="large" :dataSource="blogs" :loading="!blogs.length">
       <a-list-item data-aos="fade-in" slot="renderItem" slot-scope="item" key="item._key">
         <a-list-item-meta>
@@ -17,7 +16,7 @@
       </a-list-item>
     </a-list>
     <div style="width:100%;text-align:right;">
-      <a href="https://www.cnblogs.com/zxuuu/" target="_blank" style="text-decoration:none;">更多...</a>
+      <a :href="cnblogUrl" target="_blank" style="text-decoration:none;">更多...</a>
     </div>
   </div>
 </template>
@@ -39,6 +38,7 @@ interface BlogRecord {
   }
 })
 export default class extends Vue {
+  cnblogUrl = 'https://www.cnblogs.com/zxuuu/'
   blogs: BlogRecord[] = []
 
   async initBlogs() {

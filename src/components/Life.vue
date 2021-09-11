@@ -1,104 +1,68 @@
 <template>
   <div class="life-root">
-    <span>本页面仍在开发中...</span>
-    <a-table :columns="columns" :data-source="data" />
+    <div class="life-record" v-for="(record, idx1) in this.lifeRecords" :key="idx1">
+      <p class="life-record-title">{{ record.type }}</p>
+      <table class="responstable">
+        <thead style="display: none">
+          <th style="width: 25%"></th>
+          <th></th>
+        </thead>
+        <tbody>
+          <tr v-for="(item, idx2) in record.items" :key="idx2">
+            <td style="width: 15%">{{ item[1] == 'star' ? '👍' : '' }}</td>
+            <td>{{ item[0] }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <br>
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
 
-const LifeData = {
-  // TODO
+interface LifeRecord {
+  type: string
+  items: [string, string][]
 }
-
-const columns = [
-  {
-    title: 'Name',
-    dataIndex: 'name',
-    filters: [
-      {
-        text: 'Joe',
-        value: 'Joe'
-      },
-      {
-        text: 'Jim',
-        value: 'Jim'
-      }
-    ],
-    onFilter: (value: any, record: any) => record.name.indexOf(value) === 0,
-  },
-  {
-    title: 'Age',
-    dataIndex: 'age',
-    defaultSortOrder: 'descend',
-    sorter: (a: any, b: any) => a.age - b.age
-  },
-  {
-    title: 'Address',
-    dataIndex: 'address',
-    filters: [
-      {
-        text: 'London',
-        value: 'London'
-      },
-      {
-        text: 'New York',
-        value: 'New York'
-      }
-    ],
-    filterMultiple: false,
-    onFilter: (value: any, record: any) => record.address.indexOf(value) === 0,
-    sorter: (a: any, b: any) => a.address.length - b.address.length,
-    sortDirections: ['descend', 'ascend']
-  }
-]
-
-const data = [
-  {
-    key: '1',
-    name: 'John Brown',
-    age: 32,
-    address: 'New York No. 1 Lake Park'
-  },
-  {
-    key: '2',
-    name: 'Jim Green',
-    age: 42,
-    address: 'London No. 1 Lake Park'
-  },
-  {
-    key: '3',
-    name: 'Joe Black',
-    age: 32,
-    address: 'Sidney No. 1 Lake Park'
-  },
-  {
-    key: '4',
-    name: 'Jim Red',
-    age: 32,
-    address: 'London No. 2 Lake Park'
-  }
-]
 
 @Component({
   components: {}
 })
 export default class extends Vue {
-  columns = columns
-  data = data
+  lifeRecords: LifeRecord[] = []
+
+  async loadLifeRecords() {
+    this.lifeRecords = await (await fetch('/life_data_json.json', { method: 'get', mode: 'cors' })).json()
+  }
+
+  created() {
+    this.loadLifeRecords().then(() => {
+      console.log(this.lifeRecords)
+    })
+  }
 }
 </script>
 
 <style scoped lang="less">
+@import '../styles/respontable.less';
+
 .life-root {
+  font-size: 14px;
   height: 100vh;
-  margin: 20px;
-  span {
-    display: block;
-    width: 100%;
-    background-color: rgb(230, 1, 1);
-    color: #fff;
+  margin: 1em 3em;
+  .life-record {
+    margin: 10px auto;
+    table {
+      width: 100%;
+      font-size: 1.2em;
+    }
+    .life-record-title {
+      font-weight: bold;
+      font-size: 2em;
+      margin-bottom: 0;
+    }
   }
 }
 </style>
