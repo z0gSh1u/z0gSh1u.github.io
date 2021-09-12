@@ -38,9 +38,7 @@ export default class extends Vue {
   }
 
   created() {
-    this.loadLifeRecords().then(() => {
-      console.log(this.lifeRecords)
-    })
+    this.loadLifeRecords()
   }
 }
 </script>
