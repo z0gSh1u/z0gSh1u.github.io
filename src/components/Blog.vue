@@ -42,15 +42,15 @@ export default class extends Vue {
   blogs: BlogRecord[] = []
 
   async initBlogs() {
-    const rssUrl = './phpapi/cnblogs-rss-to-json.php'
+    const rssUrl = 'https://api.rss2json.com/v1/api.json?rss_url=http%3A%2F%2Ffeed.cnblogs.com%2Fblog%2Fu%2F576840%2Frss%2F'
     const rssJSON = JSON.parse(await (await fetch(rssUrl, { method: 'get', mode: 'cors' })).text())
     // @ts-ignore
-    const recentBlogs = rssJSON['entry'].slice(0, 10).map((v, i) => ({
+    const recentBlogs = rssJSON['items'].slice(0, 10).map((v, i) => ({
       _key: i,
       title: v.title.replace(/(.+)\s-\sz0gSh1u$/, '$1'),
-      time: v.updated,
-      summary: v.summary,
-      url: v.id
+      time: v.pubDate,
+      summary: v.description,
+      url: v.link
     }))
     this.blogs = recentBlogs
   }
