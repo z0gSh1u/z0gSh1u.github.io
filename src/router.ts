@@ -18,6 +18,10 @@ export default new Router({
       component: () => import('@/components/Blog.vue')
     },
     {
+      path: '/calendar',
+      component: () => import('@/components/Calendar.vue')
+    },
+    {
       path: '/life',
       component: () => import('@/components/Life.vue')
     }

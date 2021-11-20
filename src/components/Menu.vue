@@ -55,8 +55,13 @@ export default class Menu extends Vue {
     },
     {
       _key: 2,
+      path: 'calendar',
+      name: '日历排期'
+    },
+    {
+      _key: 3,
       path: 'life',
-      name: 'Life...'
+      name: '生活记录'
     }
   ]
 }
