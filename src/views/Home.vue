@@ -84,13 +84,13 @@ export default class Home extends Vue {
   }
 }
 
-@media screen and (max-width: @--screen-sm-min) {
+@media screen and (max-width: @--screen-md-min) {
   .layout-sider {
     display: none;
   }
 }
 
-@media screen and (min-width: @--screen-sm-min) {
+@media screen and (min-width: @--screen-md-min) {
   .sider-menu-trigger {
     display: none;
   }
