@@ -59,15 +59,12 @@ export default class Home extends Vue {
 <style scoped lang="less">
 @import '../styles/variable';
 
-.layout-header {
+.layout-content {
+  position: relative;
   z-index: 0;
   height: 100vh;
   overflow: auto;
   padding: 0;
-}
-
-.layout-content {
-  position: relative;
 }
 
 .sider-menu-trigger {
