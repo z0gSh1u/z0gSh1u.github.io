@@ -1,14 +1,10 @@
 <template>
   <a-layout>
-    <!-- 内容 -->
     <a-layout>
-      <!-- 菜单 -->
       <a-layout-sider class="layout-sider" width="310"
         ><a-affix><Menu /></a-affix
       ></a-layout-sider>
-      <!-- 正文部分 -->
       <a-layout class="layout-content">
-        <!-- 小屏侧边栏抽屉按钮 -->
         <a-affix>
           <a-button
             :class="{
@@ -22,12 +18,10 @@
             @click="toggleMenuDrawer"
           ></a-button>
         </a-affix>
-        <!-- 正文 -->
         <router-view></router-view>
       </a-layout>
     </a-layout>
-
-    <!-- 小屏侧边栏抽屉 -->
+    <!-- Use drawer for small screen. -->
     <a-drawer placement="left" :closable="true" :visible="menuDrawerVisible" @close="onMenuDrawerClose">
       <Menu @menuClick="onMenuDrawerClose" />
     </a-drawer>

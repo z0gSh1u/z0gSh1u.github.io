@@ -21,12 +21,12 @@
     <a-layout-footer class="footer">
       <!-- 版权 -->
       <div class="used-services">
-        <span>基于 </span>
-        <a href="https://github.com/manerfan/vuesume" target="_blank">vuesume</a><br /><span>使用 </span>
-        <a href="https://www.ucloud.cn/" target="_blank">UCloud 云服务器</a><span> 和 </span>
+        <span>Based on </span>
+        <a href="https://github.com/manerfan/vuesume" target="_blank">vuesume</a><br /><span>Using </span>
+        <a href="https://www.ucloud.cn/" target="_blank">UCloud Server</a><span> and </span>
         <a href="https://www.cloudflare.com/" target="_blank">Cloudflare CDN</a>
       </div>
-      <span>© 2021&nbsp;<a href="https://zxuuu.tech" target="_blank">zxuuu.tech</a></span>
+      <span>© 2022&nbsp;<a href="https://zxuuu.tech" target="_blank">zxuuu.tech</a></span>
     </a-layout-footer>
   </a-layout>
 </template>
@@ -46,22 +46,22 @@ export default class Menu extends Vue {
     {
       _key: 0,
       path: '/',
-      name: '关于我'
+      name: 'About Me'
     },
     {
       _key: 1,
       path: 'blog',
-      name: '博客'
+      name: 'Blog'
     },
     {
       _key: 2,
       path: 'calendar',
-      name: '日历排期'
+      name: 'Calendar'
     },
     {
       _key: 3,
-      path: 'life',
-      name: '生活记录'
+      path: 'collection',
+      name: 'Collection'
     }
   ]
 }

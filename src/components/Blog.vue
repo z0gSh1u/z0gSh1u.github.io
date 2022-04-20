@@ -1,6 +1,6 @@
 <template>
   <div class="blog">
-    <a :href="cnblogUrl" target="_blank" class="cnblog-redirect">z0gSh1u's Blog</a>
+    <a :href="cnblogUrl" target="_blank" class="cnblog-redirect">(a piece of) z0gSh1u's Blog</a>
     <a-list itemLayout="vertical" size="large" :dataSource="blogs" :loading="!blogs.length">
       <a-list-item data-aos="fade-in" slot="renderItem" slot-scope="item" key="item._key">
         <a-list-item-meta>
@@ -40,12 +40,13 @@ interface BlogRecord {
 export default class extends Vue {
   cnblogUrl = 'https://www.cnblogs.com/zxuuu/'
   blogs: BlogRecord[] = []
+  numberToDisplay = 8
 
   async initBlogs() {
     const rssUrl = 'https://api.rss2json.com/v1/api.json?rss_url=http%3A%2F%2Ffeed.cnblogs.com%2Fblog%2Fu%2F576840%2Frss%2F'
     const rssJSON = JSON.parse(await (await fetch(rssUrl, { method: 'get', mode: 'cors' })).text())
     // @ts-ignore
-    const recentBlogs = rssJSON['items'].slice(0, 10).map((v, i) => ({
+    const recentBlogs = rssJSON['items'].slice(0, this.numberToDisplay).map((v, i) => ({
       _key: i,
       title: v.title.replace(/(.+)\s-\sz0gSh1u$/, '$1'),
       time: v.pubDate,

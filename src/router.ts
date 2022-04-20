@@ -22,8 +22,8 @@ export default new Router({
       component: () => import('@/components/Calendar.vue')
     },
     {
-      path: '/life',
-      component: () => import('@/components/Life.vue')
+      path: '/collection',
+      component: () => import('@/components/Collection.vue')
     }
   ]
 })

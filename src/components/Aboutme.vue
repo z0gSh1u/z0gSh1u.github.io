@@ -3,19 +3,20 @@
     <a-row type="flex" justify="center" align="middle">
       <!-- 头像 -->
       <a-col class="col" :xs="24" :sm="24" :md="24" :lg="10" :xl="6">
-        <img class="avatar" draggable="false" src="../assets/photo.png" />
+        <img class="avatar" draggable="false" src="../assets/photo.jpg" />
       </a-col>
       <!-- 内容 -->
       <a-col class="color-content text-align-left col" :xs="24" :sm="24" :md="24" :lg="14" :xl="14">
         <!-- 简介 -->
-        <span class="name black">
-          卓旭
-        </span>
+        <span class="name black"> Zhuo Xu (卓旭) </span>
         <span class="brief black">
-          我正在东南大学攻读硕士学位，研究方向为医学影像处理（计算机 × 生医），主要学习放射影像的二、三、四维重建。
-          目前还任计算机学院本科生《数字图像处理》课程助教。
-          我本科毕业于东南大学算机科学与技术专业。2020 年夏，在腾讯公司（深圳）PCG 事业群前端开发岗实习，并获得留用资格。
-          我的主要技术栈包括但不限于 TypeScript、Vue.js、Python，并在学习 CUDA 等新的技术。
+          I'm currently working for my Master Degree in
+          <a href="https://www.seu.edu.cn" target="_blank">Southeast University (China)</a>. I now focus mainly on
+          Cone-Beam CT (CBCT) image processing and reconstruction supervised by
+          <a href="https://cse.seu.edu.cn/2019/0102/c23024a256991/page.htm" target="_blank"> Prof. Yang Chen </a>.
+          Before this, I graduated from Southeast University majoring in Computer Science and Enginerring in 2021, and
+          finished an internship with full-member qualification in Tencent (Shenzhen)'s PCG as a frontend developer in
+          2020.
         </span>
       </a-col>
     </a-row>
@@ -50,7 +51,7 @@
 
     <a-row type="flex" justify="center" align="top" class="section">
       <a-col :xs="24" :sm="24" :md="24" :lg="12" :xl="12">
-        <span class="section-title">教育经历</span>
+        <span class="section-title">Educations</span>
         <a-list item-layout="horizontal" :data-source="eduExps">
           <a-list-item slot="renderItem" slot-scope="item" key="item._key" class="edu-item">
             <a-list-item-meta :description="item.desc">
@@ -61,7 +62,7 @@
         </a-list>
       </a-col>
       <a-col :xs="24" :sm="24" :md="24" :lg="12" :xl="12">
-        <span class="section-title">工作经历</span>
+        <span class="section-title">Jobs</span>
         <a-list item-layout="horizontal" :data-source="workExps">
           <a-list-item slot="renderItem" slot-scope="item" key="item._key" class="work-item">
             <a-list-item-meta :description="item.desc">
@@ -76,8 +77,8 @@
     <a-divider />
 
     <a-row type="flex" justify="center" align="top" class="section">
-      <a-col :xs="20" :sm="20" :md="20" :lg="12" :xl="12">
-        <span class="section-title">著作</span>
+      <a-col :xs="24" :sm="24" :md="24" :lg="24" :xl="24">
+        <span class="section-title">Publications</span>
         <a-list item-layout="horizontal" :data-source="publications">
           <a-list-item slot="renderItem" slot-scope="item" key="item._key" class="pub-item">
             <a-list-item-meta :description="item.place + ' / ' + item.authors">
@@ -87,23 +88,8 @@
           </a-list-item>
         </a-list>
       </a-col>
-      <a-col :xs="20" :sm="20" :md="20" :lg="12" :xl="12">
-        <span class="section-title">（比较好看的）课程成绩</span>
-        <a-list item-layout="horizontal" :data-source="scores" :grid="{ gutter: 2, column: 2 }">
-          <a-list-item slot="renderItem" slot-scope="item" key="item._key" class="score-item">
-            <template>
-              <a-col span="24">
-                <a-statistic :title="item.course" :value="item.score" class="demo-class">
-                  <template #suffix>
-                    <span>{{ item.suffix || ' / 100' }}</span>
-                  </template>
-                </a-statistic>
-              </a-col>
-            </template>
-          </a-list-item>
-        </a-list>
-      </a-col>
     </a-row>
+
   </div>
 </template>
 
@@ -128,7 +114,7 @@ export default class extends Vue {
       icon: require('@/assets/icons/email.png')
     },
     {
-      title: '知乎',
+      title: 'Zhihu',
       url: 'https://www.zhihu.com/people/zhuoxu',
       fgc: '#fff',
       bgc: 'rgba(6,100,195,0.8)',
@@ -142,7 +128,7 @@ export default class extends Vue {
       icon: require('@/assets/icons/github.png')
     },
     {
-      title: '博客园',
+      title: 'Blog @ cnblogs',
       url: 'https://cnblogs.com/zxuuu',
       fgc: '#fff',
       bgc: 'rgb(98,122,173)',
@@ -156,7 +142,7 @@ export default class extends Vue {
       icon: require('@/assets/icons/500px.png')
     },
     {
-      title: '哔哩哔哩',
+      title: 'bilibili',
       url: 'https://space.bilibili.com/530258',
       fgc: '#fff',
       bgc: 'rgb(251,114,153)',
@@ -170,7 +156,7 @@ export default class extends Vue {
       icon: require('@/assets/icons/qq.png')
     },
     {
-      title: 'QQ空间',
+      title: 'QZone',
       url: 'https://user.qzone.qq.com/136371391',
       fgc: '#fff',
       bgc: 'rgb(0,163,255)',
@@ -198,55 +184,41 @@ export default class extends Vue {
       icon: require('@/assets/icons/ns.png')
     },
     {
-      title: '下厨房',
-      url: 'https://www.xiachufang.com/cook/159722813/',
+      title: 'Cirriculum Vitae (WIP)',
+      url: 'https://zxuuu.tech/static/cv-zhuoxu.pdf',
       fgc: '#fff',
-      bgc: 'rgb(138,207,219)',
-      icon: require('@/assets/icons/xcf.png')
-    },
-    // {
-    //   title: '简历',
-    //   url: './static/cv-zhuoxu-zhcn.pdf',
-    //   fgc: '#fff',
-    //   bgc: 'rgb(87,149,241)',
-    //   icon: require('@/assets/icons/cv.png')
-    // },
-    // {
-    //   title: 'Resume (CV)',
-    //   url: './static/cv-zhuoxu-enus.pdf',
-    //   fgc: '#fff',
-    //   bgc: 'rgb(136,189,243)',
-    //   icon: require('@/assets/icons/cv.png')
-    // }
+      bgc: 'rgb(136,189,243)',
+      icon: require('@/assets/icons/cv.png')
+    }
   ])
   // 教育经历
   eduExps = _withKeys([
     {
-      school: '东南大学',
-      desc: '硕士 / 影像科学与技术 / 2021~',
+      school: 'Southeast University (东南大学)',
+      desc: 'Master / 影像科学与技术 / 2021~',
       icon: require('@/assets/icons/seu-icon.png')
     },
     {
-      school: '雷恩第一大学（Université de Rennes 1）',
-      desc: '硕士 / 信号和图像处理（联合培养） / 2021~',
+      school: 'Université de Rennes 1',
+      desc: 'Master / Signal and Image Processing (Joint Degree) / 2021~',
       icon: require('@/assets/icons/rennes1-icon.png')
     },
     {
-      school: '东南大学',
-      desc: '本科 / 计算机科学与技术 / 2017~2021',
+      school: 'Southeast University (东南大学)',
+      desc: 'Undergraduate / 计算机科学与技术 / 2017~2021',
       icon: require('@/assets/icons/seu-icon.png')
     }
   ])
   // 工作经历
   workExps = _withKeys([
     {
-      place: '一影医疗',
-      desc: '算法岗位实习 / 2021.06~07',
+      place: 'First Imaging (一影医疗)',
+      desc: 'Intern / 2021.06~07',
       icon: require('@/assets/icons/first-imaging.png')
     },
     {
-      place: '腾讯',
-      desc: '前端开发暑期实习 / Vue+TS, PHP / 2020.06~08',
+      place: 'Tencent (腾讯)',
+      desc: 'Frontend Developer (Intern) / 2020.06~08',
       icon: require('@/assets/icons/tencent.png')
     }
   ])
@@ -277,26 +249,6 @@ export default class extends Vue {
       url: 'https://arxiv.org/abs/2104.14852'
     }
   ])
-  // 成绩
-  scores = [
-    ['程序设计基础及语言A', 98],
-    ['语言课程设计', 99],
-    ['运筹学', 95],
-    ['信号与系统', 92],
-    ['概率论与数理统计A', 96],
-    ['计算机图形学', 100],
-    ['数字图像处理', 100],
-    ['数字信号处理', 94],
-    ['VLSI系统导论', 97],
-    ['数据库原理', 98],
-    ['编译原理课程设计', 96],
-    ['计算机系统综合课程设计', 98]
-  ].map((v, _key) => ({
-    _key,
-    course: v[0],
-    score: v[1],
-    suffix: v.length > 2 ? v[2] : void 0
-  }))
 }
 </script>
 

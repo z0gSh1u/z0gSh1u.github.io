@@ -16,7 +16,7 @@
         scrolling="no"
       ></iframe>
     </div>
-    <p class="calendar-hint">本页面使用 Google 服务，如无法正常显示，请检查与 Google 的连接。</p>
+    <p class="calendar-hint">Check your connection to Google if nothing displays.</p>
   </div>
 </template>
 
