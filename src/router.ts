@@ -1,29 +1,29 @@
 import Vue from 'vue'
-import Router from 'vue-router'
-
-Vue.use(Router)
+import { createRouter, createWebHashHistory } from 'vue-router'
 
 import Aboutme from '@/components/Aboutme.vue'
+import Blog from '@/components/Blog.vue'
+import Calendar from '@/components/Calendar.vue'
+import Collection from '@/components/Collection.vue'
 
-export default new Router({
-  mode: 'hash',
-  base: process.env.BASE_URL,
+export const router = createRouter({
+  history: createWebHashHistory(process.env.BASE_URL),
   routes: [
     {
       path: '/',
-      component: Aboutme // no lazy loading
+      component: Aboutme
     },
     {
       path: '/blog',
-      component: () => import('@/components/Blog.vue')
+      component: Blog
     },
     {
       path: '/calendar',
-      component: () => import('@/components/Calendar.vue')
+      component: Calendar
     },
     {
       path: '/collection',
-      component: () => import('@/components/Collection.vue')
+      component: Collection
     }
   ]
 })

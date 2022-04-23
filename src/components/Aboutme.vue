@@ -29,8 +29,8 @@
           :grid="{ gutter: 4, column: 4 }"
           class="social-list"
         >
-          <a-list-item slot="renderItem" slot-scope="item" key="item._key" class="social-item">
-            <template>
+          <a-list-item class="social-item">
+            <template #renderItem="{ item }">
               <a :href="item.url" target="_blank" v-if="item.url !== '#'">
                 <div :style="{ backgroundColor: item.bgc }" class="social-item-container">
                   <img :src="item.icon" />&nbsp;

@@ -13,7 +13,7 @@
     <a-layout-content class="menu">
       <a-menu>
         <a-menu-item v-for="m in menus" v-bind:key="m._key" class="menu-item">
-          <router-link :to="m.path" @click.native="closeMenuDrawer">{{ m.name }}</router-link>
+          <router-link :to="m.path" @click="closeMenuDrawer">{{ m.name }}</router-link>
         </a-menu-item>
       </a-menu>
     </a-layout-content>

@@ -1,34 +1,26 @@
 {
-  "name": "vuesume",
-  "version": "0.1.0-beta.1",
+  "name": "zxuuutech",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint",
+    "serve": "vite preview",
+    "build": "vite build",
     "make-pretty": "prettier --write ./**/*"
   },
   "dependencies": {
     "animate.css": "^4.1.1",
-    "ant-design-vue": "^1.7.8",
-    "aos": "^3.0.0-beta.6",
-    "vue": "^2.6.14",
+    "ant-design-vue": "^3.2.0",
+    "vue": "^3.1.0",
     "vue-class-component": "^7.2.6",
     "vue-property-decorator": "^9.1.2",
-    "vue-router": "^3.5.3",
-    "vue-typer": "^1.2.0",
-    "vuex": "^3.6.2"
+    "vue-router": "^4.0.0"
   },
   "devDependencies": {
-    "@vue/cli-plugin-router": "^4.5.15",
-    "@vue/cli-plugin-typescript": "^4.5.15",
-    "@vue/cli-plugin-vuex": "^4.5.15",
-    "@vue/cli-service": "^4.5.15",
-    "config-file-loader": "^1.0.0",
+    "@vitejs/plugin-vue": "^1.6.1",
+    "vite": "^2.9.4",
     "less": "^4.1.2",
     "less-loader": "^7.3.0",
-    "typescript": "^4.5.4",
-    "vue-template-compiler": "^2.6.14"
+    "typescript": "^4.5.4"
   },
   "postcss": {
     "plugins": {

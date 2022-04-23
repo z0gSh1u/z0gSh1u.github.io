@@ -5,10 +5,12 @@
 </template>
 
 <script lang="ts">
-import Vue from 'vue'
+import { defineComponent } from 'vue'
 import Home from '@/views/Home.vue'
-export default Vue.extend({
-  components: { Home }
+export default defineComponent({
+  components: {
+    Home
+  }
 })
 </script>
 
