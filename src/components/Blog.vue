@@ -2,18 +2,18 @@
   <div class="blog">
     <a :href="cnblogUrl" target="_blank" class="cnblog-redirect">(a piece of) z0gSh1u's Blog</a>
     <a-list itemLayout="vertical" size="large" :dataSource="blogs" :loading="!blogs.length">
-      <a-list-item data-aos="fade-in" slot="renderItem" slot-scope="item" key="item._key">
-        <a-list-item-meta>
-          <template v-slot:description>
-            <div class="description">
-              <a class="title" slot="title" :href="item.url" target="_blank">{{ item.title }}</a>
+      <template #renderItem="{ item }">
+        <a-list-item>
+          <a-list-item-meta>
+            <template #title class="description">
+              <a class="title" :href="item.url" target="_blank">{{ item.title }}</a>
               &nbsp;&nbsp;
               <span class="pub-date">{{ new Date(item.time).toLocaleDateString() }}</span>
-            </div>
-          </template>
-        </a-list-item-meta>
-        <span class="desc">{{ item.summary }} ...</span>
-      </a-list-item>
+              <span class="desc">{{ item.summary }} ...</span>
+            </template>
+          </a-list-item-meta>
+        </a-list-item>
+      </template>
     </a-list>
     <div style="width: 100%; text-align: right">
       <a :href="cnblogUrl" target="_blank" style="text-decoration: none">更多...</a>
@@ -22,7 +22,7 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue } from 'vue-property-decorator'
+import { defineComponent } from 'vue'
 
 interface BlogRecord {
   _key: number
@@ -32,31 +32,34 @@ interface BlogRecord {
   url: string
 }
 
-@Component({})
-export default class extends Vue {
-  cnblogUrl = 'https://www.cnblogs.com/zxuuu/'
-  blogs: BlogRecord[] = []
-  numberToDisplay = 8
-
-  async initBlogs() {
-    const rssUrl =
-      'https://api.rss2json.com/v1/api.json?rss_url=http%3A%2F%2Ffeed.cnblogs.com%2Fblog%2Fu%2F576840%2Frss%2F'
-    const rssJSON = JSON.parse(await (await fetch(rssUrl, { method: 'get', mode: 'cors' })).text())
-    // @ts-ignore
-    const recentBlogs = rssJSON['items'].slice(0, this.numberToDisplay).map((v, i) => ({
-      _key: i,
-      title: v.title.replace(/(.+)\s-\sz0gSh1u$/, '$1'),
-      time: v.pubDate,
-      summary: v.description,
-      url: v.link
-    }))
-    this.blogs = recentBlogs
-  }
-
+export default defineComponent({
+  data() {
+    return {
+      cnblogUrl: 'https://www.cnblogs.com/zxuuu/',
+      blogs: [] as BlogRecord[],
+      numberToDisplay: 8
+    }
+  },
+  methods: {
+    async initBlogs() {
+      const rssUrl =
+        'https://api.rss2json.com/v1/api.json?rss_url=http%3A%2F%2Ffeed.cnblogs.com%2Fblog%2Fu%2F576840%2Frss%2F'
+      const rssJSON = JSON.parse(await (await fetch(rssUrl, { method: 'get', mode: 'cors' })).text())
+      // @ts-ignore
+      const recentBlogs = rssJSON['items'].slice(0, this.numberToDisplay).map((v, i) => ({
+        _key: i,
+        title: v.title.replace(/(.+)\s-\sz0gSh1u$/, '$1'),
+        time: v.pubDate,
+        summary: v.description,
+        url: v.link
+      }))
+      this.blogs = recentBlogs
+    }
+  },
   created() {
     this.initBlogs()
   }
-}
+})
 </script>
 
 <style scoped lang="less">

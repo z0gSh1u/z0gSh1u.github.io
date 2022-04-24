@@ -4,9 +4,7 @@
   <a-layout class="layout-menu">
     <!-- 头像 -->
     <div class="header">
-      <span class="avatar ant-avatar ant-avatar-circle ant-avatar-image">
-        <img draggable="false" src="../assets/avatar.png" />
-      </span>
+      <img draggable="false" src="../../public/assets/avatar.png" class="avatar" />
       <span>{{ 'z0gSh1u' }}</span>
     </div>
     <!-- 菜单 -->
@@ -32,39 +30,41 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue } from 'vue-property-decorator'
+import { defineComponent } from 'vue'
 
-@Component({
-  components: {}
-})
-export default class Menu extends Vue {
-  closeMenuDrawer() {
-    this.$emit('menuClick')
-  }
-
-  menus = [
-    {
-      _key: 0,
-      path: '/',
-      name: 'About Me'
-    },
-    {
-      _key: 1,
-      path: 'blog',
-      name: 'Blog'
-    },
-    {
-      _key: 2,
-      path: 'calendar',
-      name: 'Calendar'
-    },
-    {
-      _key: 3,
-      path: 'collection',
-      name: 'Collection'
+export default defineComponent({
+  methods: {
+    closeMenuDrawer() {
+      this.$emit('menuClick')
     }
-  ]
-}
+  },
+  data() {
+    return {
+      menus: [
+        {
+          _key: 0,
+          path: '/',
+          name: 'About Me'
+        },
+        {
+          _key: 1,
+          path: 'blog',
+          name: 'Blog'
+        },
+        {
+          _key: 2,
+          path: 'calendar',
+          name: 'Calendar'
+        },
+        {
+          _key: 3,
+          path: 'collection',
+          name: 'Collection'
+        }
+      ]
+    }
+  }
+})
 </script>
 
 <style scoped lang="less">
@@ -87,6 +87,7 @@ export default class Menu extends Vue {
       width: 180px;
       height: 180px;
       line-height: 180px;
+      border-radius: 50%;
     }
     span {
       display: block;
@@ -99,7 +100,7 @@ export default class Menu extends Vue {
 
   .menu {
     * {
-      font-size: 1.2em;
+      font-size: 1.6em;
     }
 
     a {
@@ -108,7 +109,7 @@ export default class Menu extends Vue {
 
     .menu-item {
       text-align: center;
-      margin: 1.5rem;
+      margin: 1.3rem;
     }
   }
 

@@ -1,10 +1,7 @@
 <template>
   <div class="life-root">
-    <i
-      >This page collects parts of things that I've ever tried in this world, and some of them have my personal
-      comments.</i
-    >
-    <div class="life-record" v-for="(record, idx1) in this.lifeRecords" :key="idx1">
+    <i>This page collects parts of things that I've ever tried in this world, and some of them have my personal comments.</i>
+    <div class="life-record" v-for="(record, idx1) in lifeRecords" :key="idx1">
       <p class="life-record-title">{{ record.type }}</p>
       <table class="responstable">
         <thead style="display: none">
@@ -28,27 +25,29 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue } from 'vue-property-decorator'
+import { defineComponent } from 'vue'
 
 interface LifeRecord {
   type: string
-  items: [string[]][]
+  items: string[]
 }
 
-@Component({
-  components: {}
-})
-export default class extends Vue {
-  lifeRecords: LifeRecord[] = []
-
-  async loadLifeRecords() {
-    this.lifeRecords = await (await fetch('/collectionData.json', { method: 'get', mode: 'cors' })).json()
-  }
+export default defineComponent({
+  data() {
+    return {
+      lifeRecords: [] as LifeRecord[]
+    }
+  },
+  methods: {
+    async loadLifeRecords() {
+      this.lifeRecords = await (await fetch('/collectionData.json', { method: 'get', mode: 'cors' })).json()
+    }
+  },
 
   created() {
     this.loadLifeRecords()
   }
-}
+})
 </script>
 
 <style scoped lang="less">

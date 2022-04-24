@@ -29,25 +29,32 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue } from 'vue-property-decorator'
-import Menu from '@/components/Menu.vue'
+import { defineComponent } from 'vue'
 
-@Component({
+import Menu from '../components/Menu.vue'
+
+export default defineComponent({
+  data() {
+    return {
+      menuDrawerVisible: false
+    }
+  },
   components: {
     Menu
+  },
+  mounted() {
+    this.menuDrawerVisible = false
+  },
+  methods: {
+    toggleMenuDrawer() {
+      this.menuDrawerVisible = !this.menuDrawerVisible
+    },
+
+    onMenuDrawerClose() {
+      this.menuDrawerVisible = false
+    }
   }
 })
-export default class Home extends Vue {
-  menuDrawerVisible = false
-
-  toggleMenuDrawer() {
-    this.menuDrawerVisible = !this.menuDrawerVisible
-  }
-
-  onMenuDrawerClose() {
-    this.menuDrawerVisible = false
-  }
-}
 </script>
 
 <style scoped lang="less">

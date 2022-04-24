@@ -3,7 +3,7 @@
     <div class="responsive-iframe-container big-container">
       <iframe
         src="https://calendar.google.com/calendar/embed?height=600&wkst=2&bgcolor=%23a0d8ef&ctz=Asia%2FShanghai&showTitle=0&showNav=1&mode=MONTH&showTabs=1&showCalendars=0&showPrint=0&showDate=1&src=YzExMTkwMkBnbWFpbC5jb20&src=emguY2hpbmEjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%234285F4&color=%230B8043"
-        style="border-width:0"
+        style="border-width: 0"
         frameborder="0"
         scrolling="no"
       ></iframe>
@@ -11,7 +11,7 @@
     <div class="responsive-iframe-container small-container">
       <iframe
         src="https://calendar.google.com/calendar/embed?height=600&wkst=2&bgcolor=%23a0d8ef&ctz=Asia%2FShanghai&showTitle=0&showNav=0&mode=AGENDA&showTabs=1&showCalendars=0&showPrint=0&showDate=1&src=YzExMTkwMkBnbWFpbC5jb20&src=emguY2hpbmEjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%234285F4&color=%230B8043"
-        style="border-width:0"
+        style="border-width: 0"
         frameborder="0"
         scrolling="no"
       ></iframe>
@@ -21,11 +21,8 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue } from 'vue-property-decorator'
-@Component({
-  components: {}
-})
-export default class Calendar extends Vue {}
+import { defineComponent } from 'vue'
+export default defineComponent({})
 </script>
 
 <style lang="less">
