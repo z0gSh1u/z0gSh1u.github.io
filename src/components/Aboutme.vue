@@ -8,8 +8,8 @@
       <!-- 内容 -->
       <a-col class="color-content text-align-left col" :xs="24" :sm="24" :md="24" :lg="14" :xl="14">
         <!-- 简介 -->
-        <span class="name black"> Zhuo Xu (卓旭) </span>
-        <span class="brief black">
+        <span class="name"> Zhuo Xu (卓旭) </span>
+        <span class="brief">
           I'm currently working for my Master Degree in
           <a href="https://www.seu.edu.cn" target="_blank">Southeast University (China)</a>. I now focus mainly on
           Cone-Beam CT (CBCT) image processing and reconstruction supervised by
@@ -21,14 +21,9 @@
       </a-col>
     </a-row>
 
-    <a-row type="flex" justify="center" align="middle" class="section section-first">
+    <a-row type="flex" justify="center" class="section section-first">
       <a-col :xs="20" :sm="20" :md="20" :lg="16" :xl="16">
-        <a-list
-          item-layout="horizontal"
-          :data-source="socialNetworks"
-          :grid="{ gutter: 4, column: 4 }"
-          class="social-list"
-        >
+        <a-list item-layout="horizontal" :data-source="socialNetworks" class="social-list">
           <template #renderItem="{ item }">
             <a-list-item class="social-item">
               <a :href="item.url" target="_blank" v-if="item.url !== '#'">
@@ -273,7 +268,7 @@ export default defineComponent({
 @import '../styles/NotoSerifSC500.css';
 
 .about {
-  padding: 30px;
+  padding: 2rem 0;
   .col {
     padding: 0 1rem;
   }
@@ -291,12 +286,14 @@ export default defineComponent({
     font-size: 1.8rem;
     font-weight: bold;
     font-family: 'Noto Serif SC', serif;
+    padding: 0 2rem;
   }
   .brief {
     font-size: 1rem;
     line-height: 1.5rem;
     display: block;
-    margin: 1rem auto;
+    margin: 1rem auto -1rem auto;
+    padding: 0 2rem;
   }
 
   .work-item,
@@ -316,28 +313,33 @@ export default defineComponent({
 
   .pub-item {
     text-align: left;
-    padding-left: 1.8rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
     .ant-list-item-meta-title {
       font-weight: bold;
     }
   }
 
-  .social-item {
+  .social-list {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    a {
-      text-decoration: none;
-    }
-    .social-item-container {
+    justify-content: left;
+    flex-direction: column;
+    text-align: left;
+    .social-item {
       width: auto;
-
-      padding: 0.5rem 0.75rem;
-      margin: 0 2px;
-      img {
-        height: 30px;
-        max-width: 100px;
-        margin-right: 5px;
+      display: inline-block;
+      a {
+        text-decoration: none;
+      }
+      .social-item-container {
+        padding: 0.5rem 0.75rem;
+        margin: 0 2px;
+        img {
+          height: 30px;
+          max-width: 100px;
+          margin-right: 5px;
+        }
       }
     }
   }

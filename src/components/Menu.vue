@@ -1,5 +1,3 @@
-<!-- 菜单 -->
-
 <template>
   <a-layout class="layout-menu">
     <!-- 头像 -->
@@ -10,7 +8,12 @@
     <!-- 菜单 -->
     <a-layout-content class="menu">
       <a-menu>
-        <a-menu-item v-for="m in menus" v-bind:key="m._key" class="menu-item">
+        <a-menu-item
+          v-for="m in menus"
+          :key="m._key"
+          class="menu-item"
+          :style="{ textAlign: 'center', margin: '1.5rem' }"
+        >
           <router-link :to="m.path" @click="closeMenuDrawer">{{ m.name }}</router-link>
         </a-menu-item>
       </a-menu>
@@ -78,7 +81,7 @@ export default defineComponent({
   .header,
   .menu,
   .footer {
-    background-color: white !important;
+    background-color: #fff !important;
   }
 
   .header {
@@ -100,16 +103,11 @@ export default defineComponent({
 
   .menu {
     * {
-      font-size: 1.6em;
+      font-size: 2em;
     }
 
     a {
       display: inline;
-    }
-
-    .menu-item {
-      text-align: center;
-      margin: 1.3rem;
     }
   }
 

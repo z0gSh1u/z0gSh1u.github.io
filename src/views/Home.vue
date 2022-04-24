@@ -14,9 +14,13 @@
             }"
             shape="circle"
             size="large"
-            :icon="menuDrawerVisible ? 'arrow-left' : 'bars'"
             @click="toggleMenuDrawer"
-          ></a-button>
+          >
+            <template #icon>
+              <MenuOutlined v-show="!menuDrawerVisible" />
+              <LeftOutlined v-show="menuDrawerVisible" />
+            </template>
+          </a-button>
         </a-affix>
         <router-view></router-view>
       </a-layout>
@@ -30,6 +34,7 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue'
+import { MenuOutlined, LeftOutlined } from '@ant-design/icons-vue'
 
 import Menu from '../components/Menu.vue'
 
@@ -40,7 +45,9 @@ export default defineComponent({
     }
   },
   components: {
-    Menu
+    Menu,
+    MenuOutlined,
+    LeftOutlined
   },
   mounted() {
     this.menuDrawerVisible = false
