@@ -13,15 +13,20 @@ export default defineComponent({
   methods: {
     async initCollection() {
       const mdContent: string = await (await fetch('/CollectionsMarkdown.md', { method: 'get', mode: 'cors' })).text()
+      const renderer = new marked.Renderer()
+      renderer.link = (href, title, text) => `<a target="_blank" href="${href}" title="${title}">${text}</a>`
       // @ts-ignore
-      this.$refs['markedDisplay'].innerHTML = marked(mdContent)
+      this.$refs['markedDisplay'].innerHTML = marked(mdContent, { renderer })
     }
+  },
+  created() {
+    this.initCollection()
   }
 })
 </script>
 
 <style scoped lang="less">
 .collection-root {
-  margin: 1rem;
+  margin: 1.5rem 3rem;
 }
 </style>

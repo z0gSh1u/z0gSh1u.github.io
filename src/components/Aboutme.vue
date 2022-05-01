@@ -269,6 +269,7 @@ export default defineComponent({
 
 .about {
   padding: 2rem 0;
+  text-align: center;
   .col {
     padding: 0 1rem;
   }

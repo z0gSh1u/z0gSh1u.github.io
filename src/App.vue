@@ -16,7 +16,6 @@ export default defineComponent({
 
 <style lang="less">
 #app {
-  text-align: center;
   color: #2c3e50;
 }
 
