@@ -2,7 +2,7 @@
   <div class="about">
     <a-row type="flex" justify="center" align="middle">
       <!-- 头像 -->
-      <a-col class="col" :xs="24" :sm="24" :md="24" :lg="10" :xl="6">
+      <a-col class="col" :xs="24" :sm="24" :md="24" :lg="10" :xl="5">
         <img class="avatar" draggable="false" src="../../public/assets/photo.jpg" />
       </a-col>
       <!-- 内容 -->
@@ -12,8 +12,9 @@
         <span class="brief">
           I'm currently working for my Master Degree in
           <a href="https://www.seu.edu.cn" target="_blank">Southeast University (China)</a>. I now focus mainly on
-          Cone-Beam CT (CBCT) image processing and reconstruction supervised by
-          <a href="https://cse.seu.edu.cn/2019/0102/c23024a256991/page.htm" target="_blank"> Prof. Yang Chen </a>.
+          Computer Tomography (CT) (Mainly CBCT) image acquisition, reconstruction and processing with X-ray physics
+          supervised by <a href="https://cse.seu.edu.cn/2019/0102/c23024a256991/page.htm" target="_blank"> Prof. Yang Chen </a>
+          and <a href="https://cse.seu.edu.cn/2022/0221/c23024a399204/page.htm"> A.P. Xu Ji</a>.
           Before this, I graduated from Southeast University majoring in Computer Science and Enginerring in 2021, and
           finished an internship with full-member qualification in Tencent (Shenzhen)'s PCG as a frontend developer in
           2020.
@@ -115,6 +116,13 @@ export default defineComponent({
     return {
       // 社交网络
       socialNetworks: _withKeys([
+        {
+          title: '江苏省南京市玄武区东南大学四牌楼校区群贤楼202',
+          url: '#',
+          fgc: '#fff',
+          bgc: 'rgb(253,208,1)',
+          icon: 'assets/icons/location.png'
+        },
         {
           title: 'zx.cs@qq.com',
           url: 'mailto:zx.cs@qq.com',
@@ -275,7 +283,7 @@ export default defineComponent({
   }
   .avatar {
     display: block;
-    width: 200px;
+    width: 220px;
     border-radius: 10%;
     margin: 0 auto;
     box-shadow: rgba(0, 0, 0, 0.16) 0 2px 5px 0, rgba(0, 0, 0, 0.12) 0 2px 10px 0;
