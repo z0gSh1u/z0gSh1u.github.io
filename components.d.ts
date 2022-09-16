@@ -22,7 +22,6 @@ declare module '@vue/runtime-core' {
     AMenuItem: typeof import('ant-design-vue/es')['MenuItem']
     ARow: typeof import('ant-design-vue/es')['Row']
     Blog: typeof import('./src/components/Blog.vue')['default']
-    Calendar: typeof import('./src/components/Calendar.vue')['default']
     Collection: typeof import('./src/components/Collection.vue')['default']
     Menu: typeof import('./src/components/Menu.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']

@@ -56,11 +56,6 @@ export default defineComponent({
         },
         {
           _key: 2,
-          path: 'calendar',
-          name: 'Calendar'
-        },
-        {
-          _key: 3,
           path: 'collection',
           name: 'Collection'
         }
