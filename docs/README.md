@@ -1,4 +1,3 @@
-# zxuuu.tech
 
 ## About me
 <Aboutme>
