@@ -11,16 +11,26 @@ export default defineUserConfig({
         link: '/',
       },
       {
-        text: 'Projects',
-        link: 'projects.html',
+        text: '项目',
+        link: '/projects',
+        children: [
+          {
+            text: 'WIPs',
+            link: '/projects/wip.html',
+          },
+          {
+            text: 'Finished',
+            link: '/projects/finished.html',
+          },
+        ],
       },
       {
-        text: 'Blogs',
-        link: 'blogs.html',
+        text: '博客博文',
+        link: '/blogs.html',
       },
       {
-        text: 'Calendar',
-        link: 'calendar.html',
+        text: '日程安排',
+        link: '/calendar.html',
       },
     ],
     navbar: [
@@ -29,7 +39,7 @@ export default defineUserConfig({
         link: '/',
       },
       {
-        text: 'cnblogs',
+        text: '博客园',
         link: 'https://cnblogs.com/zxuuu',
       },
       {

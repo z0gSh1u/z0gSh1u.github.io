@@ -3,6 +3,8 @@
 import { defineClientConfig } from '@vuepress/client';
 import Aboutme from './components/Aboutme.vue'
 import Calendar from './components/Calendar.vue'
+import './styles/index.scss'
+import './styles/main.less'
 
 export default defineClientConfig({
   enhance({ app }) {
