@@ -55,7 +55,7 @@ export default defineComponent({
   width: fit-content;
   min-width: 300px;
   padding: 0.5rem 1rem;
-  border: 1px solid #aaa;
+  border: 1px solid #ddd;
   box-shadow: 1px 1px 2px #ddd;
   margin: 0.5rem;
 }

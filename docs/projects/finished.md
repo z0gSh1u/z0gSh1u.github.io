@@ -142,3 +142,7 @@
 本项目硬件使用 Arduino Uno 开发板与 PIR 传感器，软件基于 Vue.js (前端框架) + Node.js (后端) + Python (软硬件交互侦听)。主要功能是图书馆座位的预约、热度的统计和入/离座的检测。
 
 ![iot](./assets/iot.jpg)
+
+## [crip](https://github.com/SEU-CT-Recon/crip)
+
+本项目实现了一个 all-in-one 的工具包，用于 CT / CBCT 数据的 IO、预处理、后处理，并提供进行相关研究物理计算、双能、低剂量模拟的能力。

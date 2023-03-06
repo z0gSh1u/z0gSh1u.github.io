@@ -1,76 +1,12 @@
 # Collections
 
-*This section includes some fancy facts about me.*
+::: warning
 
-## Selected Courses
+该页面目前过于粗糙，其中的一些信息可能过时。我正在准备用 [sxone](./projects/wip.html#sxone) 替代这一部分。
 
-### Undergraduate (2017 - 2021)
+:::
 
-- **Programming Fundamentals and Languages / 程序设计基础及语言A**
-  - 98 / 100, Course Award *(by the department for some key courses)* 🏆
-  - Teaches C++ fundamentals
-  - [Homework Solutions](https://github.com/z0gSh1u/cpphomework)
-- **Language Course Design / 语言课程设计**
-  - 99 / 100
-  - Teaches MFC fundamentals
-  - [One of Projects](https://github.com/z0gSh1u/library-manage-mfc)
-- **Algorithm Fundamentals / 算法设计基础**
-  - 90 / 100
-  - [Homework Solutions](https://zzk.cnblogs.com/my/s/blogpost-p?Keywords=%E7%AE%97%E6%B3%95%E8%AE%BE%E8%AE%A1%E5%9F%BA%E7%A1%80)
-- **Operations Research / 运筹学**
-  - 95 / 100
-- **Signals and Systems / 信号与系统**
-  - 92 / 100, Course Award 🏆
-- **Probability Theory and Mathematical Statistics / 概率论与数理统计A**
-  - 96 / 100
-- **Computer Graphics / 计算机图形学**
-  - 100 / 100 💯
-  - Group work
-  - Uses WebGL, a browser port of OpenGL and more
-  - [Projects](https://github.com/z0gSh1u/typed-webgl)
-- **Digital Image Processing / 数字图像处理**
-  - 100 / 100 💯
-  - Course Award
-  - [Homework Solutions](https://zzk.cnblogs.com/my/s/blogpost-p?Keywords=%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86)
-- **Digital Signal Processing / 数字信号处理**
-  - 94 / 100
-  - Teaches DFT, z transform, FFT, DHT, DCT, Linear Filters and so on
-  - [Experiments](https://zzk.cnblogs.com/my/s/blogpost-p?Keywords=%E6%95%B0%E5%AD%97%E4%BF%A1%E5%8F%B7%E5%A4%84%E7%90%86)
-- **Introduction to VLSI Systems / VLSI 系统导论**
-  - 97 / 100
-  - Teaches MOS level circuits, CMOS and so on
-  - [Experiments](https://github.com/z0gSh1u/VLSI-EXP)
-- **Database Principles / 数据库原理**
-  - 98 / 100
-- **Compilation Principles Course Design / 编译原理课程设计**
-  - 96 / 100
-  - Group work
-  - [A Lex-like tool and a Yacc-like tool](https://github.com/z0gSh1u/seu-lex-yacc)
-- **Comprehensive Course Design of Computer System / 计算机系统综合课程设计**
-  - 98 / 100
-  - Group work
-  - [A System-on-Chip using Verilog, a simple C compiler (source to assembly), an assembler and linker, an IDE and runnable applications](https://github.com/z0gSh1u/minisys)
-
-### Master (2021 - Now)
-
-- **Advances in Digital Image Processing / 数字图像处理进展**
-
-  - 95 / 100
-  - [A CUDA accelerated Non-Local Means denoising implementation](https://github.com/z0gSh1u/nlm-cuda)
-
-- **Information Visualization / 信息可视化**
-
-  - 96 / 100, Class Top 1 🏆
-  - [Volume Rendering via Ray Casting Using OpenGL](https://github.com/z0gSh1u/seu-viz)
-
-- **Random Signal Processing / 随机信号处理** *
-
-  *\* This course teaches advances in SP mainly instead of RSP.*
-
-  - 92 / 100
-  - [Quaternion Fourier Transform](https://github.com/z0gSh1u/qftpy)
-
-## Anime Bangumi
+## Anime Bangumi Watched
 
 *Bold font marks recommendation.*
 
@@ -121,8 +57,9 @@
 - **摇曳露营△ 第一季**
 - **摇曳露营△ 第二季**
 - **女孩的钓鱼慢活**
+- **孤独摇滚**
 
-## Games
+## Games Played
 
 *Bold font marks recommendation, while italic marks "still playing" or “unfinished yet".*
 
@@ -230,9 +167,15 @@
 - *天命奇御*
 - **天命奇御二**
 - ***Narcissu 水仙 1 & 2***
-- ***十三机兵防卫圈***
+- **十三机兵防卫圈**
+- ***卧龙：苍天陨落***
+- **女神异闻录 5 皇家版**
+- **荒野大镖客：救赎2**
+- ***死亡搁浅***
+- ***如龙7：光与暗的去向***
+- ***原子之心***
 
-## TV Episodes
+## TV Episodes Watched
 
 *Bold font marks recommendation.*
 
@@ -283,6 +226,12 @@
 - **大宋提刑官**
 - 龙门镖局
 - 开端
+- 狂飙
+- 后翼弃兵
+- 暗黑 第一季
+- 西部世界 第一季
+- 老友记 第一季
+- 老友记 第二季
 
 ## Travelling Destinations
 

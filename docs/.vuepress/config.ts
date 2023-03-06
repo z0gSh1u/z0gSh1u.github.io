@@ -11,12 +11,42 @@ export default defineUserConfig({
         text: '主页',
         link: '/',
         collapsible: false,
+        children: [
+          {
+            text: '关于我',
+            link: '/index.html/#关于我',
+          },
+          {
+            text: '社交平台',
+            link: '/index.html/#社交平台',
+          },
+          {
+            text: '教育经历',
+            link: '/index.html/#教育经历',
+          },
+          {
+            text: '工作经历',
+            link: '/index.html/#工作经历',
+          },
+          {
+            text: '出版',
+            link: '/index.html/#出版',
+          },
+          {
+            text: '部分课程成绩',
+            link: '/scores.html',
+          },
+        ],
       },
       {
         text: '项目',
         link: '/projects',
         collapsible: false,
         children: [
+          {
+            text: '📖 扉页',
+            link: '/projects/index.html',
+          },
           {
             text: '🚧 还在做',
             link: '/projects/wip.html',
