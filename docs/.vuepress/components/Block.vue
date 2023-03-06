@@ -32,6 +32,7 @@ export default defineComponent({
 </script>
 
 <style scoped lang="less">
+@import '../styles/variables.less';
 .block {
   .avatar {
     width: 40px;
@@ -50,13 +51,23 @@ export default defineComponent({
   }
   display: inline-flex;
   flex-direction: row;
-  // justify-content: space-around;
   align-items: center;
   width: fit-content;
-  min-width: 300px;
   padding: 0.5rem 1rem;
   border: 1px solid #ddd;
   box-shadow: 1px 1px 2px #ddd;
   margin: 0.5rem;
+}
+
+@media (max-width: @ResponsiveScreenWidth) {
+  .block {
+    min-width: 250px;
+    max-width: 100%;
+  }
+}
+@media (min-width: @ResponsiveScreenWidth) {
+  .block {
+    min-width: 300px;
+  }
 }
 </style>

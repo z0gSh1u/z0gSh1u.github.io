@@ -41,7 +41,7 @@ export default defineUserConfig({
       {
         text: '项目',
         link: '/projects',
-        collapsible: false,
+        collapsible: true,
         children: [
           {
             text: '📖 扉页',

@@ -1,10 +1,10 @@
 <template>
   <div :style="{ backgroundColor: bgc }" class="social-item-container">
     <img :src="icon" class="nozoom" />&nbsp;
-    <a :style="{ color: fgc }" :href="url" target="_blank" v-if="url != '#'">{{
+    <a :style="{ color: fgc }" :href="url" target="_blank" v-if="url != '#'" class="socialtext">{{
       title
     }}</a>
-    <span :style="{ color: fgc }" v-else>{{ title }}</span>
+    <span :style="{ color: fgc }" class="socialtext" v-else>{{ title }}</span>
   </div>
 </template>
 
@@ -51,6 +51,9 @@ export default defineComponent({
     height: 30px;
     max-width: 100px;
     margin-right: 5px;
+  }
+  .socialtext {
+    line-height: calc(0.5rem + 0.5rem + 1rem - 2px);
   }
 }
 </style>
