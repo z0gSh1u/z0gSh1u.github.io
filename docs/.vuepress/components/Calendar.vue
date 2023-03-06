@@ -1,7 +1,7 @@
 <template>
   <div class="calendar">
     <div class="loading" v-show="loading">
-      <img src="assets/loading.svg" />
+      <img src="/assets/loading.svg" />
     </div>
     <div class="responsive-iframe-container big-container">
       <iframe

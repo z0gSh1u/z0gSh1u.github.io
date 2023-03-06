@@ -508,7 +508,7 @@
     "@vuepress/utils" "2.0.0-beta.61"
     execa "^7.0.0"
 
-"@vuepress/plugin-google-analytics@^2.0.0-beta.61":
+"@vuepress/plugin-google-analytics@2.0.0-beta.61":
   version "2.0.0-beta.61"
   resolved "https://registry.npmmirror.com/@vuepress/plugin-google-analytics/-/plugin-google-analytics-2.0.0-beta.61.tgz#c38751ac6c7dcf104d8ff8eb2e137b33ae94eda5"
   integrity sha512-UwjDVtNpqkfEz7S5TPl703Jwhg0V1Xfvz8y5c4y5nQLNRky0/3bOKx8u7e5J3AATtwz0XwI2cmhXtuHFs6IiDA==
@@ -1652,7 +1652,7 @@ vue@^3.2.47:
     "@vue/server-renderer" "3.2.47"
     "@vue/shared" "3.2.47"
 
-vuepress-vite@2.0.0-beta.50-pre.1:
+vuepress-vite@2.0.0-beta.61:
   version "2.0.0-beta.61"
   resolved "https://registry.npmmirror.com/vuepress-vite/-/vuepress-vite-2.0.0-beta.61.tgz#04058551e6be014e9f2dee14c5d8043b158e032d"
   integrity sha512-4mcR8XSY5b36CYkPqF80WvoeGAEjTw6Cr9bMPHrPVSjG4qqyfVpdSdyRtXD+/5aLJB7r/L60J7PI1pKTci1+3w==
@@ -1662,12 +1662,12 @@ vuepress-vite@2.0.0-beta.50-pre.1:
     "@vuepress/core" "2.0.0-beta.61"
     "@vuepress/theme-default" "2.0.0-beta.61"
 
-vuepress@^2.0.0-beta.60:
-  version "2.0.0-beta.50-pre.1"
-  resolved "https://registry.npmmirror.com/vuepress/-/vuepress-2.0.0-beta.50-pre.1.tgz#26eec90444bb37590f29d10dd5923e75c476189f"
-  integrity sha512-4Finc3GDscIqgRFAZFwa4SUm8tIFSVQIxnPIpQPW3kaM37rKylvUDkLrs2lMvoDPTAAE+Kf+v34tAFX+ZMGKUg==
+vuepress@2.0.0-beta.61:
+  version "2.0.0-beta.61"
+  resolved "https://registry.npmmirror.com/vuepress/-/vuepress-2.0.0-beta.61.tgz#f89741a505b71fbe49dba83d8319b1fd0d45116c"
+  integrity sha512-gpttL0x5ZvI9eTyR/pexBknIAcgrdjAWoiJc7OYd4bIVfwlXAb4GO4A2EwRSX+pIaNOWdcd+sfZA86EMEbrtNg==
   dependencies:
-    vuepress-vite "2.0.0-beta.50-pre.1"
+    vuepress-vite "2.0.0-beta.61"
 
 wcwidth@^1.0.1:
   version "1.0.1"

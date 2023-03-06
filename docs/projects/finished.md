@@ -49,7 +49,7 @@
 
 这是我们本科《编译原理》的课程设计。我们基于 TypeScript 语言实现了类似于 Lex 的词法分析器的生成器，包括从正则表达式到 NFA 到 DFA 的构建；实现了类似于 Yacc 的语法分析器的生成器，包括 LR(1) 语法分析；实现了自动机和抽象语法树 (AST) 的可视化。本项目的结果在后面的 [minisys-minicc-ts](https://github.com/seu-cs-class2/minisys-minicc-ts) 中作为基石。
 
-![Introduction](finished../assets/Introduction.png)
+![Introduction](./assets/Introduction.png)
 
 ## [VCampus](https://github.com/z0gSh1u/VCampus)
 
