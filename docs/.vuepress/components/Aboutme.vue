@@ -17,9 +17,6 @@ const markdownIt = MarkdownIt()
 
 export default defineComponent({
   setup() {
-    onMounted(() => {
-    })
-
     const aboutmeIntroduction = ref(
       [
         `我目前正在[东南大学](https://www.seu.edu.cn)计算机科学与工程学院就读硕士研究生二年级，主要
@@ -44,7 +41,6 @@ PHP、Java、CUDA进行编程——我认为不应该局限于特定的编程语
     return {
       aboutmeIntroduction,
     }
-
   },
 })
 </script>
@@ -63,6 +59,7 @@ PHP、Java、CUDA进行编程——我认为不应该局限于特定的编程语
   }
   .rightblock {
     width: 75%;
+    margin-left: 1.5rem;
     .name {
       font-size: 1.8rem;
       font-weight: bold;
