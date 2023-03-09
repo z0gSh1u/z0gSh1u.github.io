@@ -80,7 +80,7 @@ export default defineUserConfig({
       },
       {
         text: '下载简历',
-        link: '/个人简历(卓旭).pdf',
+        link: 'https://zxuuu.tech/个人简历(卓旭).pdf',
       },
       {
         text: '博客园',
