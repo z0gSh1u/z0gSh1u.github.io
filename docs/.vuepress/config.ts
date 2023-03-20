@@ -83,6 +83,10 @@ export default defineUserConfig({
         link: 'https://zxuuu.tech/个人简历(卓旭).pdf',
       },
       {
+        text: 'Resume (EN)',
+        link: 'https://zxuuu.tech/Resume(ZHUOXu).pdf',
+      },
+      {
         text: '博客园',
         link: 'https://cnblogs.com/zxuuu',
       },
