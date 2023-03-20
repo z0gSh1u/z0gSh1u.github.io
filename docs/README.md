@@ -14,6 +14,7 @@
 <Social title="zhuoxu" url="#" fgc="#fff" bgc="rgb(60,176,53)" icon="assets/icons/wechat.png"></Social>
 <Social title="SW-0432-5008-1243" url="#" fgc="#fff" bgc="rgb(114,206,165)" icon="assets/icons/ns.png"></Social>
 <Social title="z0gSh1u" url="https://steamcommunity.com/id/zhuoxu/" fgc="#fff" bgc="rgb(30,36,47)" icon="assets/icons/steam.png"></Social>
+<Social title="z0gSh1u" url="https://account.xbox.com/en-us/profile?gamertag=z0gSh1u" fgc="#fff" bgc="rgb(16,124,16)" icon="assets/icons/xbox.png"></Social>
 <Social title="领英" url="https://www.linkedin.com/in/%E6%97%AD-%E5%8D%93-884094173/" fgc="#fff" bgc="rgb(10,102,194)" icon="assets/icons/linkedin.png"></Social>
 
 ## 教育经历
