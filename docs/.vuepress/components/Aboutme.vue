@@ -17,14 +17,15 @@ const markdownIt = MarkdownIt()
 
 const aboutmeIntroduction = [
   `我目前正在[东南大学](https://www.seu.edu.cn)计算机科学与工程学院就读硕士研究生二年级，主要
-研究方向为计算机断层扫描 (CT，尤其是CBCT) 图像的获取、重建和与X射线物理相关的处理过程 (导师为
+研究方向为计算机断层扫描 (CT) 图像的获取、重建和与X射线物理相关的处理过程 (导师为
 [Prof. Yang Chen](https://cse.seu.edu.cn/2019/0102/c23024a256991/page.htm)
 与[A.P. Xu Ji](https://cse.seu.edu.cn/2022/0221/c23024a399204/page.htm))。`,
+  `我正在寻找与计算机专业相关的开发岗位的正式工作机会 (2024秋入职)。
+我主要使用JavaScript (ES6)、TypeScript、Vue.js (2/3)、Node.js、Python，并正在学习
+Golang——因为它适合云开发、网络开发。我希望从事使用JS/TS的有挑战的工作，如WebRTC、前端音视频、
+WebGL、SVG、低代码、编译、WASM、Electron等。我认为浏览器在未来将会承担更多功能，并发展到类似操作系统的程度。`,
   `
-2023年下半年，我正在寻找与计算机专业相关的开发岗位的正式工作机会（2024年毕业入职）。
-我主要使用JavaScript (ES6)、TypeScript、Vue.js (2/3)、Node.js、Python。`,
-  `
-向下滑动，可以进一步了解我的社交网络、学历情况、工作经历等；通过左侧的导航，可以了解我的项目经历、
+向下滑动，可以进一步了解我的社交网络、学历情况、工作经历等；通过左侧的导航，可以了解我的相关项目经历、
 博客博文和日程安排等。
 `,
 ]
@@ -67,7 +68,7 @@ export default defineComponent({
         margin-block: 0 !important;
       }
       text-indent: 2rem;
-      word-break: keep-all;
+      word-break: normal;
     }
   }
 }

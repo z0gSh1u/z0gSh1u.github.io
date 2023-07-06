@@ -1,8 +1,6 @@
 <template>
   <div class="block">
-    <div class="left">
-      <img :src="avatar" class="avatar nozoom" />
-    </div>
+    <div class="left" :style="{ backgroundImage: `url(${avatar})` }"></div>
     <div class="right">
       <p class="name" v-text="name"></p>
       <p class="intro" v-text="intro"></p>
@@ -34,8 +32,12 @@ export default defineComponent({
 <style scoped lang="less">
 @import '../styles/variables.less';
 .block {
-  .avatar {
+  .left {
     width: 40px;
+    height: 40px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
   }
   .right {
     margin-left: 1rem;
