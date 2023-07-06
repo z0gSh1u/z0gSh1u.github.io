@@ -15,7 +15,7 @@
 <Social title="SW-0432-5008-1243" url="#" fgc="#fff" bgc="rgb(114,206,165)" icon="assets/icons/ns.png"></Social>
 <Social title="z0gSh1u" url="https://steamcommunity.com/id/zhuoxu/" fgc="#fff" bgc="rgb(30,36,47)" icon="assets/icons/steam.png"></Social>
 <Social title="z0gSh1u" url="https://account.xbox.com/en-us/profile?gamertag=z0gSh1u" fgc="#fff" bgc="rgb(16,124,16)" icon="assets/icons/xbox.png"></Social>
-<Social title="领英" url="https://www.linkedin.com/in/%E6%97%AD-%E5%8D%93-884094173/" fgc="#fff" bgc="rgb(10,102,194)" icon="assets/icons/linkedin.png"></Social>
+<Social title="领英" url="https://www.linkedin.com/in/seuzhuoxu/" fgc="#fff" bgc="rgb(10,102,194)" icon="assets/icons/linkedin.png"></Social>
 
 ## 教育经历
 
@@ -27,8 +27,9 @@
 
 ## 工作经历
 
-<Block name="一影医疗" intro="图像算法 / 2021.06-2021.07" avatar="/assets/icons/first-imaging.png"></Block>
-<Block name="腾讯 (深圳)" intro="PCG 前端开发 (Vue, Vuex, PHP) / 2020.06-2020.08" avatar="/assets/icons/tencent.png"></Block>
+<Block name="美团" intro="前端开发 (Vue) / 2023.04-2023.07" avatar="/assets/icons/meituan.png"></Block>
+<Block name="一影医疗" intro="CT图像算法 / 2021.06-2021.07" avatar="/assets/icons/first-imaging.png"></Block>
+<Block name="腾讯 (深圳)" intro="前端开发 (Vue, PHP) / 2020.06-2020.08" avatar="/assets/icons/tencent.png"></Block>
 
 *如需实习证明，请发邮件获取*
 

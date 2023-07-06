@@ -11,7 +11,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, onMounted, ref } from 'vue'
+import { defineComponent } from 'vue'
 import MarkdownIt from 'markdown-it'
 const markdownIt = MarkdownIt()
 
@@ -21,10 +21,8 @@ const aboutmeIntroduction = [
 [Prof. Yang Chen](https://cse.seu.edu.cn/2019/0102/c23024a256991/page.htm)
 与[A.P. Xu Ji](https://cse.seu.edu.cn/2022/0221/c23024a399204/page.htm))。`,
   `
-2023年上半年，我正在寻找与计算机专业相关的开发岗位的暑期实习。我主要使用JavaScript (ES6)、TypeScript、
-Vue.js (2/3)、Node.js、CSS (Less)、Python；我正在学习Golang；必要时我也可以使用C++、C#、
-PHP、Java、CUDA进行编程——我认为程序员不应局限于特定的编程语言，而要面向任务实际适当选型。
-`,
+2023年下半年，我正在寻找与计算机专业相关的开发岗位的正式工作机会（2024年毕业入职）。
+我主要使用JavaScript (ES6)、TypeScript、Vue.js (2/3)、Node.js、Python。`,
   `
 向下滑动，可以进一步了解我的社交网络、学历情况、工作经历等；通过左侧的导航，可以了解我的项目经历、
 博客博文和日程安排等。
