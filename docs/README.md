@@ -5,7 +5,8 @@
 ## 社交平台
 
 <Social title="江苏省南京市玄武区东南大学四牌楼校区群贤楼" url="#" fgc="#fff" bgc="rgb(243,178,61)" icon="assets/icons/location.png"></Social>
-<Social title="zx.cs@qq.com" url="mailto:zx.cs@qq.com" fgc="#fff" bgc="rgba(51,153,102,0.8)" icon="assets/icons/email.png"></Social>
+<Social title="zx.cs@qq.com (Private)" url="mailto:zx.cs@qq.com" fgc="#fff" bgc="rgba(51,153,102,0.8)" icon="assets/icons/email.png"></Social>
+<Social title="zhuoxu@seu.edu.cn (Academic)" url="mailto:zhuoxu@seu.edu.cn" fgc="#fff" bgc="rgba(0,168,84,0.8)" icon="assets/icons/email.png"></Social>
 <Social title="知乎" url="https://www.zhihu.com/people/zhuoxu" fgc="#fff" bgc="rgba(6,100,195,0.8)" icon="assets/icons/zhihu.png"></Social> 
 <Social title="GitHub" url="https://github.com/z0gSh1u" fgc="#fff" bgc="rgba(0,0,0,0.8)" icon="assets/icons/github.png"></Social>
 <Social title="500px" url="https://500px.com/p/136371391" fgc="#fff" bgc="rgb(8,112,209)" icon="assets/icons/500px.png"></Social>
