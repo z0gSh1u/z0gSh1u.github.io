@@ -26,7 +26,7 @@
 
 *点击以查看[部分课程成绩](scores.html)*
 
-## 工作经历
+## 实习经历
 
 <Block name="美团" intro="前端开发 (Vue) / 2023.04-2023.07" avatar="/assets/icons/meituan.png"></Block>
 <Block name="一影医疗" intro="CT图像算法 / 2021.06-2021.07" avatar="/assets/icons/first-imaging.png"></Block>
