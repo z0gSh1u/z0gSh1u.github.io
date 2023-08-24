@@ -80,12 +80,12 @@ export default defineUserConfig({
       },
       {
         text: '下载简历',
-        link: 'https://zxuuu.tech/个人简历(卓旭).pdf',
+        link: 'https://zxuuu.tech/个人简历(卓旭).pdf?latest',
       },
-      {
-        text: 'Resume (EN)',
-        link: 'https://zxuuu.tech/Resume(ZHUOXu).pdf',
-      },
+      // {
+      //   text: 'Resume (EN)',
+      //   link: 'https://zxuuu.tech/Resume(ZHUOXu).pdf',
+      // },
       {
         text: '博客园',
         link: 'https://cnblogs.com/zxuuu',
