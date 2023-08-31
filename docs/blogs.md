@@ -4,6 +4,13 @@
 
 持之以恒地编写博客需要大量空闲时间，而我近期相当繁忙。我手头还有许多值得一写的内容，待我有时间后一定更新上。
 
+## 更适合程序员宝宝的行测攻略
+- [一 - 言语理解与表达](https://www.cnblogs.com/zxuuu/p/17663756.html)
+- [二 - 数量关系](https://www.cnblogs.com/zxuuu/p/17669331.html)
+- [三 - 判断推理](https://www.cnblogs.com/zxuuu/p/17670803.html)
+- [四 - 资料分析](https://www.cnblogs.com/zxuuu/p/17670805.html)
+- [五 - 常识；六 - 性格](https://www.cnblogs.com/zxuuu/p/17670806.html)
+
 ## 信号与系统
 
 - [Ch01 信号与系统](https://www.cnblogs.com/zxuuu/p/16167252.html)
