@@ -4,7 +4,7 @@
 
 ## 社交平台
 
-<Social title="江苏省南京市玄武区东南大学四牌楼校区群贤楼" url="#" fgc="#fff" bgc="rgb(243,178,61)" icon="assets/icons/location.png"></Social>
+<Social title="江苏省南京市玄武区东南大学四牌楼校区群贤楼" url="https://j.map.baidu.com/79/Fef" fgc="#fff" bgc="rgb(243,178,61)" icon="assets/icons/location.png"></Social>
 <Social title="zx.cs@qq.com (Private)" url="mailto:zx.cs@qq.com" fgc="#fff" bgc="rgba(51,153,102,0.8)" icon="assets/icons/email.png"></Social>
 <Social title="zhuoxu@seu.edu.cn (Academic)" url="mailto:zhuoxu@seu.edu.cn" fgc="#fff" bgc="rgba(0,168,84,0.8)" icon="assets/icons/email.png"></Social>
 <Social title="知乎" url="https://www.zhihu.com/people/zhuoxu" fgc="#fff" bgc="rgba(6,100,195,0.8)" icon="assets/icons/zhihu.png"></Social> 
