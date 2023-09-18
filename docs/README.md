@@ -36,7 +36,7 @@
 
 ## 出版
 
-- Real-Time Endoscopy Haze Removal: A Synthetical Method (Multimedia Tools and Applications) (**Xu Zhuo** et al.) (In Press)
+- [Real-time endoscopy haze removal: a synthetical method](https://link.springer.com/article/10.1007/s11042-023-16375-w) (Multimedia Tools and Applications) (**Xu Zhuo** and Chenbin Yang et al.)
 - [A Geometrical Calibration Method for C-arm CT based on a Non-Linear Registration Model](https://ieeexplore.ieee.org/document/10225596) (IEEE Transactions on Instrumentation and Measurement) (Xu Ji, Yuchen Lu, **Xu Zhuo** et al.)
 - [Scatter correction for cone-beam CT via scatter kernel superposition-inspired convolutional neural network](https://iopscience.iop.org/article/10.1088/1361-6560/acbe8f) (Physics in Medicine & Biology) (**Xu Zhuo** et al.)
 - 基于深度学习的图像超分辨率重建及其在医学影像上的应用 (东南大学本科优秀毕业设计)
