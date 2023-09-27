@@ -25,8 +25,8 @@ export default defineUserConfig({
             link: '/index.html/#教育经历',
           },
           {
-            text: '工作经历',
-            link: '/index.html/#工作经历',
+            text: '实习经历',
+            link: '/index.html/#实习经历',
           },
           {
             text: '出版',
@@ -67,11 +67,11 @@ export default defineUserConfig({
         link: '/calendar.html',
         collapsible: false,
       },
-      {
-        text: 'Collections',
-        link: '/Collections.html',
-        collapsible: false,
-      },
+      // {
+      //   text: 'Collections',
+      //   link: '/Collections.html',
+      //   collapsible: false,
+      // },
     ],
     navbar: [
       {
