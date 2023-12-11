@@ -7,6 +7,7 @@
       <p class="name">卓旭</p>
       <p class="intro-content" v-html="aboutmeIntroduction"></p>
     </div>
+    <div id="google_translate_element"></div>
   </div>
 </template>
 
@@ -16,23 +17,21 @@ import MarkdownIt from 'markdown-it'
 const markdownIt = MarkdownIt()
 
 const aboutmeIntroduction = [
-  `我目前正在[东南大学](https://www.seu.edu.cn)计算机科学与工程学院就读硕士研究生二年级，主要
-研究方向为计算机断层扫描 (CT) 图像的获取、重建和与X射线物理相关的处理过程 (导师为
+  `我目前正在[东南大学](https://www.seu.edu.cn)计算机科学与工程学院就读硕士研究生三年级，主要
+研究方向为计算机断层扫描 (CT) 的获取、重建和与X射线物理相关的数字图像处理过程 (导师为 
 [Prof. Yang Chen](https://cse.seu.edu.cn/2019/0102/c23024a256991/page.htm)
-与[A.P. Xu Ji](https://cse.seu.edu.cn/2022/0221/c23024a399204/page.htm))。`,
-  `我正在寻找与计算机专业相关的开发岗位的正式工作机会 (2024秋入职)。
-我主要使用JavaScript (ES6)、TypeScript、Vue.js (2/3)、Node.js、Python，并正在学习
-Golang——因为它适合云开发、网络开发。我希望从事使用JS/TS的有挑战的工作，如WebRTC、前端音视频、
-WebGL、SVG、低代码、编译、WASM、Electron等。我认为浏览器在未来将会承担更多功能，并发展到类似操作系统的程度。`,
+ 与 [A.P. Xu Ji](https://cse.seu.edu.cn/2022/0221/c23024a399204/page.htm))。`,
+  `2024年秋毕业，我计划从事 Web 前端 Infra 的开发工作。近期，我的开发重心计划
+在 WebGL、WebGPU、WebAssembly、Electron 等技术上。`,
   `
-向下滑动，可以进一步了解我的社交网络、学历情况、工作经历等；通过左侧的导航，可以了解我的相关项目经历、
+向下滑动，可以进一步了解我的社交网络、学历、实习经历等；通过左侧的导航，可以了解我的相关项目经历、
 博客博文和日程安排等。
 `,
 ]
-  .map((x) => x.replace(/\r?\n/g, ''))
-  .map((x) => markdownIt.render(x, {}))
-  .map((x) => x.replace(/<a href/g, '<a target="_blank" href'))
-  .join('')
+  .map((x) => x.replace(/\r?\n/g, '')) // normalize it
+  .map((x) => markdownIt.render(x, {})) // make it rendered Markdown
+  .map((x) => x.replace(/<a href/g, '<a target="_blank" href')) // links open in new tab
+  .join('') // done
 
 export default defineComponent({
   setup() {

@@ -30,7 +30,7 @@
 
 <Block name="美团" intro="前端开发 (Vue) / 2023.04-2023.07" avatar="/assets/icons/meituan.png"></Block>
 <Block name="一影医疗" intro="CT图像算法 / 2021.06-2021.07" avatar="/assets/icons/first-imaging.png"></Block>
-<Block name="腾讯 (深圳)" intro="前端开发 (Vue, PHP) / 2020.06-2020.08" avatar="/assets/icons/tencent.png"></Block>
+<Block name="腾讯" intro="前端开发 (Vue, PHP) / 2020.06-2020.08" avatar="/assets/icons/tencent.png"></Block>
 
 *如需实习证明，请发邮件获取*
 
@@ -41,9 +41,9 @@
 <svg class="external-link-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg>
 </p>
 
-- [Real-time endoscopy haze removal: a synthetical method](https://link.springer.com/article/10.1007/s11042-023-16375-w) (Multimedia Tools and Applications) (**Xu Zhuo** and Chenbin Yang et al.)
-- [A Geometrical Calibration Method for C-arm CT based on a Non-Linear Registration Model](https://ieeexplore.ieee.org/document/10225596) (IEEE Transactions on Instrumentation and Measurement) (Xu Ji, Yuchen Lu, **Xu Zhuo** et al.)
-- [Scatter correction for cone-beam CT via scatter kernel superposition-inspired convolutional neural network](https://iopscience.iop.org/article/10.1088/1361-6560/acbe8f) (Physics in Medicine & Biology) (**Xu Zhuo** et al.)
+- [Real-time endoscopy haze removal: a synthetical method](https://link.springer.com/article/10.1007/s11042-023-16375-w) (Multimedia Tools and Applications) (**Zhuo X**, Yang C, Gao Y, Wang Z, Chen Y, Wu K)
+- [A Geometrical Calibration Method for C-arm CT based on a Non-Linear Registration Model](https://ieeexplore.ieee.org/document/10225596) (IEEE Transactions on Instrumentation and Measurement) (Ji X, Lu Y, **Zhuo X**, Zhang Y, Zhu S, Chen Y)
+- [Scatter correction for cone-beam CT via scatter kernel superposition-inspired convolutional neural network](https://iopscience.iop.org/article/10.1088/1361-6560/acbe8f) (Physics in Medicine & Biology) (**Zhuo X**, Lu Y, Hua Y, Liu H, Zhang Y, Hao S, Wan L, Xie Q, Ji X, Chen Y)
 - 基于深度学习的图像超分辨率重建及其在医学影像上的应用 (东南大学本科优秀毕业设计)
 - [NTIRE 2021 Challenge on Video Super-Resolution](https://arxiv.org/abs/2104.14852) (arXiv)
-- [一种基于概率优化和神经网络的内窥镜去雾方法及装置](http://www.soopat.com/Patent/202010370770) (发明专利) (汪彦刚，陈阳，**卓旭**，高钰铭，王志华)
+- [一种基于概率优化和神经网络的内窥镜去雾方法及装置](https://xueshu.baidu.com/usercenter/paper/show?paperid=182a0mx0jf410p00c2640gv049758025&site=xueshu_se) (发明专利) (汪彦刚，陈阳，**卓旭**，高钰铭，王志华)

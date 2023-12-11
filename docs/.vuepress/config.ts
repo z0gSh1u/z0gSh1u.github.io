@@ -67,11 +67,6 @@ export default defineUserConfig({
         link: '/calendar.html',
         collapsible: false,
       },
-      // {
-      //   text: 'Collections',
-      //   link: '/Collections.html',
-      //   collapsible: false,
-      // },
     ],
     navbar: [
       {
@@ -82,10 +77,6 @@ export default defineUserConfig({
         text: '下载简历',
         link: 'https://zxuuu.tech/个人简历(卓旭).pdf?latest',
       },
-      // {
-      //   text: 'Resume (EN)',
-      //   link: 'https://zxuuu.tech/Resume(ZHUOXu).pdf',
-      // },
       {
         text: '博客园',
         link: 'https://cnblogs.com/zxuuu',
@@ -93,6 +84,36 @@ export default defineUserConfig({
       {
         text: 'GitHub',
         link: 'https://github.com/z0gSh1u',
+      },
+      {
+        text: 'Language',
+        children: [
+          {
+            text: '简体中文',
+            link: 'https://zxuuu.tech',
+            target: '_self',
+          },
+          {
+            text: '繁體中文',
+            link: 'https://translate.google.com/translate?sl=zh-CN&tl=zh-TW&hl=zh-CN&u=zxuuu.tech&client=webapp',
+            target: '_self',
+          },
+          {
+            text: 'English',
+            link: 'https://translate.google.com/translate?sl=zh-CN&tl=en&hl=zh-CN&u=zxuuu.tech&client=webapp',
+            target: '_self',
+          },
+          {
+            text: 'Français',
+            link: 'https://translate.google.com/translate?sl=zh-CN&tl=fr&hl=zh-CN&u=zxuuu.tech&client=webapp',
+            target: '_self',
+          },
+          {
+            text: '日本語',
+            link: 'https://translate.google.com/translate?sl=zh-CN&tl=ja&hl=zh-CN&u=zxuuu.tech&client=webapp',
+            target: '_self',
+          },
+        ],
       },
     ],
     lastUpdated: true,
