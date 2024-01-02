@@ -36,7 +36,7 @@
 import { defineComponent, ref } from 'vue'
 export default defineComponent({
   setup() {
-    let loading = ref(true)
+    const loading = ref(true)
     return {
       loading,
     }

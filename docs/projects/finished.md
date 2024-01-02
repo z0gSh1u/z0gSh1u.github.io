@@ -8,7 +8,6 @@
 
 ![img](./assets/webgl.png)
 
-
 ## [chinadle](https://github.com/z0gSh1u/chinadle)
 
 | 状态                  | 语言/技术栈                 |
@@ -18,8 +17,6 @@
 在猜词游戏 [Wordle](https://www.powerlanguage.co.uk/wordle/) 很火的时候受 [Worldle](https://worldle.teuteuf.fr/) 启发制作的模仿项目。你可以通过方位和距离提示在有限步数内猜测中国的名胜景点。该项目在 Vue 3 尚未成熟时编写，使用了部分 Vue 3 特性，使用 mitt 事件总线完成组件通信，使用 Tailwind CSS 快速布局页面。
 
 ![chinadle](./assets/chinadle.png)
-
-
 
 ## [seu-viz](https://github.com/z0gSh1u/seu-viz)
 
@@ -145,4 +142,16 @@
 
 ## [crip](https://github.com/SEU-CT-Recon/crip)
 
-本项目实现了一个 all-in-one 的工具包，用于 CT / CBCT 数据的 IO、预处理、后处理，并提供进行相关研究物理计算、双能、低剂量模拟的能力。
+| 状态                  | 语言/技术栈 |
+| --------------------- | ----------- |
+| **:sparkles:** 迭代中 | Python (numpy etc.) |
+
+本项目实现了一个 all-in-one 的工具包，用于 CT 数据的 IO、预处理、后处理，并提供进行相关研究物理计算、双能、低剂量模拟的能力。
+
+## [dijkstra-manyjs](https://github.com/z0gSh1u/dijkstra-manyjs)
+
+| 状态                  | 语言/技术栈 |
+| --------------------- | ----------- |
+| **:sparkles:** 已完工 | PureJS / WASM / WebGL / WebGPU |
+
+Compare different implementations of Dijkstra's shortest path algorithm on browser.

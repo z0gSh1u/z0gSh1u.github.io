@@ -9,13 +9,6 @@
 - 用户在前端部分引入 Vue / React 组件，对于每篇被评论文章注入一个配置项 props 即可工作
 - 后端采用 Gin / NestJS 提供 API 接口，采用 MongoDB 进行持久化，支持 Docker 容器化部署
 
-## [dijkstra-manyjs](https://github.com/z0gSh1u/dijkstra-manyjs)
-
-| 状态                  | 语言/技术栈 |
-| --------------------- | ----------- |
-| **:construction:** 施工中 | PureJS / WASM / WebGL / WebGPU |
-
-Compare different implementations of Dijkstra's shortest path algorithm on browser.
 
 ## [vjsplayer](https://github.com/z0gSh1u/vjsplayer)
 

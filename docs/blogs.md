@@ -1,4 +1,4 @@
-# 博客博文
+# 博客
 
 我的博客主要发表在 [博客园](https://cnblogs.com/zxuuu)。这里是其中部分文章的分类摘录。要浏览最新文章、发表评论等，请跳转到 [博客园](https://cnblogs.com/zxuuu)。
 

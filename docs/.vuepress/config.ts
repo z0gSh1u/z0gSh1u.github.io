@@ -58,7 +58,7 @@ export default defineUserConfig({
         ],
       },
       {
-        text: '博客博文',
+        text: '博客',
         link: '/blogs.html',
         collapsible: true,
       },
