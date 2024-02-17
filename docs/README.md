@@ -45,7 +45,7 @@
 <svg class="external-link-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg>
 </p>
 
-<!-- - [Image Domain Multi-Material Decomposition Noise Suppression through Basis Transformation and Selective Filtering](#) (IEEE Journal of Biomedical and Health Informatics) (In Press) (Ji X, **Zhuo X**, et al.) -->
+- [Image Domain Multi-Material Decomposition Noise Suppression Through Basis Transformation and Selective Filtering](https://ieeexplore.ieee.org/document/10438845) (IEEE Journal of Biomedical and Health Informatics) (Ji X, **Zhuo X**, et al.)
 - [Real-time endoscopy haze removal: a synthetical method](https://link.springer.com/article/10.1007/s11042-023-16375-w) (Multimedia Tools and Applications) (**Zhuo X**, Yang C, Gao Y, Wang Z, Chen Y, Wu K)
 - [A Geometrical Calibration Method for C-arm CT based on a Non-Linear Registration Model](https://ieeexplore.ieee.org/document/10225596) (IEEE Transactions on Instrumentation and Measurement) (Ji X, Lu Y, **Zhuo X**, Zhang Y, Zhu S, Chen Y)
 - [Scatter correction for cone-beam CT via scatter kernel superposition-inspired convolutional neural network](https://iopscience.iop.org/article/10.1088/1361-6560/acbe8f) (Physics in Medicine & Biology) (**Zhuo X**, Lu Y, Hua Y, Liu H, Zhang Y, Hao S, Wan L, Xie Q, Ji X, Chen Y)
