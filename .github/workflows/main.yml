@@ -34,6 +34,7 @@ jobs:
           retention-days: 1
       
   deploy:
+    needs: build
     environment:
       name: github-pages
       url: z0gSh1u.github.io # Customize this
