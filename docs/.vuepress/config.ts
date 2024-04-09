@@ -44,7 +44,7 @@ export default defineUserConfig({
         collapsible: true,
         children: [
           {
-            text: '📖 扉页',
+            text: '✨ 已完成',
             link: '/projects/index.html',
           },
           {
@@ -52,8 +52,8 @@ export default defineUserConfig({
             link: '/projects/wip.html',
           },
           {
-            text: '✨ 已完成',
-            link: '/projects/finished.html',
+            text: '📖 开源共建',
+            link: '/projects/opensource.html',
           },
         ],
       },
@@ -61,11 +61,6 @@ export default defineUserConfig({
         text: '博客',
         link: '/blogs.html',
         collapsible: true,
-      },
-      {
-        text: '日程安排',
-        link: '/calendar.html',
-        collapsible: false,
       },
     ],
     navbar: [
@@ -121,6 +116,7 @@ export default defineUserConfig({
     contributors: false,
     notFound: ['未找到该页面。'],
     backToHome: '返回主页',
+    colorModeSwitch: false,
   }),
   plugins: [
     googleAnalyticsPlugin({
