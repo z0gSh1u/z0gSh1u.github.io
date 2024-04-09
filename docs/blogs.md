@@ -1,10 +1,9 @@
 # 博客
 
-我的博客主要发表在 [博客园](https://cnblogs.com/zxuuu)。这里是其中部分文章的分类摘录。要浏览最新文章、发表评论等，请跳转到 [博客园](https://cnblogs.com/zxuuu)。
-
-持之以恒地编写博客需要大量空闲时间，而我近期相当繁忙。我手头还有许多值得一写的内容，待我有时间后一定更新上。
+我的博客主要发表在博客园。这里是其中部分文章的分类摘录。要浏览最新文章、发表评论等，请跳转 [博客园](https://cnblogs.com/zxuuu)。
 
 ## 更适合程序员宝宝的行测攻略
+
 - [一 - 言语理解与表达](https://www.cnblogs.com/zxuuu/p/17663756.html)
 - [二 - 数量关系](https://www.cnblogs.com/zxuuu/p/17669331.html)
 - [三 - 判断推理](https://www.cnblogs.com/zxuuu/p/17670803.html)
@@ -22,8 +21,8 @@
 
 ## 数字信号处理实验
 
-- [《数字信号处理》课程实验1 – FFT的实现](https://www.cnblogs.com/zxuuu/p/12425321.html)
-- [《数字信号处理》课程实验2 – FIR数字滤波器设计](https://www.cnblogs.com/zxuuu/p/12433152.html)
+- [《数字信号处理》课程实验 1 – FFT 的实现](https://www.cnblogs.com/zxuuu/p/12425321.html)
+- [《数字信号处理》课程实验 2 – FIR 数字滤波器设计](https://www.cnblogs.com/zxuuu/p/12433152.html)
 
 ## 算法设计基础课程习题
 
@@ -45,9 +44,9 @@
 
 ## 未归类
 
-- [东南大学《VLSI系统导论》课程复习笔记](https://www.cnblogs.com/zxuuu/p/14027716.html)
+- [东南大学《VLSI 系统导论》课程复习笔记](https://www.cnblogs.com/zxuuu/p/14027716.html)
 - [写一个简单的 Linux Shell (C++)](https://www.cnblogs.com/zxuuu/p/13701489.html)
 - [conda / cuda / screen 常用命令总结](https://www.cnblogs.com/zxuuu/p/14016104.html)
-- [Socket.io库使用笔记 ](https://www.cnblogs.com/zxuuu/p/12800549.html)
+- [Socket.io 库使用笔记 ](https://www.cnblogs.com/zxuuu/p/12800549.html)
 - [PhalApi 2.7 开发快速上手](https://www.cnblogs.com/zxuuu/p/12411256.html)
-- [CentOS 7下Apache + PHP + MySQL环境（LAMP）的安装](https://www.cnblogs.com/zxuuu/p/12419221.html)
+- [CentOS 7 下 Apache + PHP + MySQL 环境（LAMP）的安装](https://www.cnblogs.com/zxuuu/p/12419221.html)
