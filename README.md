@@ -1,5 +1,23 @@
 # zxuuu.tech
 
-Source code of [zxuuu.tech](https://zxuuu.tech) .
+A static site base on [dumi](https://d.umijs.org).
 
-Based on [Vuepress v2](https://v2.vuepress.vuejs.org/zh/) .
+## Development
+
+```bash
+# install dependencies
+$ pnpm install
+
+# start dev server
+$ pnpm start
+
+# build docs
+$ pnpm run build
+
+# Locally preview the production build
+$ pnpm run preview
+```
+
+## LICENSE
+
+MIT
