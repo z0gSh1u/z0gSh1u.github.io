@@ -1,0 +1,31 @@
+diff --git a/theme-default/slots/Header/index.js b/theme-default/slots/Header/index.js
+index 094f6388968cef7cb9a56480ed83a417f2609728..6dbed173184275b8a78905654d92e627b1f61987 100644
+--- a/theme-default/slots/Header/index.js
++++ b/theme-default/slots/Header/index.js
+@@ -27,10 +27,10 @@ var Header = function Header() {
+   var _useSiteData = useSiteData(),
+     themeConfig = _useSiteData.themeConfig;
+   var socialIcons = useMemo(function () {
+-    return themeConfig.socialLinks ? Object.keys(themeConfig.socialLinks).slice(0, 5).map(function (key) {
++    return themeConfig.socialLinks ? Object.keys(themeConfig.socialLinks).map(function (key) {
+       return {
+-        icon: key,
+-        link: themeConfig.socialLinks[key]
++        icon: themeConfig.socialLinks[key].icon,
++        link: themeConfig.socialLinks[key].link,
+       };
+     }) : [];
+   }, [themeConfig.socialLinks]);
+diff --git a/theme-default/slots/SocialIcon/index.js b/theme-default/slots/SocialIcon/index.js
+index 35498fc5730c5d99d5ad6c868c0664d1d4db6305..4a2b734b3437ffb4016f5617b3aa522d22622b67 100644
+--- a/theme-default/slots/SocialIcon/index.js
++++ b/theme-default/slots/SocialIcon/index.js
+@@ -25,7 +25,7 @@ var SocialIcon = function SocialIcon(props) {
+   var intl = useIntl();
+   var preset = useMemo(function () {
+     return {
+-      Icon: presetIconMap[icon],
++      Icon: Object.keys(presetIconMap).includes(String(icon)) ? presetIconMap[icon] : icon,
+       link: link
+     };
+   }, [icon, link]);
