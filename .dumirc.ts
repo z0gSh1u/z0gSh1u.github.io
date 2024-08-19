@@ -59,7 +59,6 @@ export default defineConfig({
     },
     editLink: false,
   },
-  mako: {},
   analytics: {
     ga_v2: 'G-6Q50KH8DS4',
   },
