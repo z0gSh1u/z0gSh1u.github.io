@@ -3,7 +3,7 @@ group:
   name: home
 ---
 
-# 项目列表
+# Projects
 
 ## [typed-webgl](https://github.com/z0gSh1u/typed-webgl)
 

@@ -1,5 +1,33 @@
+diff --git a/theme-default/locales/en-US.json b/theme-default/locales/en-US.json
+index 41c774076c851dbb5f460449079cce8c34bcb05d..0594d93dab489610c53749561c45f40fdb7f8a14 100644
+--- a/theme-default/locales/en-US.json
++++ b/theme-default/locales/en-US.json
+@@ -11,6 +11,9 @@
+   "header.social.zhihu": "Zhihu",
+   "header.social.yuque": "Yuque",
+   "header.social.linkedin": "Linkedin",
++  "header.social.bilibili": "Bilibili",
++  "header.social.steam": "Steam",
++  "header.social.500px": "500px",
+   "previewer.actions.code.expand": "Show Code",
+   "previewer.actions.code.shrink": "Hide Code",
+   "previewer.actions.sketch": "Copy to Sketch app",
+diff --git a/theme-default/locales/zh-CN.json b/theme-default/locales/zh-CN.json
+index f277a2a645d038cb63f3d9759628bafdb6a38ae7..d9597bccc2ac0f168b05955cc7806105338faae5 100644
+--- a/theme-default/locales/zh-CN.json
++++ b/theme-default/locales/zh-CN.json
+@@ -11,6 +11,9 @@
+   "header.social.zhihu": "知乎",
+   "header.social.yuque": "语雀",
+   "header.social.linkedin": "Linkedin",
++  "header.social.bilibili": "哔哩哔哩",
++  "header.social.steam": "Steam",
++  "header.social.500px": "500px",
+   "previewer.actions.code.expand": "展开代码",
+   "previewer.actions.code.shrink": "收起代码",
+   "previewer.actions.codesandbox": "在 CodeSandbox 中打开",
 diff --git a/theme-default/slots/Header/index.js b/theme-default/slots/Header/index.js
-index 094f6388968cef7cb9a56480ed83a417f2609728..6dbed173184275b8a78905654d92e627b1f61987 100644
+index 094f6388968cef7cb9a56480ed83a417f2609728..67ed6b0babb128faac6c8ed6d7e9608270022595 100644
 --- a/theme-default/slots/Header/index.js
 +++ b/theme-default/slots/Header/index.js
 @@ -27,10 +27,10 @@ var Header = function Header() {
@@ -11,21 +39,162 @@ index 094f6388968cef7cb9a56480ed83a417f2609728..6dbed173184275b8a78905654d92e627
        return {
 -        icon: key,
 -        link: themeConfig.socialLinks[key]
-+        icon: themeConfig.socialLinks[key].icon,
-+        link: themeConfig.socialLinks[key].link,
++        ...themeConfig.socialLinks[key],
++        name: key
        };
      }) : [];
    }, [themeConfig.socialLinks]);
+@@ -51,9 +51,11 @@ var Header = function Header() {
+     className: "dumi-default-header-right-aside"
+   }, /*#__PURE__*/React.createElement(SearchBar, null), /*#__PURE__*/React.createElement(LangSwitch, null), /*#__PURE__*/React.createElement(RtlSwitch, null), themeConfig.prefersColor.switch && /*#__PURE__*/React.createElement(ColorSwitch, null), socialIcons.map(function (item) {
+     return /*#__PURE__*/React.createElement(SocialIcon, {
++      key: item.name,
++      name: item.name,
++      display: item.display,
+       icon: item.icon,
+       link: item.link,
+-      key: item.link
+     });
+   }), /*#__PURE__*/React.createElement(HeaderExtra, null))), /*#__PURE__*/React.createElement("button", {
+     type: "button",
+diff --git a/theme-default/slots/SearchBar/index.less b/theme-default/slots/SearchBar/index.less
+index 533deaa9ca019f5857dd8c2a96026dd9146fb8cd..47de13696bfe6e357d86aa49c1cb254fbcfca203 100644
+--- a/theme-default/slots/SearchBar/index.less
++++ b/theme-default/slots/SearchBar/index.less
+@@ -3,10 +3,7 @@
+ .@{prefix}-search-bar {
+   position: relative;
+ 
+-  @media @mobile {
+-    // TODO: support search for mobile devices
+-    display: none;
+-  }
++  display: none; // Hide the search bar by default
+ 
+   &:not(:last-child) {
+     margin-inline-end: 28px;
+diff --git a/theme-default/slots/SocialIcon/index.d.ts b/theme-default/slots/SocialIcon/index.d.ts
+index 37560dc24ddaeb9d72ca31704f2a568b60af72b1..40099a10af70c52b4602d00f1e8da7ba3c42b79f 100644
+--- a/theme-default/slots/SocialIcon/index.d.ts
++++ b/theme-default/slots/SocialIcon/index.d.ts
+@@ -1,13 +1,9 @@
+-import { SocialTypes } from "../../../theme-api/types";
+-import { FunctionComponent, type FC } from 'react';
++import { type FC } from 'react';
+ import './index.less';
+ export type SocialIconProps = {
+-    icon: SocialTypes;
++    name: string;
++    icon: string;
+     link: string;
+ };
+-export type PresetSocialIcon = {
+-    Icon: FunctionComponent;
+-    titleIntlId: string;
+-};
+ declare const SocialIcon: FC<SocialIconProps>;
+ export default SocialIcon;
 diff --git a/theme-default/slots/SocialIcon/index.js b/theme-default/slots/SocialIcon/index.js
-index 35498fc5730c5d99d5ad6c868c0664d1d4db6305..4a2b734b3437ffb4016f5617b3aa522d22622b67 100644
+index 35498fc5730c5d99d5ad6c868c0664d1d4db6305..caeb1717bed3bb448fe1e7bc19b7908e89c24223 100644
 --- a/theme-default/slots/SocialIcon/index.js
 +++ b/theme-default/slots/SocialIcon/index.js
-@@ -25,7 +25,7 @@ var SocialIcon = function SocialIcon(props) {
+@@ -1,43 +1,27 @@
+-import { ReactComponent as IconFacebook } from '@ant-design/icons-svg/inline-svg/outlined/facebook.svg';
+-import { ReactComponent as IconGitHub } from '@ant-design/icons-svg/inline-svg/outlined/github.svg';
+-import { ReactComponent as IconGitlab } from '@ant-design/icons-svg/inline-svg/outlined/gitlab.svg';
+-import { ReactComponent as IconLinkedin } from '@ant-design/icons-svg/inline-svg/outlined/linkedin.svg';
+-import { ReactComponent as IconTwitter } from '@ant-design/icons-svg/inline-svg/outlined/twitter.svg';
+-import { ReactComponent as IconWeiBo } from '@ant-design/icons-svg/inline-svg/outlined/weibo.svg';
+-import { ReactComponent as IconYuque } from '@ant-design/icons-svg/inline-svg/outlined/yuque.svg';
+-import { ReactComponent as IconZhihu } from '@ant-design/icons-svg/inline-svg/outlined/zhihu.svg';
+ import React, { useMemo } from 'react';
+ import { useIntl } from 'react-intl';
+ import "./index.less";
+-var presetIconMap = {
+-  github: IconGitHub,
+-  weibo: IconWeiBo,
+-  twitter: IconTwitter,
+-  gitlab: IconGitlab,
+-  facebook: IconFacebook,
+-  zhihu: IconZhihu,
+-  yuque: IconYuque,
+-  linkedin: IconLinkedin
+-};
++
+ var SocialIcon = function SocialIcon(props) {
+-  var icon = props.icon,
++  var name = props.name,
++    display = props.display,
++    icon = props.icon,
+     link = props.link;
    var intl = useIntl();
    var preset = useMemo(function () {
      return {
 -      Icon: presetIconMap[icon],
-+      Icon: Object.keys(presetIconMap).includes(String(icon)) ? presetIconMap[icon] : icon,
        link: link
      };
    }, [icon, link]);
+   return /*#__PURE__*/React.createElement("a", {
+     className: "dumi-default-icon",
+-    "data-dumi-tooltip": intl.formatMessage({
+-      id: "header.social.".concat(icon)
+-    }),
+-    "data-dumi-tooltip-bottom": true,
+     target: "_blank",
+     href: preset.link,
+     rel: "noreferrer"
+-  }, /*#__PURE__*/React.createElement(preset.Icon, null));
++  }, /*#__PURE__*/React.createElement("img", {
++    src: icon,
++    width: '16',
++    height: '16'
++  }), /*#__PURE__*/React.createElement("span", {}, display));
+ };
+ export default SocialIcon;
+\ No newline at end of file
+diff --git a/theme-default/slots/SocialIcon/index.less b/theme-default/slots/SocialIcon/index.less
+index 5ae8359bc4332c8408cbc0fc9777179690d558f9..805517e068c8162f0c775ab1b73840efe480810c 100644
+--- a/theme-default/slots/SocialIcon/index.less
++++ b/theme-default/slots/SocialIcon/index.less
+@@ -1,8 +1,26 @@
+ @import (reference) '../../styles/variables.less';
+ 
+ .@{prefix}-icon {
+-  font-size: 0;
+-  line-height: 0;
++  font-size: 13px;
++
++  color: #4f5866;
++  text-decoration: none;
++  display: flex;
++  align-items: center;
++
++  img {
++    margin-right: 3px;
++  }
++
++  span {
++    border-bottom: 1px dashed #aaa;
++  }
++  
++  @media @mobile {
++    span {
++      display: none;
++    }
++  }
+ 
+   [class*='-switch'] + &,
+   [class*='-select'] + & {
+diff --git a/theme-default/styles/variables.less b/theme-default/styles/variables.less
+index 271383c636bd4dc14573ff2740820b73357abb3f..fddbce8d2a611b9dee0dbbdeb5f3b85b22eb627e 100644
+--- a/theme-default/styles/variables.less
++++ b/theme-default/styles/variables.less
+@@ -16,7 +16,7 @@
+ @c-text-note: #8a9099;
+ @c-border: #d0d5d8;
+ @c-border-light: #e4e9ec;
+-@c-site-bg: #f7f9fb;
++@c-site-bg: lighten(#fefae0, 5%);
+ 
+ // dark theme colors
+ // @dark-selector be injected by less-loader in feature/theme/index.ts

@@ -1,9 +1,11 @@
+// @ts-nocheck
+
 import { defineConfig } from 'dumi';
 
 export default defineConfig({
   locales: [
     { id: 'zh-CN', name: '中文' },
-    { id: 'en-US', name: 'EN', },
+    { id: 'en-US', name: 'EN' },
   ],
   themeConfig: {
     name: 'zxuuu.tech',
@@ -11,27 +13,54 @@ export default defineConfig({
     logo: false,
     nav: {
       mode: 'append',
-      value: [
-        { title: '500px', link: 'https://github.com/z0gSh1u' },
-        { title: 'Steam', link: 'https://steamcommunity.com/id/zhuoxu/' },
-        {
-          title: '谷歌学术',
-          link: 'https://scholar.google.com/citations?hl=en&user=nWCWwY0AAAAJ',
-        },
-      ],
+      value: [],
     },
     prefersColor: {
       default: 'light',
       switch: false,
     },
+
     socialLinks: {
-      github: 'https://github.com/z0gSh1u',
-      yuque: 'https://www.yuque.com/z0gsh1u',
-      zhihu: 'https://www.zhihu.com/people/zhuoxu',
-      linkedin: 'https://www.linkedin.com/in/seuzhuoxu/',
+      github: {
+        display: 'GitHub',
+        icon: '/svg/github.svg',
+        link: 'https://github.com/z0gSh1u',
+      },
+      yuque: {
+        display: '语雀',
+        icon: '/svg/yuque.svg',
+        link: 'https://yuque.com/z0gsh1u/blog',
+      },
+      zhihu: {
+        display: '知乎',
+        icon: '/svg/zhihu.svg',
+        link: 'https://www.zhihu.com/people/zhuoxu',
+      },
+      linkedin: {
+        display: '领英',
+        icon: '/svg/linkedin.svg',
+        link: 'https://www.linkedin.com/in/seuzhuoxu/',
+      },
+      bilibili: {
+        display: '哔哩哔哩',
+        icon: '/svg/bilibili.svg',
+        link: 'https://space.bilibili.com/530258',
+      },
+      '500px': {
+        display: '500px',
+        icon: '/svg/500px.svg',
+        link: 'https://500px.com/p/136371391',
+      },
+      steam: {
+        display: 'Steam',
+        icon: '/svg/steam.svg',
+        link: 'https://steamcommunity.com/id/zhuoxu/',
+      },
     },
     editLink: false,
-
   },
   mako: {},
+  analytics: {
+    ga_v2: 'G-6Q50KH8DS4',
+  },
 });
