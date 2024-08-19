@@ -27,6 +27,8 @@ jobs:
           run_install: true
       - name: Build Bundle
         run: pnpm run build
+      - name: Remove Unnecessary Files
+        run: rm -rf dist/~demos
       - name: Archive Production Artifact
         uses: actions/upload-artifact@v4
         with:
