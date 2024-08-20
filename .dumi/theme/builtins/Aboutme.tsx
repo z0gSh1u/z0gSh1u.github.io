@@ -68,12 +68,12 @@ export default function Aboutme() {
 
   return (
     <Row style={{ marginBottom: '2em', marginTop: '1em' }} gutter={16}>
-      <Col span={16}>
+      <Col lg={16} md={24} sm={24}>
         <MyChineseName>卓旭</MyChineseName>
         <MyEnglishName>ZHUO Xu</MyEnglishName>
         {Description}
       </Col>
-      <Col span={8} style={{ textAlign: 'right' }}>
+      <Col lg={8} md={24} sm={24} style={{ textAlign: 'center' }}>
         <Avatar size={192} src={'/photo.jpg'}></Avatar>
       </Col>
     </Row>

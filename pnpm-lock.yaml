@@ -9,7 +9,7 @@ overrides:
 
 patchedDependencies:
   dumi@2.2.17:
-    hash: eeaa3ut3hevau3unafpeul3lpi
+    hash: 6nog3z3et45qpjyk7fzeddxok4
     path: patches/dumi@2.2.17.patch
 
 importers:
@@ -46,7 +46,7 @@ importers:
         version: 14.1.2
       dumi:
         specifier: ~2.2.x
-        version: 2.2.17(patch_hash=eeaa3ut3hevau3unafpeul3lpi)(@babel/core@7.24.9)(@swc/helpers@0.5.1)(@types/node@20.5.1)(@types/react@18.3.3)(eslint@8.57.0)(lightningcss@1.22.1)(prettier@2.8.8)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(rollup@3.29.4)(stylelint@14.16.1)(terser@5.31.3)(type-fest@1.4.0)(typescript@5.5.4)(webpack@5.93.0(@swc/core@1.3.72(@swc/helpers@0.5.1)))
+        version: 2.2.17(patch_hash=6nog3z3et45qpjyk7fzeddxok4)(@babel/core@7.24.9)(@swc/helpers@0.5.1)(@types/node@20.5.1)(@types/react@18.3.3)(eslint@8.57.0)(lightningcss@1.22.1)(prettier@2.8.8)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(rollup@3.29.4)(stylelint@14.16.1)(terser@5.31.3)(type-fest@1.4.0)(typescript@5.5.4)(webpack@5.93.0(@swc/core@1.3.72(@swc/helpers@0.5.1)))
       lint-staged:
         specifier: ^13.0.3
         version: 13.3.0
@@ -9949,7 +9949,7 @@ snapshots:
 
   dumi-assets-types@2.0.0-alpha.0: {}
 
-  dumi@2.2.17(patch_hash=eeaa3ut3hevau3unafpeul3lpi)(@babel/core@7.24.9)(@swc/helpers@0.5.1)(@types/node@20.5.1)(@types/react@18.3.3)(eslint@8.57.0)(lightningcss@1.22.1)(prettier@2.8.8)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(rollup@3.29.4)(stylelint@14.16.1)(terser@5.31.3)(type-fest@1.4.0)(typescript@5.5.4)(webpack@5.93.0(@swc/core@1.3.72(@swc/helpers@0.5.1))):
+  dumi@2.2.17(patch_hash=6nog3z3et45qpjyk7fzeddxok4)(@babel/core@7.24.9)(@swc/helpers@0.5.1)(@types/node@20.5.1)(@types/react@18.3.3)(eslint@8.57.0)(lightningcss@1.22.1)(prettier@2.8.8)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(rollup@3.29.4)(stylelint@14.16.1)(terser@5.31.3)(type-fest@1.4.0)(typescript@5.5.4)(webpack@5.93.0(@swc/core@1.3.72(@swc/helpers@0.5.1))):
     dependencies:
       '@ant-design/icons-svg': 4.4.2
       '@makotot/ghostui': 2.0.0(react@18.3.1)

@@ -4,8 +4,8 @@ import { defineConfig } from 'dumi';
 
 export default defineConfig({
   locales: [
-    { id: 'zh-CN', name: '中文' },
-    { id: 'en-US', name: 'EN' },
+    { id: 'zh-CN', name: '中文', base: '/' },
+    { id: 'en-US', name: 'EN', base: '/en' },
   ],
   themeConfig: {
     name: 'zxuuu.tech',
@@ -19,7 +19,6 @@ export default defineConfig({
       default: 'light',
       switch: false,
     },
-
     socialLinks: {
       github: {
         display: 'GitHub',
