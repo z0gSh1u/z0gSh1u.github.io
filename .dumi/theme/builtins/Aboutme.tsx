@@ -20,7 +20,7 @@ md.renderer.rules.link_open = function (tokens, idx, options, env, self) {
 
 const Container = styled.div`
   color: #30363f;
-  font-size: 16px;
+  font-size: 1.25em;
   line-height: 1.75;
 `;
 

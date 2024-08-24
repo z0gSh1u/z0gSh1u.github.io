@@ -1,3 +1,16 @@
+diff --git a/theme-default/layouts/DocLayout/index.less b/theme-default/layouts/DocLayout/index.less
+index df5b487586f12609affe0f32493063fba9de0f7a..177825a671fb8cecca9707e67ae6d2ed8da14164 100644
+--- a/theme-default/layouts/DocLayout/index.less
++++ b/theme-default/layouts/DocLayout/index.less
+@@ -63,7 +63,7 @@ body {
+     }
+ 
+     @media @mobile {
+-      display: flex;
++      display: none;
+     }
+ 
+     .@{prefix}-sidebar-btn {
 diff --git a/theme-default/locales/en-US.json b/theme-default/locales/en-US.json
 index 41c774076c851dbb5f460449079cce8c34bcb05d..0594d93dab489610c53749561c45f40fdb7f8a14 100644
 --- a/theme-default/locales/en-US.json
