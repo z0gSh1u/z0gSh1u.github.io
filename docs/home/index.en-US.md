@@ -15,7 +15,7 @@ group:
 - **Mostly Used Working Language**: TypeScript
 - **Low-level Frameworks/Libraries**: React.js lately, Vue.js in the past
 - **High-level Frameworks/Libraries**: Umi.js, Ant Design, learning Next.js
-- **Node.js Server-side Development**: Koa
+- **Node.js Server-side Development**: Koa, learning Nest.js + Prisma
 - **Server-side and Socket Level Development**: Golang
 - **Front-end Graphics and HPC**: WebGL, learning WebGPU
 - **Powerful Script Language**: Python

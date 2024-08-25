@@ -15,7 +15,7 @@ group:
 - **最常用的工作语言**：TypeScript
 - **最小粒度的框架/库**：最近在用 React.js，以前习惯 Vue.js
 - **较大粒度/层面的框架/库**：Umi.js、Ant Design、在学习 Next.js
-- **Node.js 下的服务端开发**：Koa
+- **Node.js 下的服务端开发**：Koa，在学习 Nest.js + Prisma
 - **服务端开发、网络开发**：Golang
 - **Web 前端的图形学与高性能计算**：WebGL，在学习 WebGPU
 - **一门好用的脚本语言**：Python
