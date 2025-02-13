@@ -14,16 +14,15 @@ group:
 
 - **Mostly Used Working Language**: TypeScript
 - **Low-level Frameworks/Libraries**: React.js lately, Vue.js in the past
-- **High-level Frameworks/Libraries**: Umi.js, Ant Design, learning Next.js
+- **High-level Frameworks/Libraries**: Umi.js, Ant Design
 - **Node.js Server-side Development**: Koa, learning Nest.js + Prisma
 - **Server-side and Socket Level Development**: Golang
-- **Front-end Graphics and HPC**: WebGL, learning WebGPU
+- **Front-end Graphics and HPC**: WebGL, plan to learn WebGPU
 - **Powerful Script Language**: Python
 - **Containerization and Cloud Native**: Docker, Kubernetes
-- **AI Generation**: PyTorch, working on SecretFlow and LangChain
-- **Natural Language** (improving...): English @ CET6, Japanese @ N5
-- **Can Hardly Do with...**: PHP, C++, CUDA, CMake, Java, Webpack
-- **Philosophy**: Maintain documentation, leave everything simple
+- **AI Generation**: PyTorch, learning HuggingFace family
+- **Natural Language**: English @ CET6, Japanese @ N5
+- **Can Hardly Do with...**: PHP, C++, CUDA, CMake, Java
 
 ## 📖 Education
 
@@ -49,11 +48,11 @@ During my master's degree, my main research interests include computed tomograph
 
 ### Publications
 
-- [SeNAS-Net: Self-Supervised Noise and Artifact Suppression Network for Material Decomposition in Spectral CT](https://ieeexplore.ieee.org/abstract/document/10509795) (IEEE Transactions on Computational Imaging) (Ji X, Lu Y, Zhang Y, **Zhuo X**, et al.)
-- [Image Domain Multi-Material Decomposition Noise Suppression Through Basis Transformation and Selective Filtering](https://ieeexplore.ieee.org/document/10438845) (IEEE Journal of Biomedical and Health Informatics) (Ji X, **Zhuo X**, et al.)
+- [Scatter correction for cone-beam CT via scatter kernel superposition-inspired convolutional neural network](https://iopscience.iop.org/article/10.1088/1361-6560/acbe8f) (Physics in Medicine and Biology) (**Zhuo X**, Lu Y, et al.) [cited by 6]
+- [A Geometrical Calibration Method for C-arm CT based on a Non-Linear Registration Model](https://ieeexplore.ieee.org/document/10225596) (IEEE Transactions on Instrumentation and Measurement) (Ji X, Lu Y, **Zhuo X**, et al.) [cited by 6]
 - [Real-time endoscopy haze removal: a synthetical method](https://link.springer.com/article/10.1007/s11042-023-16375-w) (Multimedia Tools and Applications) (**Zhuo X**, Yang C, et al.)
-- [A Geometrical Calibration Method for C-arm CT based on a Non-Linear Registration Model](https://ieeexplore.ieee.org/document/10225596) (IEEE Transactions on Instrumentation and Measurement) (Ji X, Lu Y, **Zhuo X**, et al.)
-- [Scatter correction for cone-beam CT via scatter kernel superposition-inspired convolutional neural network](https://iopscience.iop.org/article/10.1088/1361-6560/acbe8f) (Physics in Medicine and Biology) (**Zhuo X**, Lu Y, et al.)
+- [Image Domain Multi-Material Decomposition Noise Suppression Through Basis Transformation and Selective Filtering](https://ieeexplore.ieee.org/document/10438845) (IEEE Journal of Biomedical and Health Informatics) (Ji X, **Zhuo X**, et al.)
+- [SeNAS-Net: Self-Supervised Noise and Artifact Suppression Network for Material Decomposition in Spectral CT](https://ieeexplore.ieee.org/abstract/document/10509795) (IEEE Transactions on Computational Imaging) (Ji X, Lu Y, Zhang Y, **Zhuo X**, et al.)
 
 [Details on Google Scholar...](https://scholar.google.com/citations?hl=en&user=nWCWwY0AAAAJ)
 

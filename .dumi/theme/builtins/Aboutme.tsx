@@ -42,14 +42,11 @@ const MyEnglishName = styled.span`
 // Description markdown content
 const mdZHCN = `
 嗨！我是一名正在 [蚂蚁集团](https://www.antgroup.com/) 工作的 Web 前端工程师，并正向全栈工程师方向发展。
-业余时间，我喜欢出门逛逛（轻度）、玩电子游戏和学习新技术。最近，我计划系统地开始健身，并学习一门乐器。
-我这段时间的座右铭是——珍惜年轻，享受年轻！你可以通过我的邮箱 [zx.cs@qq.com](mailto:zx.cs@qq.com) 联系我。
+你可以通过我的邮箱 [zx.cs@qq.com](mailto:zx.cs@qq.com) 联系我。
 `;
 
 const mdENUS = `Hi! I'm a web front-end developer in China currently working at [Ant Group](https://www.antgroup.com/). 
-I'm learning towards a full-stack engineer. In my spare time, I like to hang out (a little bit), play video games and learn new technologies. 
-Recently, I plan to start working out and learn a musical instrument. Cherish your youth and enjoy it! This is my motto recently.
-You can contact me via my email [zx.cs@qq.com](mailto:zx.cs@qq.com).`;
+I'm learning towards a full-stack engineer. You can reach me via my email [zx.cs@qq.com](mailto:zx.cs@qq.com).`;
 
 export default function Aboutme() {
   const lang = useLocale();
