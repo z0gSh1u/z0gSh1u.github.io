@@ -4,8 +4,8 @@ import { defineConfig } from 'dumi';
 
 export default defineConfig({
   locales: [
-    { id: 'zh-CN', name: '中文', base: '/' },
-    { id: 'en-US', name: 'EN', base: '/en' },
+    { id: 'en-US', name: 'EN', base: '/' },
+    { id: 'zh-CN', name: '中文', base: '/zh' },
   ],
   themeConfig: {
     name: 'zxuuu.tech',

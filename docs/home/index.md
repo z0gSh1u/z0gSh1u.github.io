@@ -1,52 +1,52 @@
 ---
 nav:
-  title: 首页
+  title: Home
 group:
   name: home
   order: 1
 ---
 
-# 关于我
+# About Me
 
 <Aboutme></Aboutme>
 
-## 🧭 技术栈
+## 🧭 Tech Stack
 
-- **最常用的工作语言**：TypeScript
-- **最小粒度的框架/库**：最近在用 React.js，以前习惯 Vue.js
-- **较大粒度/层面的框架/库**：Umi.js、Ant Design
-- **Node.js 下的服务端开发**：Koa，在学习 Nest.js + Prisma
-- **服务端开发、网络开发**：Golang
-- **Web 前端的图形学与高性能计算**：WebGL，计划学习 WebGPU
-- **一门好用的脚本语言**：Python
-- **容器化与云原生**：Docker、Kubernetes
-- **AI 世代**：PyTorch，在学习 HuggingFace 系列
-- **自然语言（提高中…）**：英语 @ CET6，日语 @ N5
-- **硬着头皮也能上…**：PHP、C++、CUDA、CMake、Java
+- **Mostly Used Working Language**: TypeScript
+- **Low-level Frameworks/Libraries**: React.js lately, Vue.js in the past
+- **High-level Frameworks/Libraries**: Umi.js, Ant Design
+- **Node.js Server-side Development**: Koa, learning Nest.js + Prisma
+- **Server-side and Socket Level Development**: Golang
+- **Front-end Graphics and HPC**: WebGL, plan to learn WebGPU
+- **Powerful Script Language**: Python
+- **Containerization and Cloud Native**: Docker, Kubernetes
+- **AI Generation**: PyTorch, learning HuggingFace family
+- **Natural Language**: English @ CET6, Japanese @ N5
+- **Can Hardly Do with...**: PHP, C++, CUDA, CMake, Java
 
-## 📖 教育经历
+## 📖 Education
 
-- 东南大学，计算机科学与技术-医学影像处理，硕士，2021 - 2024
-- Université de Rennes 1，Signal & Image Processing，硕士双学位，2021 - 2024
-- 东南大学，计算机科学与技术，本科，2017 - 2021
+- Southeast University, Computer Science & Technology - Medical Image Processing, M.Eng., 2021 - 2024
+- Université de Rennes 1, Signal & Image Processing, M.Eng. Dual Degree, 2021 - 2024
+- Southeast University, Computer Science & Technology, B.S., 2017 - 2021
 
-## 🧑‍💻 工作经历
+## 🧑‍💻 Employment
 
-### 全职
+### Full-time
 
-- 蚂蚁集团，前端工程师，2024.06 - 至今
+- Ant Group (Alipay), Frontend Developer, 2024.06 - Now
 
-### 实习
+### Internship
 
-- 美团，前端开发（Vue），2023.04 - 2023.07
-- 一影医疗，CT 图像处理算法，2021.06 - 2021.07
-- 腾讯，前端开发（Vue 和 PHP），2020.06 - 2020.08
+- Meituan, Front-End Developer (Vue), 2023.04 - 2023.07
+- FIRST IMAGING, CT Image Processing Algorithm, 2021.06 - 2021.07
+- Tencent, Front-End Developer (Vue and PHP), 2020.06 - 2020.08
 
-## 🧑‍🎓 学术经历
+## 🧑‍🎓 Academic
 
-硕士期间主要研究方向为计算机断层扫描 (CT) 图像相关的处理，包括基于物理的传统图像算法和深度学习方法。
+During my master's degree, my main research interests include computed tomography (CT) acquisition, reconstruction and digital image processing related to X-ray physics.
 
-### 论文
+### Publications
 
 - [Scatter correction for cone-beam CT via scatter kernel superposition-inspired convolutional neural network](https://iopscience.iop.org/article/10.1088/1361-6560/acbe8f) (Physics in Medicine and Biology) (**Zhuo X**, Lu Y, et al.) [cited by 6]
 - [A Geometrical Calibration Method for C-arm CT based on a Non-Linear Registration Model](https://ieeexplore.ieee.org/document/10225596) (IEEE Transactions on Instrumentation and Measurement) (Ji X, Lu Y, **Zhuo X**, et al.) [cited by 6]
@@ -54,12 +54,12 @@ group:
 - [Image Domain Multi-Material Decomposition Noise Suppression Through Basis Transformation and Selective Filtering](https://ieeexplore.ieee.org/document/10438845) (IEEE Journal of Biomedical and Health Informatics) (Ji X, **Zhuo X**, et al.)
 - [SeNAS-Net: Self-Supervised Noise and Artifact Suppression Network for Material Decomposition in Spectral CT](https://ieeexplore.ieee.org/abstract/document/10509795) (IEEE Transactions on Computational Imaging) (Ji X, Lu Y, Zhang Y, **Zhuo X**, et al.)
 
-[详情请见 Google Scholar](https://scholar.google.com/citations?hl=en&user=nWCWwY0AAAAJ)
+[Details on Google Scholar...](https://scholar.google.com/citations?hl=en&user=nWCWwY0AAAAJ)
 
-### 专利
+### Patents
 
-- [一种基于概率优化和神经网络的内窥镜去雾方法及装置](https://xueshu.baidu.com/usercenter/paper/show?paperid=182a0mx0jf410p00c2640gv049758025&site=xueshu_se) (发明专利) (汪彦刚，陈阳，**卓旭**，高钰铭，王志华)
+- [一种基于概率优化和神经网络的内窥镜去雾方法及装置](https://xueshu.baidu.com/usercenter/paper/show?paperid=182a0mx0jf410p00c2640gv049758025&site=xueshu_se) (Invention) (Yangang Wang, Yang Chen, **Xu Zhuo**, Yuming Gao, Zhihua Wang)
 
-### 服务
+### Services
 
-- Physics in Medicine and Biology 期刊审稿人
+- Reviewer of Physics in Medicine and Biology
