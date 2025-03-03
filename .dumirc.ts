@@ -3,10 +3,7 @@
 import { defineConfig } from 'dumi';
 
 export default defineConfig({
-  locales: [
-    { id: 'en-US', name: 'EN', base: '/' },
-    { id: 'zh-CN', name: '中文', base: '/zh' },
-  ],
+  locales: [{ id: 'en-US', name: 'EN', base: '/' }],
   themeConfig: {
     name: 'zxuuu.tech',
     footer: `Based on <a href="https://d.umijs.org" target="_blank">dumi</a>. Deployed on <a href='https://pages.github.com/' target='_blank'>GitHub Pages</a>.`,
@@ -26,22 +23,22 @@ export default defineConfig({
         link: 'https://github.com/z0gSh1u',
       },
       yuque: {
-        display: '语雀',
+        display: 'Yuque',
         icon: '/svg/yuque.svg',
         link: 'https://yuque.com/z0gsh1u/blog',
       },
       zhihu: {
-        display: '知乎',
+        display: 'Zhihu',
         icon: '/svg/zhihu.svg',
         link: 'https://www.zhihu.com/people/zhuoxu',
       },
       linkedin: {
-        display: '领英',
+        display: 'Linkedin',
         icon: '/svg/linkedin.svg',
         link: 'https://www.linkedin.com/in/seuzhuoxu/',
       },
       bilibili: {
-        display: '哔哩哔哩',
+        display: 'Bilibili',
         icon: '/svg/bilibili.svg',
         link: 'https://space.bilibili.com/530258',
       },
