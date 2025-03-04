@@ -10,7 +10,7 @@ group:
 **Status:** Completed (Team)  
 **Language/Tech Stack:** TypeScript + WebGL
 
-This is our undergraduate course project for "Computer Graphics". The main content includes implementing basic 2D/3D model rendering, transformations, shaders, trackball, first-person 3D space roaming, skybox, materials, lighting, etc., using WebGL. We built a basic framework with TypeScript and completed all requirements, achieving high scores. The project can be played at [zxuuu.tech/seucg](https://zxuuu.tech/typed-webgl/).
+This is our undergraduate course project for "Computer Graphics". The main content includes implementing basic 2D/3D model rendering, transformations, shaders, trackball, first-person 3D space roaming, skybox, materials, lighting, etc., using WebGL. We built a basic framework with TypeScript and completed all requirements, achieving high scores. The project can be played at [zxuuu.cloud/seucg](https://zxuuu.cloud/typed-webgl/).
 
 <img src="/projects/webgl.png" width="360px">
 

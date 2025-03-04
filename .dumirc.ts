@@ -5,7 +5,7 @@ import { defineConfig } from 'dumi';
 export default defineConfig({
   locales: [{ id: 'en-US', name: 'EN', base: '/' }],
   themeConfig: {
-    name: 'zxuuu.tech',
+    name: 'zxuuu.cloud',
     footer: `Based on <a href="https://d.umijs.org" target="_blank">dumi</a>. Deployed on <a href='https://pages.github.com/' target='_blank'>GitHub Pages</a>.`,
     logo: false,
     nav: {
