@@ -28,16 +28,26 @@ _[Details on Google Scholar](https://scholar.google.com/citations?hl=en&user=nWC
 ### Paper Snapshots
 
 <div style="margin-bottom: 16px">
-<img src="/publications/jbhi.jpg" width="420px">
-<i>[JBHI 24]</i>
+<img src="/publications/jbhi.jpg" width="450px">
+&nbsp;<span>[JBHI 24]</span>
 </div>
 
 <div style="margin-bottom: 16px">
-<img src="/publications/pmb.jpg" width="420px">
-<i>[PMB 23]</i>
+<img src="/publications/tci.jpg" width="450px">
+&nbsp;<span>[TCI 24]</span>
 </div>
 
 <div style="margin-bottom: 16px">
-<img src="/publications/mtap.jpg" width="420px">
-<i>[MTAP 23]</i>
+<img src="/publications/pmb.jpg" width="450px">
+&nbsp;<span>[PMB 23]</span>
+</div>
+
+<div style="margin-bottom: 16px">
+<img src="/publications/tim.jpg" width="450px">
+&nbsp;<span>[TIM 23]</span>
+</div>
+
+<div style="margin-bottom: 16px">
+<img src="/publications/mtap.jpg" width="450px">
+&nbsp;<span>[MTAP 23]</span>
 </div>
