@@ -5,6 +5,8 @@ group:
 
 # Projects
 
+Please visit my [GitHub](https://github.com/z0gSh1u) for the full list of active projects.
+
 ## [typed-webgl](https://github.com/z0gSh1u/typed-webgl)
 
 **Status:** Completed (Team)  

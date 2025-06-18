@@ -40,11 +40,6 @@ const MyEnglishName = styled.span`
 `;
 
 // Description markdown content
-const mdZHCN = `
-嗨！我是一名正在 [蚂蚁集团](https://www.antgroup.com/) 工作的 Web 前端工程师，并正向全栈工程师方向发展。
-你可以通过我的邮箱 [zx.cs@qq.com](mailto:zx.cs@qq.com) 联系我。
-`;
-
 const mdENUS = `Hi! I'm a web front-end developer in China currently working at [Ant Group](https://www.antgroup.com/). 
 I'm learning towards a full-stack engineer. You can reach me via my email [zx.cs@qq.com](mailto:zx.cs@qq.com).`;
 
@@ -54,9 +49,7 @@ export default function Aboutme() {
     () => (
       <Container
         dangerouslySetInnerHTML={{
-          __html: md.render(
-            (lang.id === 'en-US' ? mdENUS : mdZHCN).replace(/\n/g, ''),
-          ),
+          __html: md.render(mdENUS.replace(/\n/g, '')),
         }}
       ></Container>
     ),

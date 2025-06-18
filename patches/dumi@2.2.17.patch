@@ -220,7 +220,7 @@ index 271383c636bd4dc14573ff2740820b73357abb3f..fddbce8d2a611b9dee0dbbdeb5f3b85b
  @c-border: #d0d5d8;
  @c-border-light: #e4e9ec;
 -@c-site-bg: #f7f9fb;
-+@c-site-bg: lighten(#fefae0, 5%);
++@c-site-bg: #ffffff;
  
  // dark theme colors
  // @dark-selector be injected by less-loader in feature/theme/index.ts

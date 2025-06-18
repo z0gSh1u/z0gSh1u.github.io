@@ -2143,12 +2143,20 @@
     U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
-.markdown blockquote {
-  padding-block-start: 0 !important;
-  padding-block-end: 0 !important;
+.markdown {
+  blockquote {
+    padding-block-start: 0 !important;
+    padding-block-end: 0 !important;
+    margin-block-start: 8px !important;
+    margin-block-end: 8px !important;
+  }
+}
 
-  p {
-    margin-block-start: 0 !important;
-    margin-block-end: 0 !important;
+.markdown {
+  li {
+    p {
+      margin-block-start: 6px !important;
+      margin-block-end: 6px !important;
+    }
   }
 }
