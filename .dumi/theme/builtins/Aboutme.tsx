@@ -51,7 +51,7 @@ export default function Aboutme() {
         dangerouslySetInnerHTML={{
           __html: md.render(mdENUS.replace(/\n/g, '')),
         }}
-      ></Container>
+      />
     ),
     [lang.id],
   );

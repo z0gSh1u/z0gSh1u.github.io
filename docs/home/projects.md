@@ -9,17 +9,15 @@ Please visit my [GitHub](https://github.com/z0gSh1u) for the full list of active
 
 ## [typed-webgl](https://github.com/z0gSh1u/typed-webgl)
 
-**Status:** Completed (Team)  
-**Language/Tech Stack:** TypeScript + WebGL
+_Completed (Team) / TypeScript + WebGL_
 
-Our undergraduate course project for "Computer Graphics". The main content includes implementing basic 2D/3D model rendering, transformations, shaders, trackball, first-person 3D space roaming, skybox, materials, lighting, etc., using WebGL. We built a basic framework with TypeScript and completed all requirements, achieving high scores. The project can be played at [zxuuu.cloud/seucg](https://zxuuu.cloud/typed-webgl/).
+Course project for "Computer Graphics". Implementing basic 2D/3D model rendering, transformations, shaders, trackball, first-person 3D space roaming, skybox, materials, lighting, etc., using WebGL. We built a basic framework with TypeScript and completed all requirements, achieving high scores. The project can be played at [zxuuu.cloud/seucg](https://zxuuu.cloud/typed-webgl/).
 
 <img src="/projects/webgl.png" width="400px">
 
 ## [chinadle](https://github.com/z0gSh1u/chinadle)
 
-**Status:** Completed  
-**Language/Tech Stack:** Vue 3 + mitt + Tailwind CSS
+_Completed / Vue 3 + mitt + Tailwind CSS_
 
 Inspired by the popularity of the word-guessing game [Wordle](https://www.powerlanguage.co.uk/wordle/) and [Worldle](https://worldle.teuteuf.fr/), this project allows you to guess famous Chinese landmarks within a limited number of attempts based on direction and distance hints. It was developed when Vue 3 was still maturing, utilizing some of its features, mitt for event bus communication, and Tailwind CSS for quick page layout.
 
@@ -27,17 +25,15 @@ Inspired by the popularity of the word-guessing game [Wordle](https://www.powerl
 
 ## [seu-viz](https://github.com/z0gSh1u/seu-viz)
 
-**Status:** Completed  
-**Language/Tech Stack:** C++ & OpenGL
+_Completed / C++ & OpenGL_
 
-My graduate course project for "Information Visualization" - implementing volume rendering based on ray casting in OpenGL. It includes parallel light volume rendering, transfer functions, normal vector calculation, lighting, ray-box intersection tests, and multi-threading acceleration.
+Course project for "Information Visualization" - implementing volume rendering based on ray casting in OpenGL. It includes parallel light volume rendering, transfer functions, normal vector calculation, lighting, ray-box intersection tests, and multi-threading acceleration.
 
 <img src="/projects/seuviz.png" width="400px">
 
 ## [nlm-cuda](https://github.com/z0gSh1u/nlm-cuda)
 
-**Status:** Completed  
-**Language/Tech Stack:** CUDA + CMake
+_Completed / CUDA + CMake_
 
 Implemented a CUDA-based parallel Non-Local Means (NLM) denoising algorithm, saving 99% of the time compared to non-parallel CPU implementation.
 
@@ -45,8 +41,7 @@ Implemented a CUDA-based parallel Non-Local Means (NLM) denoising algorithm, sav
 
 ## [seu-lex-yacc](https://github.com/z0gSh1u/seu-lex-yacc)
 
-**Status:** Completed (Team)  
-**Language/Tech Stack:** TypeScript
+_Completed (Team) / TypeScript_
 
 Our undergraduate course project for "Compiler Principles". We implemented a Lex-like lexical analyzer generator, including constructing from regular expressions to NFA to DFA; a Yacc-like syntax analyzer generator, including LR(1) syntax analysis; and visualizations of automata and abstract syntax trees (AST) using D3.js. The results of this project served as the foundation for the later [minisys-minicc-ts](https://github.com/seu-cs-class2/minisys-minicc-ts).
 
@@ -54,8 +49,7 @@ Our undergraduate course project for "Compiler Principles". We implemented a Lex
 
 ## [VCampus](https://github.com/z0gSh1u/VCampus)
 
-**Status:** Completed (Team)  
-**Language/Tech Stack:** Java + MyBatis
+_Completed (Team) / Java + MyBatis_
 
 Our undergraduate course project for "Software Practice". We implemented a Client/Server architecture program simulating various campus life scenarios, including:
 
@@ -68,8 +62,7 @@ Our undergraduate course project for "Software Practice". We implemented a Clien
 
 ## [expshell](https://github.com/z0gSh1u/expshell)
 
-**Status:** Completed  
-**Language/Tech Stack:** C++ & Linux
+_Completed / C++ & Linux_
 
 My undergraduate course project for "Operating Systems". Implemented a simple Linux Shell supporting features like redirection and pipelines, using Linux system APIs such as fork, pipe, dup2, and open.
 
@@ -77,8 +70,7 @@ My undergraduate course project for "Operating Systems". Implemented a simple Li
 
 ## [vscode-ts-getset](https://github.com/z0gSh1u/vscode-ts-getset)
 
-**Status:** Completed  
-**Language/Tech Stack:** TypeScript
+_Completed / TypeScript_
 
 A [VSCode extension](https://marketplace.visualstudio.com/items?itemName=z0gSh1u.vscode-ts-getset) for automatically generating Getter and Setter methods for TypeScript (.ts) class declarations, developed based on the TypeScript Compiler API to analyze AST.
 
@@ -86,8 +78,7 @@ A [VSCode extension](https://marketplace.visualstudio.com/items?itemName=z0gSh1u
 
 ## [minisys-minicc-ts](https://github.com/seu-cs-class2/minisys-minicc-ts)
 
-**Status:** Completed (Team)  
-**Language/Tech Stack:** TypeScript
+_Completed (Team) / TypeScript_
 
 One of our course projects for "Comprehensive Design of Computer Systems". It implements a compiler that compiles [MiniC language](https://github.com/seu-cs-class2/minisys-minicc-ts/blob/master/docs/MiniC.md) (a subset of C) to [Minisys architecture](http://www.icourse163.org/course/SEU-1003566002) (MIPS-like) assembly, including:
 
@@ -96,14 +87,12 @@ One of our course projects for "Comprehensive Design of Computer Systems". It im
 - Intermediate code (IR) generation
 - Target code (assembly) generation
 - Code optimization
-- 100% TypeScript
 
 <img src="/projects/minicc.png" width="400px">
 
 ## [minisys-asm](https://github.com/seu-cs-class2/minisys-asm)
 
-**Status:** Completed (Team)  
-**Language/Tech Stack:** TypeScript + Travis CI
+_Completed (Team) / TypeScript + Travis CI_
 
 One of our course projects for "Comprehensive Design of Computer Systems". It implements an assembler that converts [Minisys architecture](http://www.icourse163.org/course/SEU-1003566002) (MIPS-like) assembly to Minisys architecture machine code. The project supports both Node.js and browser (based on Webpack) environments, with continuous integration using Travis CI and automatic deployment to the web [here](seu-cs-class2.github.io/minisys-asm/).
 
@@ -111,17 +100,13 @@ One of our course projects for "Comprehensive Design of Computer Systems". It im
 
 ## [minisys-1a-cpu](https://github.com/seu-cs-class2/minisys-1a-cpu)
 
-**Status:** Completed (Team)  
-**Language/Tech Stack:** Verilog
+_Completed (Team) / Verilog_
 
-One of our course projects for "Comprehensive Design of Computer Systems". It implements a system on chip (SoC; CPU + external interfaces) using Verilog. The CPU supports five-stage pipeline, single issue, Harvard architecture, interrupts, and 57 MIPS instructions; peripherals are connected via a bus.
-
-The design can be programmed to run on Xilinx FPGA.
+One of our course projects for "Comprehensive Design of Computer Systems". It implements a system on chip (SoC; CPU + external interfaces) using Verilog. The CPU supports five-stage pipeline, single issue, Harvard architecture, interrupts, and 57 MIPS instructions; peripherals are connected via a bus. The design can be programmed to run on Xilinx FPGA.
 
 ## [SEU History and Knowledge Competition System](https://github.com/z0gSh1u/seu-history-competition-2018)
 
-**Status:** Completed (Team)  
-**Language/Tech Stack:** PHP + MySQL
+_Completed (Team) / PHP + MySQL_
 
 <img src="/projects/seuhistory.png" width="400px">
 
@@ -129,8 +114,7 @@ This project implements a knowledge competition system used in the 2018 SEU Hist
 
 ## [lib-seat-manage](https://github.com/z0gSh1u/lib-seat-manage)
 
-**Status:** Completed (Team)  
-**Language/Tech Stack:** Python + Node.js (Express)
+_Completed (Team) / Python + Node.js (Express)_
 
 This project uses Arduino Uno development board and PIR sensors for hardware, and Vue.js (front-end framework) + Node.js (back-end) + Python (software-hardware interaction listening) for software. The main functions include library seat reservation, heat statistics, and seat occupancy detection.
 
@@ -138,14 +122,18 @@ This project uses Arduino Uno development board and PIR sensors for hardware, an
 
 ## [crip](https://github.com/SEU-CT-Recon/crip)
 
-**Status:** Iterating  
-**Language/Tech Stack:** Python (numpy etc.)
+_Iterating / Python (numpy etc.)_
 
 This project implements an all-in-one toolkit for CT data IO, preprocessing, postprocessing, and provides capabilities for related research physical calculations, dual-energy, and low-dose simulations.
 
-## [dijkstra-manyjs](https://github.com/z0gSh1u/dijkstra-manyjs)
+## [SecretNote](https://github.com/secretflow/secretnote)
 
-**Status:** Completed  
-**Language/Tech Stack:** Vanilla JS / WASM / WebGL / WebGPU
+_Iterating (Job work) / TypeScript, Python_
 
-Compare different implementations of Dijkstra's shortest path algorithm on the browser.
+A multiparty Jupyter Notebook, designed for Privacy Computing teaching.
+
+## [Cloud-native SecretNote](https://studio.secretflow.com/secretnote)
+
+_Iterating (Job work) / TypeScript, Python, K8s_
+
+Deploy SecretNote to ACK Serverless K8s swarm, using an Ingress that automatically affines two Pods to a user.
