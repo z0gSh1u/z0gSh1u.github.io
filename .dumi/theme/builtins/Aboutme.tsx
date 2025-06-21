@@ -63,7 +63,12 @@ export default function Aboutme() {
         <MyEnglishName>ZHUO Xu</MyEnglishName>
         {Description}
       </Col>
-      <Col lg={8} md={24} sm={24} style={{ textAlign: 'center' }}>
+      <Col
+        lg={8}
+        md={24}
+        sm={24}
+        style={{ textAlign: 'center', width: '100%' }}
+      >
         <Avatar size={192} src={'/photo.jpg'}></Avatar>
       </Col>
     </Row>

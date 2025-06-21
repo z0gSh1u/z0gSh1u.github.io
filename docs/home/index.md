@@ -1,6 +1,6 @@
 ---
 nav:
-  title: Home
+  title: About Me
 group:
   name: home
   order: 1
@@ -10,19 +10,17 @@ group:
 
 <Aboutme></Aboutme>
 
-## 🧭 My Experience
-
 - Year 1999: Born in Putian, a small city in Fujian Province, China
 - Before 2011: Deploy various ASP / PHP webapps on free virtual hosts, including Discuz!, Phpwind, Wordpress and Dvbbs.
 - 📖 2017 - 2021: Study in Southeast University, and get B.S. degree in Computer Science & Technology
   > Main Courses include Software Engineering, Digital Image Processing, Signal and Systems, Digital Signal Processing, Computer Graphics, Compilers Principle, Discrete Math, Data Structures, Algorithms, Databases and so on.
 - 🧑‍💻 2020.06 - 2020.08: Tencent, Front-End Developer (Vue and PHP) (Internship)
   > Mobile Phone Operating Activities H5 Webpage and Platform Development
+- 🥳 2021.04: Contributed to [microsoft/TypeScript](https://github.com/microsoft/TypeScript/pull/43654)
 - 🧑‍💻 2021.06 - 2021.07: FIRST IMAGING, CT Image Processing Algorithm (Internship)
   > From MATLAB and Python Prototype to C++ Implementation
 - 📖 2021 - 2024: Study in Southeast University, and get M.Eng. degree in Computer Science & Technology - Medical Image Processing
   > Main Courses include Visualization, Pattern Recognition, Advanced Digital Signal Processing, Algorithms, Image Analysis and Understanding and so on. Published several papers and one patent on Computed Tomography and Endoscopy, e.g., CBCT, Spectral CT and C-arm CT.
-- 🥳 2021.04: Contributed to [microsoft/TypeScript](https://github.com/microsoft/TypeScript/pull/43654)
 - 📖 2021 - 2024: Study for a M.Eng. Dual Degree of Université de Rennes 1, Signal & Image Processing
   > Main Courses include Random Signal Processing and Stochastic Processes, Wavelets, Computer Vision, Classification and Detection Theory and so on.
 - 📖 2021 - 2024: Published several papers and one patent on Computed Tomography (CT), Medical Image Processing and Deep Learning
@@ -40,7 +38,7 @@ group:
   > Content Security (Censorship) Platform Development
 - Year 2024: Serves as the reviewer of Physics in Medicine and Biology
 - 2024.06 - Now: Ant Group (Alipay), Full Stack Developer
-  > Supports SecretFlow, WeaveFox and Some Novel Projects
+  > Supports SecretFlow, WeaveFox and Some Novel AI Applications
 
 I would say my technology stack includes
 

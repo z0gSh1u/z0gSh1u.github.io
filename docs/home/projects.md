@@ -1,9 +1,11 @@
 ---
+nav:
+  title: Selected Projects
 group:
   name: home
 ---
 
-# Projects
+# Selected Projects
 
 Please visit my [GitHub](https://github.com/z0gSh1u) for the full list of active projects.
 
@@ -15,14 +17,6 @@ Course project for "Computer Graphics". Implementing basic 2D/3D model rendering
 
 <img src="/projects/webgl.png" width="400px">
 
-## [chinadle](https://github.com/z0gSh1u/chinadle)
-
-_Completed / Vue 3 + mitt + Tailwind CSS_
-
-Inspired by the popularity of the word-guessing game [Wordle](https://www.powerlanguage.co.uk/wordle/) and [Worldle](https://worldle.teuteuf.fr/), this project allows you to guess famous Chinese landmarks within a limited number of attempts based on direction and distance hints. It was developed when Vue 3 was still maturing, utilizing some of its features, mitt for event bus communication, and Tailwind CSS for quick page layout.
-
-<img src="/projects/chinadle.png" width="200px">
-
 ## [seu-viz](https://github.com/z0gSh1u/seu-viz)
 
 _Completed / C++ & OpenGL_
@@ -30,14 +24,6 @@ _Completed / C++ & OpenGL_
 Course project for "Information Visualization" - implementing volume rendering based on ray casting in OpenGL. It includes parallel light volume rendering, transfer functions, normal vector calculation, lighting, ray-box intersection tests, and multi-threading acceleration.
 
 <img src="/projects/seuviz.png" width="400px">
-
-## [nlm-cuda](https://github.com/z0gSh1u/nlm-cuda)
-
-_Completed / CUDA + CMake_
-
-Implemented a CUDA-based parallel Non-Local Means (NLM) denoising algorithm, saving 99% of the time compared to non-parallel CPU implementation.
-
-<img src="/projects/nlmcuda.png" width="240px">
 
 ## [seu-lex-yacc](https://github.com/z0gSh1u/seu-lex-yacc)
 
@@ -59,22 +45,6 @@ Our undergraduate course project for "Software Practice". We implemented a Clien
 - Utilizing design patterns such as Singleton
 
 <img src="/projects/vcampus.jpg" width="400px">
-
-## [expshell](https://github.com/z0gSh1u/expshell)
-
-_Completed / C++ & Linux_
-
-My undergraduate course project for "Operating Systems". Implemented a simple Linux Shell supporting features like redirection and pipelines, using Linux system APIs such as fork, pipe, dup2, and open.
-
-<img src="/projects/expshell.png" width="400px">
-
-## [vscode-ts-getset](https://github.com/z0gSh1u/vscode-ts-getset)
-
-_Completed / TypeScript_
-
-A [VSCode extension](https://marketplace.visualstudio.com/items?itemName=z0gSh1u.vscode-ts-getset) for automatically generating Getter and Setter methods for TypeScript (.ts) class declarations, developed based on the TypeScript Compiler API to analyze AST.
-
-<img src="/projects/tsgetset.gif" width="400px">
 
 ## [minisys-minicc-ts](https://github.com/seu-cs-class2/minisys-minicc-ts)
 
@@ -111,14 +81,6 @@ _Completed (Team) / PHP + MySQL_
 <img src="/projects/seuhistory.png" width="400px">
 
 This project implements a knowledge competition system used in the 2018 SEU History and Knowledge Competition. It was my introductory project, very amateurish. It uses non-separated front-end and back-end PHP for page rendering mixed with back-end logic; native PHP mysqli API for MySQL data read/write; Bootstrap and other CSS frameworks for layout; and Session + Cookie for authentication.
-
-## [lib-seat-manage](https://github.com/z0gSh1u/lib-seat-manage)
-
-_Completed (Team) / Python + Node.js (Express)_
-
-This project uses Arduino Uno development board and PIR sensors for hardware, and Vue.js (front-end framework) + Node.js (back-end) + Python (software-hardware interaction listening) for software. The main functions include library seat reservation, heat statistics, and seat occupancy detection.
-
-<img src="/projects/iot.jpg" width="400px">
 
 ## [crip](https://github.com/SEU-CT-Recon/crip)
 
