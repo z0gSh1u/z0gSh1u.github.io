@@ -17,6 +17,11 @@ export default defineConfig({
       switch: false,
     },
     socialLinks: {
+      homepage: {
+        display: 'Homepage',
+        icon: '/svg/read.svg',
+        link: 'https://zxuuu.cloud',
+      },
       github: {
         display: 'GitHub',
         icon: '/svg/github.svg',
