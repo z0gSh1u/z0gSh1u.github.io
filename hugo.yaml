@@ -1,0 +1,58 @@
+baseurl: 'https://zxuuu.cloud/' # please update this to your actual URL
+languageCode: 'en-us'
+title: 'ZHUO Xu'
+theme: 'hugo-xmin'
+googleAnalytics: 'G-6Q50KH8DS4'
+disqusShortname: ''
+ignoreFiles: ["\\.Rmd$", "\\.Rmarkdown$", '_cache$']
+footnotereturnlinkcontents: '↩'
+
+permalinks:
+  note: '/note/:year/:month/:day/:slug/'
+  post: '/post/:year/:month/:day/:slug/'
+
+menu:
+  main:
+    - name: Blog
+      url: 'https://yuque.com/z0gsh1u/blog'
+      pre: <img src="svg/yuque.svg" style="width:16px" />
+      weight: 2
+    - name: GitHub
+      url: 'https://github.com/z0gSh1u'
+      pre: <img src="https://simpleicons.org/icons/github.svg" style="width:16px" />
+      weight: 3
+    - name: 'Google Scholar'
+      url: 'https://scholar.google.com/citations?hl=en&user=nWCWwY0AAAAJ'
+      pre: <img src="https://simpleicons.org/icons/googlescholar.svg" style="width:16px" />
+      weight: 4
+    - name: Zhihu
+      url: 'https://www.zhihu.com/people/zhuoxu'
+      pre: <img src="https://simpleicons.org/icons/zhihu.svg" style="width:16px" />
+      weight: 5
+    - name: Linkedin
+      url: 'https://www.linkedin.com/in/seuzhuoxu/'
+      pre: <img src="svg/linkedin.svg" style="width:16px" />
+      weight: 6
+    - name: Steam
+      url: 'https://steamcommunity.com/id/zhuoxu/'
+      pre: <img src="https://simpleicons.org/icons/steam.svg" style="width:16px" />
+      weight: 7
+    - name: Bilibili
+      url: 'https://space.bilibili.com/530258'
+      pre: <img src="https://simpleicons.org/icons/bilibili.svg" style="width:16px" />
+      weight: 8
+    - name: 500px
+      url: 'https://500px.com/p/136371391'
+      pre: <img src="https://simpleicons.org/icons/500px.svg" style="width:16px" />
+      weight: 9
+
+params:
+  description: 'A website built through Hugo and blogdown.'
+  footer: '&copy; [zxuuu.cloud](https://zxuuu.cloud)'
+
+markup:
+  highlight:
+    codeFences: false
+  goldmark:
+    renderer:
+      unsafe: true
