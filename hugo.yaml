@@ -45,6 +45,18 @@ menu:
       url: 'https://500px.com/p/136371391'
       pre: <img src="https://simpleicons.org/icons/500px.svg" style="width:16px" />
       weight: 9
+    - name: Reddit
+      url: 'https://www.reddit.com/user/Downtown_Job_2520/'
+      pre: <img src="https://simpleicons.org/icons/reddit.svg" style="width:16px" />
+      weight: 10
+    - name: StackOverflow
+      url: 'https://stackoverflow.com/users/11377950/z0gsh1u'
+      pre: <img src="https://simpleicons.org/icons/stackoverflow.svg" style="width:16px" />
+      weight: 11
+    - name: Xiaohongshu
+      url: 'https://www.xiaohongshu.com/user/profile/62ca4132000000000e00f718'
+      pre: <img src="https://simpleicons.org/icons/xiaohongshu.svg" style="width:16px" />
+      weight: 12
 
 params:
   description: 'A website built through Hugo and blogdown.'

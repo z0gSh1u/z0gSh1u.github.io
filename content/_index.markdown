@@ -24,6 +24,9 @@ I would say my technology stack includes
 - **Server-side and Containerization: Koa (Node.js), Golang, Kubernetes**
   <br/>
   _Deployed [Cloud SecretNote](https://studio.secretflow.com/secretnote-case) on Aliyun ACK Serverless during my working at Ant Group._
+- **Desktop: Electron**
+  <br/>
+  _Recently I'm writing Electron stuffs._
 - **Graphics: WebGL**
   <br/>
   _Visit our [CG Course Work](https://zxuuu.cloud/typed-webgl/)._
@@ -34,10 +37,6 @@ I would say my technology stack includes
   <br/>
   _Ye, should improve them both_
 - **Used several times: PHP, C++, CUDA, CMake, Java**
-
-## Recent Updates 🫡
-
-Secret for now.
 
 ## Working Experience 🧑‍💻
 
