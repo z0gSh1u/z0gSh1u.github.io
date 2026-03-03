@@ -1,4 +1,4 @@
-baseurl: 'https://zxuuu.cloud/' # please update this to your actual URL
+baseurl: 'https://zxuuu.link/' # please update this to your actual URL
 languageCode: 'en-us'
 title: 'ZHUO Xu'
 theme: 'hugo-xmin'
@@ -60,7 +60,7 @@ menu:
 
 params:
   description: 'A website built through Hugo and blogdown.'
-  footer: '&copy; [zxuuu.cloud](https://zxuuu.cloud)'
+  footer: '&copy; [zxuuu.link](https://zxuuu.link)'
 
 markup:
   highlight:
