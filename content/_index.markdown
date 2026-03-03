@@ -29,7 +29,7 @@ I would say my technology stack includes
   _Recently I'm writing desktop app stuffs with Electron._
 - **Graphics: WebGL**
   <br/>
-  _Visit our [CG Course Work](https://zxuuu.cloud/typed-webgl/)._
+_Visit our [CG Course Work](https://zxuuu.link/typed-webgl/)._
 - **AI: PyTorch**
   <br/>
   _Trained "small" vision models and published some papers during my university days._
